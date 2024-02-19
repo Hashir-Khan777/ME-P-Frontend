@@ -1,0 +1,35 @@
+.active-page {
+    background-color: #FFBA3F;
+    color: white;
+    /* border: 1px solid #007bff; */
+    border: none;
+    padding: 8px 13px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .active {
+    background-color: brown;
+} */
+
+/* .page-link {
+    background-color: burlywood;
+} */
+.active-page2 {
+    background-color: white;
+    border: none;
+    padding: 8px 13px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px #e3e3e3;
+}

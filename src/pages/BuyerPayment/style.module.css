@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: aqua; */
+    margin-top: 30px;
+}
+
+/* ============================================================= */
+.addRentalContainer {
+    width: 98%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-right: 5px;
+    padding-left: 25px;
+
+    padding-top: 20px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+}
+
+.addRentaiPage {
+    background-color: #F8F9FA;
+    width: 100%;
+}
+
+.addRentalText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.addRentalFirst {
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.inputText {
+    font-size: 13px;
+    font-weight: 400;
+    color: #807D7E;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rentalInput {
+    width: 95%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.rentalSelectInput {
+    width: 99%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.rentalSelectInput:focus {
+    outline: none;
+}
+
+.rentalInput:focus {
+    outline: none;
+}
+
+.inputDiv {
+    /* background-color: aqua; */
+    width: 33%;
+}
+
+.addRentalDisText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+}
+
+.addRentalDisInput {
+    width: 98%;
+    height: 70px;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #BEBCBD;
+    margin-bottom: 10px;
+}
+
+.addRentalDisInput:focus {
+    outline: none;
+}
+
+.chooseFileBtn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FFBA3F;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.chooseFileBtn:active {
+    background-color: #c38721;
+}
+
+.chooseFileBtn2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FFBA3F;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 45px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.chooseFileBtn2:active {
+    background-color: #c38721;
+}
+
+.addCategoryFirstDiv {
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.categoryNameDiv {
+    width: 50%;
+    /* background-color: black; */
+}
+
+.IBNAInputDiv {
+    width: 100%;
+    /* background-color: black; */
+}
+
+.catogeryNameText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 13px;
+    font-weight: 400;
+    color: #807D7E;
+    padding-bottom: 6px;
+}
+
+.categoryNameInput {
+    width: 96%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.IBNAInput {
+    width: 98%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.categoryNameInput:focus {
+    outline: none;
+}
+
+.marginTop {
+    margin-top: 15px;
+}
+
+.selectedImgDiv {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.selectedImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.textImg {
+    color: black;
+    font-size: small;
+    margin-left: 10px;
+}

@@ -1,0 +1,207 @@
+import styled from "styled-components";
+import { mobile, tablet } from "../../utils/responsive";
+import Theme from "../../constants/theme";
+
+
+export const Containerdiv = styled.div`
+    
+    width: 100%;
+    background-color: ${Theme.WHITE_COLOR};
+    margin: 0px;
+    margin-top: 100px;
+    padding: 20px 0px;
+
+   
+
+
+    h1{
+
+font-size: 64px;
+margin-left: 100px;
+font-weight: bold;
+}
+
+${mobile`
+
+h1{
+    margin-left: 0px;
+    font-size: 26px;
+    padding: 0px;
+    text-align: center;
+
+}
+
+
+`}
+
+.styledYellow{
+color: ${Theme.YELLOW};
+}
+.styledblack{
+color: ${Theme.BLACK_COLOR};
+}
+
+`
+
+export const FlexParent = styled.div`
+
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+gap: 89px;
+margin: auto;
+justify-content: center;
+align-items: center;
+
+
+${mobile`
+gap: 0px;
+
+
+`}
+`
+
+export const FlexCard = styled.div`
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: space-between;
+    width: 400px;
+    max-width: 400px;
+    background-color: ${Theme.GREY_93_COLOR};
+    padding: 0px 0px 14px 0px;
+    height: 520px;
+    max-height: 520px;
+    gap: 10px;
+    margin: 20px 0px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    ${mobile`
+    
+    max-width: 300px;
+    `}
+
+    .justifybtn{
+        display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0px 15px;
+    height: 15px;
+    
+    }
+    .greycolor{
+        color: ${Theme.DARK_GREY_COLOR};
+    }
+    .yellowcolor{
+        color: ${Theme.YELLOW};
+    }
+.imgclass{
+    margin: auto;
+    max-width: 100%;
+    margin: 15px 15px 0px 15px  ;
+    border-radius: 10px;
+    max-height: 100%;
+
+
+    img{
+
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+
+.bgyellow{
+    background-color: ${Theme.YELLOW};
+    padding-top: 0px ;
+    margin-top: 0px;
+    padding: 0px 15px;
+    color: ${Theme.WHITE_COLOR};
+}
+
+
+
+.pad{
+
+    
+    p{
+        /* padding: 0px 19px; */
+        /* margin: 5px 0px; */
+        font-size: small;
+    }
+}
+
+.para{
+    padding: 0px 15px 0px 15px;
+}
+
+`
+
+export const Styledbutton = styled.button`
+
+border: none;
+background-color: ${Theme.YELLOW};
+border-radius: 5px;
+padding: 10px 38px;
+color: ${Theme.WHITE_COLOR};
+background-color: ${Theme.BLACK_COLOR};
+font-weight: bold;
+width: 90%;
+margin:  0px auto;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+&:hover{
+
+    color: ${Theme.BLACK_COLOR};
+background-color: ${Theme.WHITE_COLOR};
+}
+
+`
+
+export const BrowseButton = styled.div`
+
+width: 100%;
+text-align: center;
+margin: auto;
+.styledbutton{
+    padding: 15px 40px;
+    border: 1px solid ${Theme.YELLOW};
+    border-radius: 8px;
+    color: ${Theme.BLACK_COLOR};
+    font-weight: bold;
+    background-color: ${Theme.WHITE_COLOR};
+    width: 40%;
+    cursor: pointer;
+&:hover{
+    color: ${Theme.YELLOW};
+    background-color: ${Theme.BLACK_COLOR};
+
+}
+
+    ${mobile`
+
+
+
+    
+        font-size: small;
+        width: 85%;
+            
+
+
+    
+ 
+
+
+`}
+}
+
+
+`

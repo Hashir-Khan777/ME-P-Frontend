@@ -1,0 +1,75 @@
+.newStoresModalContainer {
+    /* background-color: #2e4533; */
+    padding: 10px 20px;
+}
+
+.newStoresModalTitleDiv {
+    /* background-color: aqua; */
+    width: 67%;
+    margin-left: auto;
+    /* margin-top: 5px; */
+    color: black;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newStoresModalActiveBtn {
+    background-color: #26A243;
+    font-weight: 100;
+    padding: 3px 30px;
+    font-size: xx-small;
+    color: white;
+    border-radius: 5px;
+}
+
+.newStoresModalContextDiv {
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.newStoresModalContextDivChild1 {
+    width: 40%;
+    /* height: 30px; */
+    /* background-color: aqua; */
+}
+
+.newStoresModalContextDivChild2 {
+    width: 30%;
+    /* height: 30px; */
+    /* background-color: rgb(62, 172, 172); */
+}
+
+.newStoresModalContextDivChild1Text1 {
+    color: #807D7E;
+    font-size: small;
+}
+
+.newStoresModalContextDivChild1Text2 {
+    color: black;
+    font-size: small;
+    font-weight: 600;
+}
+
+.newStoresModalBtn {
+    width: 25%;
+    /* height: 50px; */
+    background-color: #FFBA3F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}

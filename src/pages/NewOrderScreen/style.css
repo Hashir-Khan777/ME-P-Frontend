@@ -1,0 +1,12 @@
+.tabsContainer {
+    border: none;
+    /* background-color: #F8F9FA; */
+    background-color: 'red';
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-left: -18px;
+}
+
+.OrderPage {
+    background-color: #F8F9FA;
+}

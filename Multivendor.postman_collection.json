@@ -1,0 +1,338 @@
+{
+  "info": {
+    "_postman_id": "bdcea507-9c41-4954-a602-b45b139e28bb",
+    "name": "Multivendor",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "24714799",
+    "_collection_link": "https://lively-comet-523513.postman.co/workspace/Neom~619e35a5-af80-45e9-a044-5249bfe42ffa/collection/24714799-bdcea507-9c41-4954-a602-b45b139e28bb?action=share&source=collection_link&creator=24714799"
+  },
+  "item": [
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "Add Category",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"category_name\": \"Rollers\",\n    \"slug\": \"rol\",\n    \"description\": \"For Rollers\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/category/"
+          },
+          "response": []
+        },
+        {
+          "name": "get all category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/category/"
+          },
+          "response": []
+        },
+        {
+          "name": "get category by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/category/64fc2f41602b0833a470c27f"
+          },
+          "response": []
+        },
+        {
+          "name": "delete category",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:8080/api/category/64fc2f41602b0833a470c27f"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Equipment",
+      "item": [
+        {
+          "name": "Add Equipment",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"equipment_name\": \"2015 Excavator\",\n    \"model\": \"mln23\",\n    \"year\": 2019, \n    \"make\": \"volvo\",\n    \"category\": \"64e99e66535d4a6e942c2aae\", \n    \"location\": \"melbourne\",\n    \"sku\": 5000,\n    \"condition\": \"used\",\n    \"price\": 50000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/equipment/"
+          },
+          "response": []
+        },
+        {
+          "name": "get all equipment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/equipment/"
+          },
+          "response": []
+        },
+        {
+          "name": "get equipment by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/equipment/64e99ad350baf62fc4f103a7"
+          },
+          "response": []
+        },
+        {
+          "name": "delete equipment",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:8080/api/equipment/64e99ad350baf62fc4f103a7"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rental",
+      "item": [
+        {
+          "name": "Add Rentals Copy",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"rental_name\": \"tesst\",\n    \"model\": \"325LN\",\n    \"pricing_type\": \"monthly\",\n    \"year\": 2019, \n    \"make\": \"volvo\",\n    \"category\": \"64e99e66535d4a6e942c2aae\", \n    \"location\": \"melbourne\",\n    \"sku\": \"76813\",\n    \"available_from\": \"1/9/2023\",\n    \"end_date\": \"1/10/2023\",\n    \"condition\": \"used\",\n    \"price\": 50000,\n    \"description\": \"working ggoood\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/rental/"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Rentals",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"rental_name\": \"cjksdvkdbvk updated\",\n    \"model\": \"325LN\",\n    \"pricing_type\": \"monthly\",\n    \"year\": 2019, \n    \"make\": \"volvo\",\n    \"category\": \"64e99e66535d4a6e942c2aae\", \n    \"location\": \"melbourne\",\n    \"sku\": \"76813\",\n    \"available_from\": \"1/9/2023\",\n    \"end_date\": \"1/10/2023\",\n    \"condition\": \"used\",\n    \"price\": 50000,\n    \"description\": \"working ggoood\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/rental/64efdd5af9ee7b402e0a3fa7"
+          },
+          "response": []
+        },
+        {
+          "name": "get all rentals",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/equipment/"
+          },
+          "response": []
+        },
+        {
+          "name": "get rental by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/rental/64efdd71f9ee7b402e0a3fae"
+          },
+          "response": []
+        },
+        {
+          "name": "delete rental",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:8080/api/rental/64efdd71f9ee7b402e0a3fae"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Parts",
+      "item": [
+        {
+          "name": "Add Part",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"rental_name\": \"tesst\",\n    \"model\": \"325LN\",\n    \"pricing_type\": \"monthly\",\n    \"year\": 2019, \n    \"make\": \"volvo\",\n    \"category\": \"64e99e66535d4a6e942c2aae\", \n    \"location\": \"melbourne\",\n    \"sku\": \"76813\",\n    \"available_from\": \"1/9/2023\",\n    \"end_date\": \"1/10/2023\",\n    \"condition\": \"used\",\n    \"price\": 50000,\n    \"description\": \"working ggoood\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/rental/"
+          },
+          "response": []
+        },
+        {
+          "name": "update Part",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"product_title\": \"part 2\",\n    \"make\": \"volvo\",\n    \"price\": 50000,\n    \"category\": \"64e99e66535d4a6e942c2aae\", \n    \"location\": \"melbourne\",\n    \"condition\": \"used\",\n    \"description\": \"working ggoood\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/part/64efe6448c484275a77be4e8"
+          },
+          "response": []
+        },
+        {
+          "name": "get all part",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/equipment/"
+          },
+          "response": []
+        },
+        {
+          "name": "get rental by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/part/64efe6448c484275a77be4e8"
+          },
+          "response": []
+        },
+        {
+          "name": "delete rental",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:8080/api/rental/64efdd71f9ee7b402e0a3fae"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Review",
+      "item": [
+        {
+          "name": "Add Review",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"rental_name\": \"tesst\",\n    \"model\": \"325LN\",\n    \"pricing_type\": \"monthly\",\n    \"year\": 2019, \n    \"make\": \"volvo\",\n    \"category\": \"64e99e66535d4a6e942c2aae\", \n    \"location\": \"melbourne\",\n    \"sku\": \"76813\",\n    \"available_from\": \"1/9/2023\",\n    \"end_date\": \"1/10/2023\",\n    \"condition\": \"used\",\n    \"price\": 50000,\n    \"description\": \"working ggoood\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/review/"
+          },
+          "response": []
+        },
+        {
+          "name": "get all review",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/review/"
+          },
+          "response": []
+        },
+        {
+          "name": "get review by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/part/64efe6448c484275a77be4e8"
+          },
+          "response": []
+        },
+        {
+          "name": "delete review",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:8080/api/rental/64efdd71f9ee7b402e0a3fae"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"shayansiddiqui759@gmail.com\",\n    \"password\" : \"test2345\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/auth/register"
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"shayansiddiqui759@gmail.com\",\n    \"password\" : \"test2345\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/auth/login"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

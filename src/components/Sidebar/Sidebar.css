@@ -1,0 +1,251 @@
+.sidebar {
+    width: 25%;
+    height: auto;
+    background-color: #F8F9FA;
+    /* background-color: #6aa9e9; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.sidebarLogoImg {
+    width: 50%;
+    margin-top: 15px;
+}
+
+.sidebarLogoImg2 {
+    width: 60%;
+    margin-top: 24px;
+    /* background-color: red; */
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.sidebarLine {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.sidebarChilderns {
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+.sidebarChilderns2 {
+    width: 85%;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sidebarChilderns2:hover {
+    background-color: #FFFFFF;
+}
+
+.sidebarChilderns:hover .sideBarText {
+    color: black;
+}
+
+.sidebarChilderns2:hover .sideBarText {
+    color: black;
+}
+
+.sidebarChilderns:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.sideBarText {
+    color: #A0AEC0;
+    font-weight: 600;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.sideBarText2 {
+    color: #A0AEC0;
+    font-weight: 600;
+    font-size: small;
+    margin-left: 10px;
+}
+
+.sidebarImgs {
+    width: 25%;
+    margin-top: 7px;
+}
+
+.sidebarImgsDashboard {
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.arrowImgs {
+    width: 8%;
+    margin-left: auto;
+}
+
+.sidebarChildernsInside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdownItem {
+    width: 70%;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.dropdownItem:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.dropdownItem:hover .sideBarText2 {
+    color: black;
+}
+
+.dropdownDiv {
+    width: 90%;
+}
+
+.sidebarText3 {
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.sidebarDoscDiv {
+    width: 95%;
+    height: 160px;
+    background-image: url("../../assets/seidebarDocsBGImg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+.sidebarDocsImg {
+    width: 20%;
+}
+
+.sidebarDocsText {
+    color: white;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.sidebarDocsText2 {
+    color: white;
+    font-weight: 500;
+    font-size: small;
+}
+
+.sidebarDocsBtn {
+    color: black;
+    width: 90%;
+    background-color: white;
+    border: none;
+    font-size: small;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.sidebarDocsBtn:active {
+    background-color: rgb(166, 166, 166);
+}
+
+.link {
+    text-decoration: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+.link2 {
+    text-decoration: none;
+    width: 70%;
+    margin-left: auto;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+.link:hover {
+    background-color: #ffffff;
+}
+
+.link2:hover {
+    background-color: #ffffff;
+}
+
+.link.active {
+    background-color: #ffffff;
+    text-decoration: none;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.link.active .sideBarText {
+    color: black;
+}
+
+.link2.active .sideBarText2 {
+    color: black;
+}
+
+.link2.active {
+    background-color: #ffffff;
+    text-decoration: none;
+    width: 70%;
+    margin-left: auto;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}

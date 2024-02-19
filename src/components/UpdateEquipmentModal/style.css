@@ -1,0 +1,164 @@
+.MEMheading {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.MEMFirst {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+
+.MEMinputText {
+    font-size: 13px;
+    font-weight: 400;
+    color: #807D7E;
+}
+
+.MEMrentalInput {
+    width: 95%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+    /* background-color: #c38721; */
+}
+
+.MEMrentalInput2 {
+    width: 95%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+    margin-left: 5px;
+    /* background-color: #c38721; */
+}
+
+.MEMrentalSelectInput {
+    width: 99%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.MEMrentalSelectInput:focus {
+    outline: none;
+}
+
+.MEMrentalInput:focus {
+    outline: none;
+}
+
+.MEMinputDiv {
+    /* background-color: aqua; */
+    width: 50%;
+}
+
+.MEMinputDiv2 {
+    /* background-color: aqua; */
+    width: 33%;
+}
+
+.MEMmodalContainer {
+    /* background-color: burlywood; */
+    border: none;
+    box-shadow: 24px;
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+
+.MEMchooseFileBtn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FFBA3F;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.MEMmarginTop {
+    margin-top: 15px;
+}
+
+.MEMequipmentDisText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+}
+
+.MEMequipmentDisInput {
+    width: 98%;
+    height: 100px;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+    max-width: 98%;
+    resize: none;
+}
+
+.MEMequipmentDisInput:focus {
+    outline: none;
+}
+
+.MEMmodalBtnDiv {
+    /* background-color: aqua; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.MEMmodalUpdateBtn {
+    background-color: #FFBA3F;
+    padding: 7px 25px;
+    width: 10%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.MEMmodalUpdateBtn:hover {
+    box-shadow: 0px 1px 4px #FFBA3F;
+    cursor: pointer;
+}
+
+.MEMmodalCancleBtn {
+    /* background-color: #FFBA3F; */
+    padding: 7px 25px;
+    width: 10%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.MEMmodalCancleBtn:hover {
+    box-shadow: 0px 1px 4px black;
+    cursor: pointer;
+}

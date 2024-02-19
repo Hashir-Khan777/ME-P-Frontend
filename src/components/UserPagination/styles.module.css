@@ -1,0 +1,51 @@
+.activePage {
+    background-color: black;
+    color: white;
+    /* border: 1px solid #007bff; */
+    border: none;
+    padding: 8px 13px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .active {
+    background-color: brown;
+} */
+
+/* .page-link {
+    background-color: burlywood;
+} */
+.activePage2 {
+    background-color: #ffb93f65;
+    border: none;
+    padding: 8px 13px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px #e3e3e3;
+}
+
+.lastImgDiv {
+    background-color: #ffb93f65;
+    border: none;
+    padding: 6px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px #e3e3e3;
+}
+
+.lastImg {
+    width: 20px;
+    height: 10px;
+
+}

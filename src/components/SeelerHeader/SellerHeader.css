@@ -1,0 +1,113 @@
+.headerContainer {
+  width: 100%;
+  position: static;
+  background-color: #f8f9fa;
+  z-index: 1;
+}
+
+.header1 {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.ABCText {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffba3f;
+}
+
+.equipmentText {
+  font-size: 14px;
+  font-weight: 600px;
+  color: #2d3748;
+}
+
+.imgDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: #FFBA3F; */
+  justify-content: flex-end;
+}
+
+.bellImg {
+  width: 20px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.bellImg:hover {
+  cursor: pointer;
+}
+
+.profileImg {
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.natificationDiv {
+  background-color: #ffffff;
+  box-shadow: 1px 2px 9px #e3e3e3;
+  position: absolute;
+  right: 100px;
+  top: 60px;
+  width: 30%;
+  /* height: 50px; */
+  padding: 0px 10px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.natificationDivChild {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.natificationDivChild1 {
+  width: 80%;
+  height: 40px;
+  /* background-color: #c0854a; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.natificationDivChild1Img1 {
+  width: 4%;
+  /* height: 10px; */
+}
+
+.natificationDivChild1Img2 {
+  width: 13%;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* height: 10px; */
+}
+
+.natificationDivChild1Text1 {
+  color: black;
+  font-size: small;
+  font-weight: 600;
+}
+
+.natificationDivChild1Text2 {
+  color: #7f7f7f;
+  font-size: x-small;
+  /* font-weight: 600; */
+  margin-left: 5px;
+}
+
+.natificationDivChild2 {
+  color: #7f7f7f;
+  font-size: x-small;
+}

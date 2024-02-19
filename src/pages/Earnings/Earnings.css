@@ -1,0 +1,124 @@
+.earningContainer {
+    width: 100%;
+    /* min-height: 100vh; */
+    /* height: 200px; */
+    /* background-color: aqua; */
+    margin-top: 15px;
+}
+
+.earningInsideContainer {
+    width: 93%;
+    /* height: 200px; */
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.earningSecondDiv {
+    width: 100%;
+    /* height: 400px; */
+    /* background-color: aqua; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.earinigChartDiv {
+    width: 65%;
+    /* height: 100%; */
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.earningTransactionDiv {
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    padding: 0px 10px;
+    padding-bottom: 62px;
+}
+
+.earinigChartDivText1 {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.earinigChartDivText1Sub {
+    color: #807D7E;
+    font-size: small;
+    font-weight: 100;
+}
+
+.earinigChartDivLastDiv {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.earinigChartDivLastDivDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FFBA3F;
+}
+
+.earinigChartDivLastDivText {
+    color: black;
+    font-size: small;
+    margin-left: 5px;
+}
+
+.earningTransactionDivHeading {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.earningTransactionDivChild {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.earningTransactionDivChildText1 {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.earningTransactionDivChildText2 {
+    color: #4F4F4F;
+    font-size: small;
+    font-weight: 100;
+}
+
+.earningTransactionDivAmountText {
+    color: #20C997;
+    font-size: medium;
+    font-weight: 600;
+}

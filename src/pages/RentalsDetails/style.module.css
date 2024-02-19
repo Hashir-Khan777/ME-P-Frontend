@@ -1,0 +1,521 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.titleDiv {
+    width: 100;
+    font-size: small;
+    color: #807D7E;
+    margin-top: 15px;
+}
+
+.titleDiv span {
+    color: black;
+    font-weight: 600;
+}
+
+.detailsDiv {
+    width: 100%;
+    /* height: 20px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.productImgDiv {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImg {
+    width: 100%;
+    height: 80vh;
+}
+
+.leftImg {
+    width: 2%;
+    position: absolute;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.rightImg {
+    width: 2%;
+    position: absolute;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.detailsDivChild {
+    width: 25%;
+    /* height: 50px; */
+    /* background-color: blue; */
+}
+
+.userDetailsMainDiv {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #D8DFE0;
+    border-radius: 3px;
+}
+
+.userDetailsDiv {
+    width: 90%;
+    /* height: 60px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 10px;
+}
+
+.userDetailsDiv img {
+    width: 60px;
+    height: 60px;
+}
+
+.userDetailsDiv h1 {
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.userDetailsDiv h2 {
+    color: #807D7E;
+    font-size: small;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.userDetailsDiv h3 {
+    color: black;
+    font-size: x-small;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.addToCardBtn {
+    width: 90%;
+    /* height: 30px; */
+    background-color: black;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.emailBtn {
+    width: 90%;
+    /* height: 30px; */
+    background-color: white;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0px;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #FFBA3F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailBtn img {
+    width: 30px;
+    height: 20px;
+}
+
+.addToCardBtn:active {
+    background-color: #00000048;
+}
+
+.productDetailsDiv {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    border: 1px solid #D8DFE0;
+    border-radius: 3px;
+    padding: 10px 0px;
+    margin-top: 20px;
+    padding: 0px 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.productDetailsDiv h1 {
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+    /* background-color: aqua; */
+    width: 95%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.productDetailsDiv h2 {
+    color: #807D7E;
+    font-size: small;
+    font-weight: 600;
+    /* background-color: aqua; */
+    width: 90%;
+    align-self: center;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+}
+
+.productDetailsDiv h3 {
+    color: #807D7E;
+    font-size: small;
+    font-weight: 600;
+    /* background-color: aqua; */
+    width: 90%;
+    align-self: center;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.productDetailsDiv span {
+    color: black;
+    font-size: small;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+.add_idDiv {
+    text-align: right;
+    color: #525351;
+    margin-top: 15px;
+}
+
+.priceDiv {
+    width: 70%;
+    border: 1px solid #D8DFE0;
+    border-radius: 3px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+
+.priceDiv h1 {
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+    margin-left: 5px;
+}
+
+.priceDiv h2 {
+    font-size: medium;
+    font-weight: 700;
+    color: #FFBA3F;
+    margin-left: 5px;
+}
+
+.priceDivLocationDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.priceDivLocationDiv img {
+    width: 30px;
+    height: 20px;
+}
+
+.priceDivLocationDiv span {
+    font-size: small;
+    color: black;
+}
+
+.disDiv {
+    width: 70%;
+    border: 1px solid #D8DFE0;
+    border-radius: 3px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.disDiv h1 {
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+}
+
+.disDiv span {
+    margin-top: 10px;
+    white-space: pre-line;
+}
+
+.reviewDiv {
+    width: 70%;
+    /* border: 1px solid #D8DFE0; */
+    /* border-radius: 3px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 20px; */
+}
+
+.reviewDiv h1 {
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+}
+
+.reviewDiv span {
+    color: black;
+    font-size: small;
+}
+
+.reviewDiv img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.reviewNameStarDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.reviewNameStarDiv span {
+    font-size: small;
+    color: black;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.reviewNameStarDiv img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 7px;
+    margin-right: 0px;
+}
+
+.relatedProductDiv {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 20px; */
+    /* background-color: red; */
+    margin-bottom: 40px;
+}
+
+.relatedProductDiv h1 {
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+}
+
+.RelatedProductMapMainDiv {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* margin-top: 40px; */
+}
+
+.mapDiv {
+    width: 22%;
+    background-color: #F4F5F7;
+    padding-bottom: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 3%;
+}
+
+.mapImg {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border-right: 2px solid #c6c5c6;
+    border-left: 2px solid #c6c5c6;
+    border-top: 2px solid #c6c5c6;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 25px 15px;
+}
+
+.mapText1 {
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.mapText2 {
+    font-size: small;
+    font-weight: 500;
+    color: #898989;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.mapText3 {
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexRow2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.readDetailsCard {
+    background-color: #ffffff;
+    width: 23%;
+    box-shadow: 3px 3px 5px 0px rgb(231, 231, 231);
+    border-radius: 12px;
+    padding: 16px 12px;
+    margin-right: 2%;
+}
+
+.readDetailsCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.readDetailsCardRowRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardLocationImg {
+    height: 12px;
+    width: 12px;
+}
+
+.cardLocationText {
+    color: #898989;
+    font-size: 10px;
+}
+
+.cardTextBold {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cardDayText {
+    color: #979797;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    margin: 12px 0px;
+}
+
+.cardCommentText {
+    color: #8e8e8e;
+    font-size: 13px;
+}
+
+.readDetailsBtn {
+    width: 100%;
+    height: 32px;
+    background-color: #ffba3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.locationDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D8DFE0;
+    border-radius: 3px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.locationDiv h1 {
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+    margin-left: 10px;
+}
+
+.locationDiv span {
+    font-size: small;
+    color: black;
+}
+
+.locationDiv img {
+    width: 30px;
+    height: 20px;
+}

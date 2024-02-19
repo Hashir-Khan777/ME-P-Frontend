@@ -1,0 +1,299 @@
+.dashboardContainer {
+    background-color: #F8F9FA;
+    width: 95%;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dashboardFirstDiv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboardFirstDivChild {
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1%;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.dashboardFirstDivChild:hover {
+    height: 105%;
+    width: 22.2%;
+    transition: .1s;
+}
+
+.dashboardText1 {
+    color: #A0AEC0;
+    font-size: x-small;
+}
+
+.dashboardText2 {
+    color: black;
+    font-size: small;
+    font-weight: 700;
+}
+
+.dashboardFirstDivChildImg {
+    width: 18%;
+    margin-top: 2%;
+}
+
+.dashboardMainDiv {
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    margin-top: 30px;
+    padding: 4px 0px;
+    border-radius: 10px;
+}
+
+.dashboardMainImg {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 6px;
+    border-radius: 10px;
+
+}
+
+.dashboardChartsDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.dashboardCircleChartMainDiv {
+    width: 44%;
+    height: 330px;
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 20px; */
+}
+
+.dashboardCC1Div {
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboardCC1Div1 {
+    width: 50%;
+    height: 100%;
+    /* background-color: chocolate; */
+}
+
+.dashboardCC1Div2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(235, 183, 145); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboardCC1Div2Inside {
+    width: 80%;
+    height: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.dashboardCC1Div2Inside1 {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    color: #737373;
+    font-weight: 600;
+    border-bottom-color: #737373;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-left: 10px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+
+.dashboardCC1Div2Inside2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #A0AEC0; */
+    margin-top: 3px;
+}
+
+.dashboardCC1Div2Inside2Text1 {
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #404040;
+}
+
+.dashboardCC1Div2Inside2Text2 {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.dashboardCC1Div2Inside2ImgDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.dahhboardChartImg {
+    /* width: 10%; */
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    /* vertical-align: middle; */
+}
+
+.dashboardCC2Div {
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(85, 85, 193); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.dashboardCC2Div1 {
+    /* width: 100%; */
+    height: 20%;
+    align-self: baseline;
+    /* background-color: blue; */
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.dashboardCC2Div2 {
+    width: 100%;
+    height: 70%;
+    /* background-color: rgb(138, 38, 38); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.dashboardCC2Div2ChildImgDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: rgb(5, 7, 7); */
+    margin-right: auto;
+}
+
+.dashboardCC2Div2Child {
+    width: 24%;
+    height: 60%;
+    /* background-color: rgb(67, 91, 91); */
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.dashboardCC2Div2ChildImg {
+    /* width: 30px;
+    height: 30px; */
+    width: 30%;
+
+}
+
+.dashboardCC2Div2ChildText1 {
+    color: #A0AEC0;
+    font-weight: 600;
+    font-size: xx-small;
+    margin-bottom: 3px;
+}
+
+.dashboardCC2Div2ChildText2 {
+    color: #000000;
+    font-size: x-small;
+    font-weight: 700;
+    /* margin-right: auto; */
+    /* background-color: aqua; */
+    margin-left: 5px;
+}
+
+.dashboardChatDiv2 {
+    width: 55%;
+    height: 320px;
+    background-color: white;
+    /* background-color: #2d37486e; */
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.dashboardLastDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dashboardOrderDiv {
+    width: 64%;
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+}
+
+.dashboardReview {
+    width: 34%;
+    background-color: white;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.dashboardChatDiv2Text {
+    /* background-color: aqua; */
+    margin-left: 2%;
+    margin-top: 10px;
+    font-weight: 600;
+}

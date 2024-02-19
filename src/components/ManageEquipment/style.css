@@ -1,0 +1,123 @@
+.manageEquipmentContainer {
+    width: 90%;
+    /* height: 300px; */
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.manageEquipmentText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.manageEquipmentSearchDiv {
+    width: 98%;
+    height: 30px;
+    /* background-color: aquamarine; */
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px;
+    border: 1px solid #807D7E;
+}
+
+.manageEquipmentSearchImg {
+    width: 2%;
+}
+
+.manageEquipmentInput {
+    width: 95%;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    padding: 3px 10px;
+}
+
+.manageEquipmentInput:focus {
+    outline: none;
+}
+
+.manageEquipmentTableHeading {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    margin-top: 15px;
+}
+
+.manageEquipmentH1Id {
+    width: 12%;
+    /* background-color: #807D7E; */
+    color: #807D7E;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+
+}
+
+.manageEquipmentH1IdMap {
+    width: 12%;
+    /* background-color: #807D7E; */
+    color: black;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+
+}
+
+.manageEquipmentH1 {
+    width: 22%;
+    /* background-color: #af2855; */
+    color: #807D7E;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+
+}
+
+.manageEquipmentH1Map {
+    width: 22%;
+    /* background-color: #af2855; */
+    color: black;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+
+}
+
+.manageEquipmentH2 {
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #9a0b3a; */
+    color: #807D7E;
+    font-size: small;
+    padding-left: 2%;
+}
+
+.manageEquipmentMainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Equipment   */

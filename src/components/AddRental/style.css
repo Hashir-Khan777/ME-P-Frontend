@@ -1,0 +1,152 @@
+.addRentalContainer {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 1px 2px 9px #e3e3e3;
+}
+
+.addRentalText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.addRentalFirst {
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.inputText {
+    font-size: 13px;
+    font-weight: 400;
+    color: #807D7E;
+}
+
+.rentalInput {
+    width: 95%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.rentalSelectInput {
+    width: 99%;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+}
+
+.rentalSelectInput:focus {
+    outline: none;
+}
+
+.rentalInput:focus {
+    outline: none;
+}
+
+.inputDiv {
+    /* background-color: aqua; */
+    width: 33%;
+}
+
+.addRentalDisText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+}
+
+.addRentalDisInput {
+    width: 98%;
+    height: 70px;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #BEBCBD;
+    margin-bottom: 10px;
+}
+
+.addRentalDisInput:focus {
+    outline: none;
+}
+
+.chooseFileBtn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #FFBA3F;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.chooseFileBtn:active {
+    background-color: #c38721;
+}
+
+.react-datetime-picker .react-datetime-picker__wrapper {
+    border: none !important;
+}
+
+.react-datetime-picker__clear-button {
+    display: none;
+}
+
+
+
+
+.dateTimePicker {
+    /* background-color: #c38721; */
+    /* padding-left: 10px; */
+    border: 1px solid #BEBCBD;
+    width: 99%;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.ARcategoryDisInput {
+    width: 98%;
+    height: 120px;
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #BEBCBD;
+    resize: none;
+}
+
+.ARcategoryDisInput:focus {
+    outline: none;
+}
+
+/* .dateTimePicker .react-datetime-picker__inputGroup::before {
+    content: "";
+    background: url('../../assets/equipmentSidebar.png') no-repeat center center;
+    background-size: contain;
+    width: 30px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+} */

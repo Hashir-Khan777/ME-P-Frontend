@@ -1,0 +1,84 @@
+.modalContainer {
+    /* background-color: burlywood; */
+    border: none;
+    box-shadow: 24px;
+    padding: 0px 10px;
+}
+
+.modaUpdateCateText {
+    color: #000000;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.modalInput {
+    background-color: transparent;
+    width: 96%;
+    border: 1px solid #807D7E;
+    border-radius: 10px;
+    height: 28px;
+    padding-left: 10px;
+}
+
+.modalInput:focus {
+    outline: none;
+}
+
+.modalInputTitle {
+    font-size: small;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.modalTextArea {
+    width: 96%;
+    border: 1px solid #807D7E;
+    border-radius: 10px;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+}
+
+.modalTextArea:focus {
+    outline: none;
+}
+
+.modalBtnDiv {
+    /* background-color: aqua; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.modalUpdateBtn {
+    background-color: #FFBA3F;
+    padding: 7px 25px;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.modalUpdateBtn:hover {
+    box-shadow: 0px 1px 4px #FFBA3F;
+    cursor: pointer;
+}
+
+.modalCancleBtn {
+    /* background-color: #FFBA3F; */
+    padding: 7px 25px;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.modalCancleBtn:hover {
+    box-shadow: 0px 1px 4px black;
+    cursor: pointer;
+}

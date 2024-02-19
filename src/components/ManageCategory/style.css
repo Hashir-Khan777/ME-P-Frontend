@@ -1,0 +1,143 @@
+.manageCategoryContainer {
+    width: 90%;
+    /* height: 300px; */
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 1px 2px 9px #e3e3e3;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.manageCategoryText {
+    width: 97%;
+    /* background-color: #ffba3f; */
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.manageCategorySearchDiv {
+    width: 98%;
+    height: 30px;
+    /* background-color: aquamarine; */
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 10px;
+    border: 1px solid #807D7E;
+}
+
+.manageCategorySearchImg {
+    width: 2%;
+}
+
+.manageCategoryInput {
+    width: 95%;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    padding: 3px 10px;
+}
+
+.manageCategoryInput:focus {
+    outline: none;
+}
+
+.manageCategoryTableHeading {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    margin-top: 15px;
+}
+
+.manageCategoryH1 {
+    width: 18%;
+    /* background-color: #807D7E; */
+    color: #807D7E;
+    font-size: small;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflow text */
+    text-overflow: ellipsis;
+    /* Display ellipsis when text overflows */
+    /* Optionally, you can set a max width to control the container's width */
+    max-width: 300px;
+
+}
+
+.manageCategoryH1InMap {
+    width: 18%;
+    /* background-color: #807D7E; */
+    color: black;
+    font-size: small;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflow text */
+    text-overflow: ellipsis;
+    /* Display ellipsis when text overflows */
+    /* Optionally, you can set a max width to control the container's width */
+    max-width: 300px;
+
+}
+
+.manageCategoryH2 {
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #9a0b3a; */
+    color: #807D7E;
+    font-size: small;
+    padding-left: 2%;
+}
+
+.manageCategoryMainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.manageReviewLine {
+    width: 90%;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.manageCategoryUpdateBtn {
+    /* background-color: aqua; */
+    width: 48%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #3C4242;
+    border: 1px solid #3C4242;
+}
+
+.manageCategoryUpdateBtn:hover {
+    box-shadow: 0px 1px 4px #3c424249;
+    cursor: pointer;
+}
+
+.manageCategoryDeleteBtn {
+    background-color: #eb2020;
+    width: 48%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: white;
+    /* border: 1px solid #3C4242; */
+}
+
+.manageCategoryDeleteBtn:hover {
+    box-shadow: 0px 1px 4px #eb2020;
+    cursor: pointer;
+}
