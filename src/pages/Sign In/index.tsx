@@ -71,7 +71,7 @@ const SignIn = () => {
     <ParentFlex>
       <FlexChild1></FlexChild1>
       <FlexChild2>
-        <h1 className="tracking-[1px] font-bold text-blackBrown">Sign In Using</h1>
+        <h1 className="tracking-[0.5px] font-bold text-blackBrown">Sign In Using</h1>
         <button className="secondary-button">
           <img src={google} alt="google" /> Sign In With Google
         </button>
@@ -80,11 +80,11 @@ const SignIn = () => {
         </button>
         <br />
         <span>
-          <img className="mt-[1rem] mb-[2rem]" src={divider} alt="divider" />
+          <img className="mb-[1rem]" src={divider} alt="divider" />
         </span>
         <br />
         <form style={{ width: "75%" }} onSubmit={handleSubmit}>
-          <label className="mb-[4rem]">Email Address</label>
+          <label>Email Address</label>
           <input placeholder="designer@gmail.com" value={email} onChange={handleEmailChange} required />
           {email && !isEmailValid && (
             <p className="validation-message">Invalid email</p>
@@ -130,7 +130,7 @@ const SignIn = () => {
             }}
           >
             <span></span>{" "}
-            <p  className="fa m-0 underline">
+            <p  className="fa m-0 underline text-[12px]">
               Forget your password
             </p>
           </label>
@@ -147,7 +147,7 @@ const SignIn = () => {
           >
             Sign In
           </StyledButton>
-          <p className="text-[#3c4242]">
+          <p className="text-[#3c4242] text-[14px]">
             Don’t have an account?{" "}
             <b>
               <Link to={"/signup"} className="underline font-400 text-[#3c4242]">

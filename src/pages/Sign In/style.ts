@@ -43,7 +43,7 @@ justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
 position: relative;
-top: -6rem;
+top: -8rem;
 left: 2rem;
 
 .validation-message{
@@ -64,8 +64,8 @@ left: 2rem;
     gap: 10px;
     margin: 10px 0px;
     font-weight: 600;
-    width: 336px;
-    font-size:1rem;
+    width: 300px;
+    font-size: 0.8rem;
     margin-bottom: 1rem
 }
 button{
@@ -86,17 +86,28 @@ button{
     margin-bottom: 1rem
 }
 ${mobile`
-button{
-    font-size:16px !important;
-
-}
-label{
-    font-size: 12px;
-}
-`}
+    button {
+      font-size: 10px !important;
+    }
+    label {
+      font-size: 10px;
+    }
+    top: 0;
+    left: 0;
+  `}
+${tablet`
+    button {
+      font-size: 12px !important;
+    }
+    label {
+      font-size: 12px;
+    }
+    top: 0;
+    left: 0;
+  `}
 
 h1{
-    font-size: 34px;
+    font-size: 24px;
     margin: 0px 0px 10px -365px;
 }
 
@@ -104,34 +115,37 @@ ${mobile`
 
 h1{
     margin: 0px 0px 0px 0px;
-    font-size: 22px;
+    font-size: 20px;
 
 }
 
 button{
-    padding: 10px 15px;
+    padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin: 10px 0px;
-    font-size:14px !important;
+    font-size:12px !important;
     max-width: 75%;    
+    width: 20vw;
 
     img{
         max-width: 7%;
     }
-
 }
 `}
 
+label {
+    font-size: 14px;
+}
 input{
     width: 100%;
     border: 1px solid ${Theme.CHANNEL_BLACK};
     border-radius: 10px;
     padding: 10px;
-    font-size: 11px;
-    margin-top: 10px;
+    font-size: 10px;
+    margin-top: 0.5rem;
 }
 
 .coloryellow{
@@ -158,11 +172,8 @@ span{
     display: none;
 }
 width: 100%
-
 `
-
 }
-
 `
 
 export const StyledButton = styled.button`
