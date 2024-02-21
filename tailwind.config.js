@@ -7,6 +7,7 @@ module.exports = {
         gray: "#F4F5F7",
         gray2: "#898989",
         yellow: "#FFBA3F",
+        blackBrown: '#333333'
       },
       width: {
         "10p": "10%",

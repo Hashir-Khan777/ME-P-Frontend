@@ -12,13 +12,13 @@ const Theme = {
     FONT_GREY: '#3b3c3d',
     CHANNEL_BLACK: '#232536',
     RGB_GREY: 'rgba(0, 0, 0, 0.555)',
-    BOX_SHADOW: ' rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+    BOX_SHADOW: '3px 2px 30px -9px rgba(0,0,0,0.2)',
     VIOLET: '#16162A',
     SENTIMENTS: '#282846',
     YELLOW: '#FFBA3F',
     FACEBOOK_COLOR: "#3B77F2",
     LIGHT_GREY: "#f5f5f5",
-    LIGHT_VIOLET: "#6b5b95"
+    LIGHT_VIOLET: "#6b5b95",
 };
 
 export default Theme;

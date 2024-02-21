@@ -27,7 +27,7 @@ const BuyerRouting = () => {
   return !currentPath.includes("seller") && !currentPath.includes("admin") ? (
     <div className="mainInsideContainer">
       <ResponsiveAppBar />
-      <div style={{ marginTop: "70px" }}>
+      <div>
         <Routes>
           <Route path="/user" element={<></>}></Route>
           <Route

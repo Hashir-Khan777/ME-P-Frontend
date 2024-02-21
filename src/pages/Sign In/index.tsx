@@ -69,14 +69,13 @@ const SignIn = () => {
 
   return (
     <ParentFlex>
-      <FlexChild1>{/* <img src={banner} alt="banner" /> */}</FlexChild1>
+      <FlexChild1></FlexChild1>
       <FlexChild2>
-        <h1 style={{ letterSpacing: "2%" }}>Sign In Using</h1>
-        <button style={{ width: "336px", fontSize: "20px" }}>
-          {" "}
+        <h1 className="tracking-[1px] font-bold text-blackBrown">Sign In Using</h1>
+        <button>
           <img src={google} alt="google" /> Sign In With Google
         </button>
-        <button style={{ width: "336px", fontSize: "20px" }}>
+        <button>
           <img src={fb} alt="fb" /> Sign In With Facebook
         </button>
         <br />
@@ -84,14 +83,12 @@ const SignIn = () => {
           <img src={divider} alt="divider" />
         </span>
         <br />
-
         <form style={{ width: "75%" }} onSubmit={handleSubmit}>
-          <label>Email</label>
+          <label>Email Address</label>
           <input value={email} onChange={handleEmailChange} required />
           {email && !isEmailValid && (
             <p className="validation-message">Invalid email format</p>
           )}
-
           <label
             style={{
               display: "flex",

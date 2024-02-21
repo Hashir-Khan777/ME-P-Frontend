@@ -11,11 +11,11 @@ align-items: center;
 justify-content: space-around;
 max-height: 87.5vh;
 padding-bottom: 0px;
+overflow: hidden;
 `
 
 export const FlexChild1 = styled.div`
 overflow: hidden;
-
 min-width: 50%;
 min-height: 87.5vh;
 background-image: url(${banner});
@@ -26,21 +26,13 @@ img{
     max-height: 100%;
     overflow: hidden;
 }
-
 ${mobile`
-
     display: none;
-
-
 `}
-
 ${tablet`
-
     display: none;
 `}
-
 `
-
 export const FlexChild2 = styled.div`
 
 width: 50%;
@@ -49,6 +41,11 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
+position: relative;
+top: 4rem;
+left: 2rem;
+
+
 
 .validation-message{
     color: red;
@@ -56,7 +53,7 @@ flex-wrap: wrap;
 }
 
 button{
-    border: none;
+    border: 1px solid #E0E0E9;
     border-radius: 11px;
     padding: 10px 20px;
     background-color: ${Theme.WHITE_COLOR};
@@ -68,9 +65,9 @@ button{
     gap: 10px;
     margin: 10px 0px;
     font-weight: 600;
-
-
-
+    width: 336px;
+    font-size:1rem;
+    margin-bottom: 1rem
 }
 
 ${mobile`
@@ -86,8 +83,6 @@ label{
 h1{
     font-size: 34px;
     margin: 0px 0px 10px -365px;
-    color: ${Theme.CHANNEL_BLACK};
-
 }
 
 ${mobile`
