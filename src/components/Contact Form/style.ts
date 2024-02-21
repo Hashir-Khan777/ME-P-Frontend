@@ -21,38 +21,36 @@ div, input, textarea {
 }
 
 input, textarea{
-    min-height: 57px;
+    min-height: 50px;
     border: 1px solid ${Theme.DARK_GREY_COLOR};
-    font-size: large;
+    font-size: 12px;
     
 }
 
 select{
-    min-width: 91%;
-    min-height: 54px;
+    min-width: 90%;
+    min-height: 50px;
     border: 1px solid ${Theme.DARK_GREY_COLOR};
-    font-size: large;
-    padding: 20px;
+    font-size: 12px;
+    padding: 24px 20px;
 
 }
 
 select, option, input::placeholder, textarea::placeholder{
 color: ${Theme.CHANNEL_BLACK};
-font-size: 16px;
+font-size: 12px;
 
 }
 
 input::placeholder, textarea::placeholder{
-    padding: 20px;
-    
-
+    padding: 24px 20px;
 }
 
 button{
     min-width: 91%;
     border: none;
     background-color: ${Theme.YELLOW};
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     min-height: 54px;
     text-align: center;

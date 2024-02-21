@@ -27,11 +27,11 @@ const ContactForm = () => {
             name=""
             id=""
             cols={30}
-            rows={10}
+            rows={7}
           ></textarea>
         </div>
         <div>
-          <button>Send Message</button>
+          <button className="text-sm">Send Message</button>
         </div>
       </ParentFlex>
     </>
