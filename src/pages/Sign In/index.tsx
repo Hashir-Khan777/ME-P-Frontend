@@ -72,10 +72,10 @@ const SignIn = () => {
       <FlexChild1></FlexChild1>
       <FlexChild2>
         <h1 className="tracking-[1px] font-bold text-blackBrown">Sign In Using</h1>
-        <button>
+        <button className="secondary-button">
           <img src={google} alt="google" /> Sign In With Google
         </button>
-        <button>
+        <button className="secondary-button">
           <img src={fb} alt="fb" /> Sign In With Facebook
         </button>
         <br />
@@ -130,23 +130,23 @@ const SignIn = () => {
             }}
           >
             <span></span>{" "}
-            <p style={{ margin: "0px" }} className="fa">
+            <p  className="fa m-0 underline">
               Forget your password
             </p>
           </label>
 
           <StyledButton
             type="submit"
+            style={{ backgroundColor: "#FFBA3F", cursor: "pointer", color: '#fff' }}
             onClick={(e) => handleLogin(e)}
             disabled={!isEmailValid || !isPasswordValid}
-            style={{ backgroundColor: "#FFBA3F", cursor: "pointer" }}
           >
-            Log In
+            Sign In
           </StyledButton>
-          <p>
+          <p className="text-[#3c4242]">
             Don’t have an account?{" "}
             <b>
-              <Link to={"/signup"} className="coloryellow">
+              <Link to={"/signup"} className="underline font-400 text-[#3c4242]">
                 Sign up
               </Link>
             </b>{" "}

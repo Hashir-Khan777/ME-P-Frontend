@@ -9,15 +9,17 @@ export const ParentFlex = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
-max-height: 87.5vh;
+max-height: 150vh;
 padding-bottom: 0px;
 overflow: hidden;
+
+
 `
 
 export const FlexChild1 = styled.div`
 overflow: hidden;
 min-width: 50%;
-min-height: 87.5vh;
+min-height: 150vh;
 background-image: url(${banner});
 background-size: cover; 
   background-repeat: no-repeat;
@@ -41,7 +43,7 @@ justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
 position: relative;
-top: 4rem;
+top: -6rem;
 left: 2rem;
 
 .validation-message{
@@ -49,7 +51,7 @@ left: 2rem;
     margin-top: 0px;
 }
 
-button{
+.secondary-button{
     border: 1px solid #E0E0E9;
     border-radius: 11px;
     padding: 10px 20px;
@@ -66,7 +68,23 @@ button{
     font-size:1rem;
     margin-bottom: 1rem
 }
-
+button{
+    border: 1px solid #E0E0E9;
+    border-radius: 11px;
+    padding: 15px 20px;
+    background-color: ${Theme.WHITE_COLOR};
+    color: ${Theme.BLACK_COLOR};
+    box-shadow: ${Theme.BOX_SHADOW} ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0px;
+    font-weight: 600;
+    width: 12vw;
+    font-size:1rem;
+    margin-bottom: 1rem
+}
 ${mobile`
 button{
     font-size:16px !important;
@@ -148,15 +166,10 @@ width: 100%
 `
 
 export const StyledButton = styled.button`
-
 border: none;
-background-color: ${Theme.YELLOW};
 border-radius: 5px;
-padding: 0px 18px;
-color: ${Theme.WHITE_COLOR};
-margin: 0px 8px;
+margin: 0px 4px;
 font-weight: bold;
-
 ${mobile`
 width:100%;
 `}
