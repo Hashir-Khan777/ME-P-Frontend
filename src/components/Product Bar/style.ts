@@ -23,12 +23,10 @@ bottom: 0px;
 `}
 
 ${tablet`
-
 position: absolute;
 width: max-content;
-background-color: transparent;
 right: 0px;
-bottom: 0px;
+bottom: -2rem;
 `}
 
 .filter{

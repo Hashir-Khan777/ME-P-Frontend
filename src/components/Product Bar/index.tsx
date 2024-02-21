@@ -41,8 +41,6 @@ function ProductBar() {
     <StyledAppBar>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-         
-        
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -82,7 +80,7 @@ function ProductBar() {
             </Menu>
           </Box>
          
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },justifyContent:'space-around', alignItems:'center', fontSize:'small' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'space-around', alignItems:'center', fontSize:'12px' }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -93,8 +91,6 @@ function ProductBar() {
               </Button>
             ))}
           </Box>
-
-         
         </Toolbar>
       </Container>
     </StyledAppBar>
