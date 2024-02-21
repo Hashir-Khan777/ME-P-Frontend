@@ -124,7 +124,6 @@ const SignIn = () => {
               cursor: "pointer",
             }}
           >
-            <span></span>{" "}
             <p  className="fa m-0 underline text-[12px]">
               Forget your password
             </p>

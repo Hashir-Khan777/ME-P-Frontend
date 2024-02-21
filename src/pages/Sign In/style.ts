@@ -125,7 +125,7 @@ button{
     margin: 10px 0px;
     font-size:12px !important;
     max-width: 75%;    
-    width: 20vw;
+    width: 24vw;
 
     img{
         max-width: 7%;

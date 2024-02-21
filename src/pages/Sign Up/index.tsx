@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FlexChild1, FlexChild2, ParentFlex, StyledButton } from "./style";
-import banner from "../../assets/signIn.png";
 import google from "../../assets/google.png";
 import fb from "../../assets/fb.png";
 import divider from "../../assets/divider.png";
-import buy from "../../assets/Get.png";
-import sell from "../../assets/Shop.png";
-import { TextField, Button } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import Checkbox from "@mui/material/Checkbox";
-import { auth } from "../../utils/firebase/auth";
-import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { register } from "../../store/actions/auth.action";
@@ -70,49 +64,40 @@ const SignUp = () => {
   return (
     <>
       <ParentFlex>
-        <FlexChild1>{/* <img src={banner} alt="banner" /> */}</FlexChild1>
+        <FlexChild1></FlexChild1>
         <FlexChild2>
-          <br />
-          <h1 style={{ letterSpacing: "2%" }}>Sign Up </h1>
-          <p className="left">Sign up for free to buy or sell on our website</p>
-
-          <button style={{ width: "336px", fontSize: "20px" }}>
-            {" "}
+          <h1 className="tracking-[0.5px] font-bold text-blackBrown relative sm:left-[-11.2rem] left-0 ">Sign Up</h1>
+          <p className="text-[#807d7e] text-[12px] relative sm:left-[-6.3rem] left-0 mt-1">Sign up for free to buy or sell on our website</p>
+          <button className="secondary-button">
             <img src={google} alt="google" /> Sign In With Google
           </button>
-          <button style={{ width: "336px", fontSize: "20px" }}>
-            <img src={fb} alt="fb" /> Sign In With Google
+          <button className="secondary-button">
+            <img src={fb} alt="fb" /> Sign In With Facebook
           </button>
+          <br />
           <span>
-            <img src={divider} alt="divider" />
+            <img className="mb-[1rem]" src={divider} alt="divider" />
           </span>
           <br />
-
-          <form className="formsize" onSubmit={handleSubmit}>
-            <label>Email</label>
-            <input value={email} onChange={handleEmailChange} required />
+          <form style={{ width: "75%" }} onSubmit={handleSubmit}>
+            <label>Email Address</label>
+            <input placeholder="designer@gmail.com" value={email} onChange={handleEmailChange} required />
             {email && !isEmailValid && (
-              <p className="validation-message">Invalid email format</p>
+              <p className="validation-message">Invalid email</p>
             )}
-
             <label
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                marginBottom: "-14px",
-              }}
+              className="flex items-center justify-between mt-6"
             >
-              Password{" "}
+              Password
               <p
                 onClick={handleShowPasswordToggle}
-                style={{
-                  border: "none",
-                  background: "transparent",
-                  cursor: "pointer",
-                }}
+                className="border-none bg-transparent cursor-pointer"
               >
-                {showPassword ? <VisibilityOff /> : <Visibility />}
+                {showPassword ? (
+                  <div className="flex"><VisibilityOff className="mb-[-6px] text-[#807d7e] mr-2" /><p className="text-[#807d7e] text-[12px] mt-1">Hide</p></div>
+                ) : (
+                  <Visibility className="mb-[-6px]" />
+                )}
               </p>
             </label>
             <div>
@@ -123,13 +108,14 @@ const SignUp = () => {
                 required
               />
             </div>
+            <p className="text-[#807d7e] text-[12px] mt-1">Use 8 or more characters with a mix of letters, numbers & symbols</p>
             {password && !isPasswordValid && (
               <p className="validation-message">
                 Password should be at least 6 characters
               </p>
             )}
 
-            <p className="fa">
+            <p className="fa text-[#807d7e] text-[14px]">
               {" "}
               <Checkbox
                 sx={{
@@ -139,20 +125,19 @@ const SignUp = () => {
                   },
                 }}
               />{" "}
-              Agree to our Terms of use and Privacy Policy{" "}
+              Agree to our <u>Terms of use</u> and <u>Privacy Policy</u>{" "}
             </p>
             <StyledButton
-              className="fa"
               type="submit"
+              style={{ backgroundColor: "#FFBA3F", cursor: "pointer", color: '#fff' }}
               disabled={!isEmailValid || !isPasswordValid}
-              style={{ backgroundColor: "#FFBA3F", cursor: "pointer" }}
             >
               Sign Up
             </StyledButton>
-            <p className="fa">
+            <p className="fa text-[#3c4242] text-[14px]">
               Already have an account?{" "}
-              <Link to={"/login"} className="coloryellow">
-                <b>Sign In</b>
+              <Link to={"/login"} className="underline font-400 text-[#3c4242]">
+                <b>Log In</b>
               </Link>{" "}
             </p>
           </form>
