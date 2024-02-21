@@ -14,7 +14,6 @@ text-align: center;
 justify-content: space-around;
 padding: 10px 0px;
 flex-wrap: wrap;
-margin-top: 50px;
 gap: 20px;
 
 

@@ -10,7 +10,7 @@ export const FlexParent = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-width: 40%;
+width: 100%;
 flex-direction: column;
 margin: auto;
 text-align: center;
@@ -21,6 +21,11 @@ h1{
     color: ${Theme.CHANNEL_BLACK};
     font-size: 48px;
     margin: 5px 0px;
+}
+p{
+width: 60%;
+margin: auto;
+
 }
 
 .fontweight{

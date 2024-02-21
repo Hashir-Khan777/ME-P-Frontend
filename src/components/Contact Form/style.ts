@@ -56,7 +56,6 @@ button{
     font-weight: bold;
     min-height: 54px;
     text-align: center;
-    margin-top: 10px;
     cursor: pointer;
     &:hover{
         color: ${Theme.YELLOW};

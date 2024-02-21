@@ -14,7 +14,7 @@ const ContactForm = () => {
         <div>
           <select name="" id="">
             <option value="option" disabled selected hidden>
-              Query Related{" "}
+              Query Related
             </option>
             <option value="option">option 1</option>
             <option value="option">option 1</option>
