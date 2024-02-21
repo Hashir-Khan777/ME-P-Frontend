@@ -5,15 +5,12 @@ import { table } from "console";
 import banner from "../../assets/signIn.png";
 
 export const ParentFlex = styled.div`
-
 display: flex;
 align-items: center;
 justify-content: space-around;
 max-height: 150vh;
 padding-bottom: 0px;
 overflow: hidden;
-
-
 `
 
 export const FlexChild1 = styled.div`
@@ -107,7 +104,7 @@ ${tablet`
   `}
 
 h1{
-    font-size: 24px;
+    font-size: 26px;
     margin: 0px 0px 10px -365px;
 }
 

@@ -1,15 +1,10 @@
-import React, { FormEvent, useContext, useEffect, useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import { FlexChild1, FlexChild2, ParentFlex, StyledButton } from "./style";
-import banner from "../../assets/signIn.png";
 import google from "../../assets/google.png";
 import fb from "../../assets/fb.png";
 import divider from "../../assets/divider.png";
-import { TextField, Button } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../utils/auth/auth";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../utils/firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../store/actions/auth.action";
 
@@ -136,10 +131,6 @@ const SignIn = () => {
           </label>
 
           <StyledButton
-
-
-
-
             type="submit"
             style={{ backgroundColor: "#FFBA3F", cursor: "pointer", color: '#fff' }}
             onClick={(e) => handleLogin(e)}
