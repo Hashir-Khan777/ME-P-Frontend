@@ -47,13 +47,13 @@ const ContactGroup = () => {
             <span key={e.id}>
               <FlexCard style={{ backgroundColor: e.bg }}>
                 <div>
-                  <img className="profileimg" src={e.profile} alt="profile1" />
+                  <img className="profileimg m-auto block" src={e.profile} width={40} alt="profile1" />
                 </div>
                 <div>
-                  <h2 style={{ color: e.fcolor1 }}>{e.title}</h2>
+                  <h2 className="font-semibold text-xl" style={{ color: e.fcolor1 }}>{e.title}</h2>
                 </div>
                 <div>
-                  <p style={{ color: e.fcolor1 }}>{e.info}</p>
+                  <p style={{ color: e.fcolor2 }}>{e.info}</p>
                 </div>
                 <div></div>
               </FlexCard>

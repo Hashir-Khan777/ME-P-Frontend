@@ -71,7 +71,7 @@ button{
 }
 
 select{
-    min-width: 92%;
+    min-width: 90%;
     
    
 

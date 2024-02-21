@@ -3,7 +3,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import ResponsiveAppBar from "../../components/Header";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
-import Services from "../../pages/Services";
 import Equipment from "../../pages/Equipment";
 import Parts from "../../pages/Parts";
 import PartsDetails from "../../pages/PartsDetails";
@@ -43,14 +42,6 @@ const BuyerRouting = () => {
             element={
               <>
                 <About />
-              </>
-            }
-          />
-          <Route
-            path="Services"
-            element={
-              <>
-                <Services />
               </>
             }
           />

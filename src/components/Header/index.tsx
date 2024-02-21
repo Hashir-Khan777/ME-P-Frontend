@@ -25,7 +25,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { verifyUser, logout } from "../../store/actions/auth.action";
 import Cookies from "universal-cookie";
 
-const pages = ["About", "Services", "Equipment", "Parts", "Rentals", "Contact"];
+const pages = ["About", "Equipment", "Parts", "Rentals", "Contact"];
 const settings = ["Profile", "Account", "Dashboard"];
 
 function ResponsiveAppBar() {

@@ -87,7 +87,6 @@ const Footer = () => {
           <div>
             <p className="yellow"> QUICK LINKS </p>
             <p> About us </p>
-            <p> Services </p>
             <p> Contact </p>
             <Link className="linkstyled" to={"/PrivacyPolicy"}>
               <p> Privacy Policy </p>

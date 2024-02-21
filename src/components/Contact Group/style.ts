@@ -8,13 +8,12 @@ export const FlexParent = styled.div`
 
 display: flex;
 align-items: center;
-max-width: 90%;
+max-width: 80%;
 margin: auto;
 text-align: center;
 justify-content: space-around;
-padding: 10px 0px;
 flex-wrap: wrap;
-gap: 20px;
+gap: 4px;
 
 
 ${mobile`
@@ -32,13 +31,13 @@ justify-content: center;
 
 export const FlexCard = styled.div`
 
-min-width: 378px;
+min-width: 330px;
 max-width: 378px;
-max-height: 294px;
+max-height: 260px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 40px;
+padding: 80px 0;
 text-align: center;
 
 margin: 10px auto;
