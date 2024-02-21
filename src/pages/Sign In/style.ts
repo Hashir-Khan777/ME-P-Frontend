@@ -34,7 +34,6 @@ ${tablet`
 `}
 `
 export const FlexChild2 = styled.div`
-
 width: 50%;
 display: flex;
 align-items: center;
@@ -44,8 +43,6 @@ flex-wrap: wrap;
 position: relative;
 top: 4rem;
 left: 2rem;
-
-
 
 .validation-message{
     color: red;
@@ -76,7 +73,7 @@ button{
 
 }
 label{
-    font-size: 14px;
+    font-size: 12px;
 }
 `}
 
@@ -110,15 +107,13 @@ button{
 }
 `}
 
-label{
-    font-size: large;
-}
 input{
     width: 100%;
     border: 1px solid ${Theme.CHANNEL_BLACK};
     border-radius: 10px;
-    font-size: large;
-    padding: 10px 0px;
+    padding: 10px;
+    font-size: 11px;
+    margin-top: 10px;
 }
 
 .coloryellow{
@@ -131,7 +126,7 @@ ${mobile`
     font-size:14px;
 }
 label{
-    font-size: 14px;
+    font-size: 12px;
 }
 span{
     display: none;

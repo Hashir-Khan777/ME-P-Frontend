@@ -80,36 +80,27 @@ const SignIn = () => {
         </button>
         <br />
         <span>
-          <img src={divider} alt="divider" />
+          <img className="mt-[1rem] mb-[2rem]" src={divider} alt="divider" />
         </span>
         <br />
         <form style={{ width: "75%" }} onSubmit={handleSubmit}>
-          <label>Email Address</label>
-          <input value={email} onChange={handleEmailChange} required />
+          <label className="mb-[4rem]">Email Address</label>
+          <input placeholder="designer@gmail.com" value={email} onChange={handleEmailChange} required />
           {email && !isEmailValid && (
-            <p className="validation-message">Invalid email format</p>
+            <p className="validation-message">Invalid email</p>
           )}
           <label
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: "-15px",
-            }}
+            className="flex items-center justify-between mt-6"
           >
-            Password{" "}
+            Password
             <p
               onClick={handleShowPasswordToggle}
-              style={{
-                border: "none",
-                background: "transparent",
-                cursor: "pointer",
-              }}
+              className="border-none bg-transparent cursor-pointer"
             >
               {showPassword ? (
-                <VisibilityOff style={{ marginBottom: "-6px" }} />
+                <div className="flex"><VisibilityOff className="mb-[-6px] text-[#807d7e] mr-2" /><p className="text-[#807d7e] text-[12px] mt-1">Hide</p></div>
               ) : (
-                <Visibility style={{ marginBottom: "-6px" }} />
+                <Visibility className="mb-[-6px]" />
               )}
             </p>
           </label>
@@ -121,6 +112,7 @@ const SignIn = () => {
               required
             />
           </div>
+          <p className="text-[#807d7e] text-[12px] mt-1">Use 8 or more characters with a mix of letters, numbers & symbols</p>
           {password && !isPasswordValid && (
             <p className="validation-message">
               Password should be at least 6 characters
