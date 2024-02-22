@@ -525,39 +525,48 @@ const Rentals = () => {
         <div className="py-0 px-[3%]">
           <div className="w-full flex flex-row pt-10">
             {showFilter ? (
-              <div className="w-[25%] mt-10 relative left-[1.5rem]">
-                <div className="w-[80%] flex flex-row items-center justify-between mx-0 my-auto border-b-1 border-solid border-b-[#BEBCBD] pb-5">
-                  <span className="text-[#ffba3f] font-semibold text-[1.2rem] items-center">
-                    Filter
-                  </span>
-                  <img
-                    onClick={() => setShowFilter(false)}
-                    src={images.filter}
-                    className="w-[20px] h-[22px] cursor-pointer"
-                  />
+              <>
+                <span className="border-l h-[35rem] relative left-[18rem] top-[6rem] border-[#BEBCBD]"></span>
+                <span className="rotate-90 border-[0.1px] h-[15rem] relative left-[9rem] top-[-2.2rem] border-[#d7d7d7]"></span>
+                <div className="w-[25%] mt-10 relative left-[1.5rem]">
+                  <div className="w-[60%] flex flex-row items-center justify-between mx-0 my-auto border-b-1 border-solid border-b-[#BEBCBD] pb-5">
+                    <span className="text-[#ffba3f] font-semibold text-[1.5rem] items-center">
+                      Filter
+                    </span>
+                    <img
+                      onClick={() => setShowFilter(false)}
+                      src={images.filter}
+                      className="w-[20px] h-[22px] cursor-pointer"
+                    />
+                  </div>
+                  <div className="w-[80%] flex flex-col mx-0 my-auto pb-2">
+                    <div className="text-[#807D7E] text-[1.5rem] font-700 tracking-[1px] py-2">
+                      Categories
+                    </div>
+
+                    <span className="pb-4">All</span>
+                    <span className="pb-4">Hydrolic Pumps</span>
+                    <span className="pb-4">Engine</span>
+                    <span className="pb-4">Filters</span>
+                  </div>
+                  <div className="w-[50%] flex flex-col mx-0 my-auto pb-6 mt-8">
+                    <div className="text-[#807D7E] text-[1.5rem] font-700 tracking-[1px] py-2">
+                      Price
+                    </div>
+                    <Slider
+                      getAriaLabel={() => "Temperature range"}
+                      valueLabelDisplay="auto"
+                      sx={{ color: "#FFBA3F" }}
+                      value={value}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="w-[50%] flex flex-row items-center mx-0 my-auto justify-between mt-8">
+                    <div className="border border-[#BEBCBD] rounded-[5px] px-6 py-[2px]">70</div>
+                    <div className="border border-[#BEBCBD] rounded-[5px] px-6 py-[2px]">600</div>
+                  </div>
                 </div>
-                <div className="w-[80%] flex flex-col mx-0 my-auto pb-2">
-                  <div>Categories</div>
-                  <span>All</span>
-                  <span>Hydrolic Pumps</span>
-                  <span>Engine</span>
-                  <span>Filters</span>
-                </div>
-                <div className="w-[80%] flex flex-col mx-0 my-auto pb-6 mt-8">
-                  <div className="text-[#807d7e] text-md font-600">Price</div>
-                  <Slider
-                    getAriaLabel={() => "Temperature range"}
-                    valueLabelDisplay="auto"
-                    sx={{ color: "#FFBA3F" }}
-                    value={value}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className="w-[80%] flex flex-row items-center mx-0 my-auto justify-between mt-8">
-                  <div>70</div>
-                  <div>600</div>
-                </div>
-              </div>
+              </>
             ) : (
               <div className="w-[15%] flex flex-col mt-10 items-center">
                 <img
@@ -568,15 +577,11 @@ const Rentals = () => {
                 <hr className="w-[23px] border-none h-[1px] mt-3 bg-[#BEBCBD]" />
               </div>
             )}
-            {/* start */}
             <div className="w-[90%] flex flex-col bg-white px-0 py-8 box-border pb-10">
               <div className="w-full flex flex-row items-end justify-between">
-                <div className="w-3/12 bg-gray-200 rounded-md flex items-center">
-                  <img src={images.search} className="ml-3 w-5 h-5" />
-                  <input
-                    placeholder="Search"
-                    className="w-full bg-transparent ml-2 focus:outline-none"
-                  />
+                <div className="w-[30%] bg-[#F6F6F6] flex flex-row items-center rounded-[2px]">
+                  <img src={images.search} className="w-5 h-5 absolute ml-4" />
+                  <input placeholder="Search" className={styles.searchInput} />
                 </div>
                 <span>{`Showing ${currentPage}-${currentItems.length} of ${data?.length} results`}</span>
               </div>
@@ -585,11 +590,10 @@ const Rentals = () => {
                   return (
                     <div
                       key={index}
-                      className="w-[30%] bg-white rounded-lg shadow-md p-4 mb-8"
-                    >
+                      className="w-[25%] bg-white rounded-lg shadow-md p-4 mb-8">
                       <div className="flex justify-between">
                         <div>
-                          <img className="w-4 h-4" src={images.location} />
+                          <img className="w-3 h-3" src={images.location} />
                           <span className="text-sm text-gray-500 ml-1">
                             {item.location}
                           </span>
@@ -615,8 +619,6 @@ const Rentals = () => {
                 })}
               </div>
             </div>
-
-            {/* end */}
           </div>
         </div>
         <div className="flex justify-center items-center mt-8">
