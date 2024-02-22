@@ -3,7 +3,7 @@
     color: white;
     /* border: 1px solid #007bff; */
     border: none;
-    padding: 8px 13px;
+    padding: 8px 18px;
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
@@ -27,7 +27,7 @@
 .activePage2 {
     background-color: #ffb93f65;
     border: none;
-    padding: 8px 13px;
+    padding: 8px 18px;
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
