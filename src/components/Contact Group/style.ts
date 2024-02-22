@@ -53,6 +53,7 @@ ${mobile`
 min-width:199px;
 max-width: 199px;
 max-height: 294px;
+padding: 40px 0;
 h2{
     font-size: 16px;
 

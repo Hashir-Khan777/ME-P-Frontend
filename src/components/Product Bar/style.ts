@@ -26,7 +26,7 @@ ${tablet`
 position: absolute;
 width: max-content;
 right: 0px;
-bottom: -2rem;
+top: 3.5rem;
 `}
 
 .filter{
