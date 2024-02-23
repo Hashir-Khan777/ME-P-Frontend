@@ -12,7 +12,7 @@ const Rentals = () => {
   const navigate = useNavigate();
 
   const [showFilter, setShowFilter] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(false); 
+  const [showSidebar, setShowSidebar] = useState(false);
   const [data, setData] = useState([
     {
       _id: "1071230814",
@@ -493,7 +493,6 @@ const Rentals = () => {
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
-    setShowFilter(true)
   };
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -518,61 +517,66 @@ const Rentals = () => {
           </div>
         </div>
         <div className="py-0 px-[3%]">
-          <div className="w-full flex flex-row pt-10">
+          <div className="w-full flex flex-row pt-10 justify-center">
             {showFilter ? (
               <>
                 {/* <span className="border-l h-[35rem] relative left-[18rem] top-[6rem] border-[#BEBCBD]"></span> */}
+                <div className="sm:hidden absolute top-4 right-4">
+                  <IoMdClose onClick={() => toggleSidebar()} />
+                </div>
                 <span className="rotate-90 border-[0.1px] h-[12rem] relative left-[7.5rem] top-[-1rem] border-[#d7d7d7]"></span>
                 <div className={showSidebar ? styles.sidebarMobile : ""}>
-                   <div className="w-[35%] mt-10 relative left-[1.5rem] mr-8">
-                  <div className="w-[60%] flex flex-row items-center justify-between mx-0 my-auto border-b-1 border-solid border-b-[#BEBCBD] pb-5">
                   <IoMdClose />
-                    <span className="text-[#ffba3f] font-semibold text-[1rem] items-center">
-                      Filter
-                    </span>
-                    <img
-                      onClick={() => toggleSidebar()}
-                      src={images.filter}
-                      className="w-[15px] h-[16px] cursor-pointer"
-                    />
+                  <div className="mt-10">
+                    <div className="w-[60%] flex flex-row items-center justify-between mx-0 my-auto border-b-1 border-solid border-b-[#BEBCBD] pb-5">
+                      <span className="text-[#ffba3f] font-semibold text-[1rem] items-center">
+                        Filter
+                      </span>
+                      <img
+                        onClick={() => toggleSidebar()}
+                        src={images.filter}
+                        className="w-[12px] h-[14px] cursor-pointer relative left-8"
+                      />
+                    </div>
+                    <div className="flex flex-col mx-0 my-auto pb-2">
+                      <div className="text-[#807D7E] text-[1rem] font-700 tracking-[1px] py-2">
+                        Categories
+                      </div>
+                      <span className="pb-4 text-[11px]">Excavators</span>
+                      <span className="pb-4 text-[11px]"> Dozers</span>
+                      <span className="pb-4 text-[11px]">Cranes</span>
+                      <span className="pb-4 text-[11px]">Loaders</span>
+                      <span className="pb-4 text-[11px]">
+                        Asphalt, Pavers & Concrete
+                      </span>
+                      <span className="pb-4 text-[11px]">Roller Compactor</span>
+                      <span className="pb-4 text-[11px]">Dredger</span>
+                    </div>
+                    <div className="flex flex-col mx-0 my-auto pb-6 mt-4">
+                      <div className="text-[#807D7E] text-[1rem] font-700 tracking-[1px] py-2">
+                        Price
+                      </div>
+                      <Slider
+                        getAriaLabel={() => "Temperature range"}
+                        valueLabelDisplay="auto"
+                        sx={{ color: "#FFBA3F" }}
+                        value={value}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className=" flex flex-row items-end justify-between">
+                      <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px] mr-2">
+                        70
+                      </div>
+                      <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px]">
+                        600
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-[80%] flex flex-col mx-0 my-auto pb-2">
-                    <div className="text-[#807D7E] text-[1rem] font-700 tracking-[1px] py-2">
-                      Categories
-                    </div>
-
-                    <span className="pb-4 text-[12px]">All</span>
-                    <span className="pb-4 text-[12px]">Hydrolic Pumps</span>
-                    <span className="pb-4 text-[12px]">Engine</span>
-                    <span className="pb-4 text-[12px]">Filters</span>
-                  </div>
-                  <div className="w-[65%] flex flex-col mx-0 my-auto pb-6 mt-4">
-                    <div className="text-[#807D7E] text-[1rem] font-700 tracking-[1px] py-2">
-                      Price
-                    </div>
-                    <Slider
-                      getAriaLabel={() => "Temperature range"}
-                      valueLabelDisplay="auto"
-                      sx={{ color: "#FFBA3F" }}
-                      value={value}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="w-[65%] flex flex-row items-end justify-between">
-                  <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px] mr-2">
-                      70
-                    </div>
-                    <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px]">
-                      600
-                    </div>
-              </div>
-              {/* end */}
                 </div>
+                <div className="w-[80%] flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
+                  <RentalCards data={data} />
                 </div>
-                <div className="w-[100%] flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
-             
-                <RentalCards data={data} />
-             </div>
               </>
             ) : (
               <>
@@ -584,10 +588,9 @@ const Rentals = () => {
                   />
                   <hr className="w-[23px] border-none h-[1px] mt-3 bg-[#BEBCBD] sm:block hidden" />
                 </div>
-                <div className="sm:w-[60rem] w-full flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
-             
-                <RentalCards data={data} />
-             </div>
+                <div className="sm:w-[60rem] w-full flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8 justify-around">
+                  <RentalCards data={data} />
+                </div>
               </>
             )}
           </div>
