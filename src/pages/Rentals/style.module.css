@@ -3,6 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+.sidebarMobile {
+    /* Define styles for sidebar on mobile devices */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%; /* Adjust the width as needed */
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000; /* Adjust z-index to ensure it appears above other content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow with 10px blur and 0.1 opacity */
+    /* Add more styles as needed */
+}
+
+  
+  /* Define media query for mobile devices */
+  @media (min-width: 768px) {
+    .sidebarMobile {
+      display: none; /* Hide sidebar on devices with width >= 768px (typical tablets and desktops) */
+    }
+  }
+  
 
 .container {
     width: 100%;
@@ -108,7 +129,6 @@
 }
 
 .searchInput {
-
     width: 100%;
     height: 40px;
     background-color: transparent;

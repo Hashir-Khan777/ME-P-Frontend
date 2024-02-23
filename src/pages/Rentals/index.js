@@ -6,10 +6,13 @@ import { Slider } from "@mui/material";
 import UserPagination from "../../components/UserPagination";
 import { useNavigate } from "react-router-dom";
 import RentalCards from "./RentalCards";
+import { IoMdClose } from "react-icons/io";
+
 const Rentals = () => {
   const navigate = useNavigate();
 
   const [showFilter, setShowFilter] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false); 
   const [data, setData] = useState([
     {
       _id: "1071230814",
@@ -488,7 +491,9 @@ const Rentals = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar); // Toggle sidebar visibility
+  };
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -503,10 +508,10 @@ const Rentals = () => {
       <div className="w-full">
         <div className="w-full bg-[#F4F4F4] flex flex-col justify-center items-center h-[16rem] mb-16">
           <div className="text-[#807D7E] font-500 text-[0.7rem] items-center tracking-[2px]">{`HOME > RENTALS`}</div>
-          <div className="text-[#000] font-700 text-[2rem] items-center mt-2 font-bold mb-2">
+          <div className="text-[#000] font-700 text-[1.8rem] sm:text-[2rem] items-center mt-2 font-bold mb-2">
             Rentals
           </div>
-          <div className="text-[#6D6E76] font-500 text-sm items-center w-[40%] my-0 mx-auto mt-2 justify-center text-center leading-6">
+          <div className="text-[#6D6E76] font-500 text-sm items-center w-[90%] w-sm:[40%] my-0 mx-auto mt-2 justify-center text-center leading-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
           </div>
@@ -517,13 +522,15 @@ const Rentals = () => {
               <>
                 {/* <span className="border-l h-[35rem] relative left-[18rem] top-[6rem] border-[#BEBCBD]"></span> */}
                 <span className="rotate-90 border-[0.1px] h-[12rem] relative left-[7.5rem] top-[-1rem] border-[#d7d7d7]"></span>
-                <div className="w-[35%] mt-10 relative left-[1.5rem] mr-8">
+                <div className={showSidebar ? styles.sidebarMobile : ""}>
+                   <div className="w-[35%] mt-10 relative left-[1.5rem] mr-8">
                   <div className="w-[60%] flex flex-row items-center justify-between mx-0 my-auto border-b-1 border-solid border-b-[#BEBCBD] pb-5">
+                  <IoMdClose />
                     <span className="text-[#ffba3f] font-semibold text-[1rem] items-center">
                       Filter
                     </span>
                     <img
-                      onClick={() => setShowFilter(false)}
+                      onClick={() => toggleSidebar()}
                       src={images.filter}
                       className="w-[15px] h-[16px] cursor-pointer"
                     />
@@ -550,14 +557,6 @@ const Rentals = () => {
                       onChange={handleChange}
                     />
                   </div>
-                  {/* <div className="w-[20%] flex flex-row items-center mx-0 my-auto justify-between">
-                    <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px] mr-2">
-                      70
-                    </div>
-                    <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px]">
-                      600
-                    </div>
-                  </div> */}
                   <div className="w-[65%] flex flex-row items-end justify-between">
                   <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px] mr-2">
                       70
@@ -566,6 +565,8 @@ const Rentals = () => {
                       600
                     </div>
               </div>
+              {/* end */}
+                </div>
                 </div>
                 <div className="w-[100%] flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
              
@@ -577,12 +578,12 @@ const Rentals = () => {
                 <div className="w-[15%] flex flex-col mt-10 items-center">
                   <img
                     src={images.filter}
-                    className="w-5 h-5 cursor-pointer"
+                    className="sm:w-5 sm:h-5 w-4 h-4 cursor-pointer relative sm:top-0 top-[-3.1rem]"
                     onClick={() => setShowFilter(true)}
                   />
-                  <hr className="w-[23px] border-none h-[1px] mt-3 bg-[#BEBCBD]" />
+                  <hr className="w-[23px] border-none h-[1px] mt-3 bg-[#BEBCBD] sm:block hidden" />
                 </div>
-                <div className="w-[60rem] flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
+                <div className="sm:w-[60rem] w-full flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
              
                 <RentalCards data={data} />
              </div>
