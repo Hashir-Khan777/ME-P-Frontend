@@ -546,7 +546,7 @@ const Rentals = () => {
               <div className={styles.hideFilterDiv}>
                 <img
                   src={images.filter}
-                  className={styles.hideFilterDivImg}
+                  className={"w-[22px] h-[24px] cursor-pointer"}
                   onClick={() => setShowFilter(true)}
                 />
                 <hr className={styles.hideFilterDivHr} />

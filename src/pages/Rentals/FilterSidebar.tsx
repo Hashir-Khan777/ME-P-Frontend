@@ -10,17 +10,13 @@ const FilterSidebar = (props: any) => {
     return (
         <>
             <div className="sidebarMobile">
-                {/* <IoMdClose
-                    className="absolute top-4 right-4 text-xl cursor-pointer"
-                    onClick={() => setShowFilter(false)}
-                /> */}
                 <div className={styles.showFilterDiv}>
                     <div className={styles.showFilterDivOne}>
                         <span>Filter</span>
                         <img
                             onClick={() => setShowFilter(false)}
                             src={images.filter}
-                            className={styles.hideFilterDivImg}
+                            className={"w-[18px] h-[20px] cursor-pointer relative"}
                         />
                     </div>
                     <div className={styles.showFilterDivTwo}>
