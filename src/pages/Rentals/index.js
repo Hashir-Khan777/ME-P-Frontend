@@ -492,7 +492,8 @@ const Rentals = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
   const toggleSidebar = () => {
-    setShowSidebar(!showSidebar); // Toggle sidebar visibility
+    setShowSidebar(!showSidebar);
+    setShowFilter(true)
   };
   const handleChange = (event, newValue) => {
     setValue(newValue);
