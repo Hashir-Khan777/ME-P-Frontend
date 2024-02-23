@@ -5,9 +5,6 @@ import styles from "./style.module.css";
 import { Slider } from "@mui/material";
 import UserPagination from "../../components/UserPagination";
 import { useNavigate } from "react-router-dom";
-import RentalCards from "./RentalCards";
-import { IoMdClose } from "react-icons/io";
-
 const Rentals = () => {
   const navigate = useNavigate();
 
@@ -491,9 +488,7 @@ const Rentals = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-  const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-  };
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -502,100 +497,131 @@ const Rentals = () => {
     setCurrentPage(pageNumber);
   };
 
+  const handleNavigation = (item) => {
+    const relatedProduct = data
+      .filter((obj) => obj.name === item.name)
+      .slice(0, 4);
+    navigate(`details/${item._id}`, {
+      state: {
+        data: item,
+        relatedProduct,
+      },
+    });
+  };
+
   console.log(value);
   return (
     <>
-      <div className="w-full">
+      <div className={styles.container}>
         <div className="w-full bg-[#F4F4F4] flex flex-col justify-center items-center h-[16rem] mb-16">
           <div className="text-[#807D7E] font-500 text-[0.7rem] items-center tracking-[2px]">{`HOME > RENTALS`}</div>
           <div className="text-[#000] font-700 text-[1.8rem] sm:text-[2rem] items-center mt-2 font-bold mb-2">
             Rentals
           </div>
-          <div className="text-[#6D6E76] font-500 text-sm items-center w-[90%] w-sm:[40%] my-0 mx-auto mt-2 justify-center text-center leading-6">
+          <div className="text-[#6D6E76] font-500 text-sm items-center w-[90%] sm:w-[40%] my-0 mx-auto mt-2 justify-center text-center leading-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
           </div>
         </div>
-        <div className="py-0 px-[3%]">
-          <div className="w-full flex flex-row pt-10 justify-center">
+        <div className={styles.containerTwo}>
+          <div className={styles.secondDiv}>
             {showFilter ? (
-              <>
-                {/* <span className="border-l h-[35rem] relative left-[18rem] top-[6rem] border-[#BEBCBD]"></span> */}
-                <div className="sm:hidden absolute top-4 right-4">
-                  <IoMdClose onClick={() => toggleSidebar()} />
-                </div>
-                <span className="rotate-90 border-[0.1px] h-[12rem] relative left-[7.5rem] top-[-1rem] border-[#d7d7d7]"></span>
-                <div className={showSidebar ? styles.sidebarMobile : ""}>
-                  <IoMdClose />
-                  <div className="mt-10">
-                    <div className="w-[60%] flex flex-row items-center justify-between mx-0 my-auto border-b-1 border-solid border-b-[#BEBCBD] pb-5">
-                      <span className="text-[#ffba3f] font-semibold text-[1rem] items-center">
-                        Filter
-                      </span>
-                      <img
-                        onClick={() => toggleSidebar()}
-                        src={images.filter}
-                        className="w-[12px] h-[14px] cursor-pointer relative left-8"
-                      />
-                    </div>
-                    <div className="flex flex-col mx-0 my-auto pb-2">
-                      <div className="text-[#807D7E] text-[1rem] font-700 tracking-[1px] py-2">
-                        Categories
-                      </div>
-                      <span className="pb-4 text-[11px]">Excavators</span>
-                      <span className="pb-4 text-[11px]"> Dozers</span>
-                      <span className="pb-4 text-[11px]">Cranes</span>
-                      <span className="pb-4 text-[11px]">Loaders</span>
-                      <span className="pb-4 text-[11px]">
-                        Asphalt, Pavers & Concrete
-                      </span>
-                      <span className="pb-4 text-[11px]">Roller Compactor</span>
-                      <span className="pb-4 text-[11px]">Dredger</span>
-                    </div>
-                    <div className="flex flex-col mx-0 my-auto pb-6 mt-4">
-                      <div className="text-[#807D7E] text-[1rem] font-700 tracking-[1px] py-2">
-                        Price
-                      </div>
-                      <Slider
-                        getAriaLabel={() => "Temperature range"}
-                        valueLabelDisplay="auto"
-                        sx={{ color: "#FFBA3F" }}
-                        value={value}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className=" flex flex-row items-end justify-between">
-                      <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px] mr-2">
-                        70
-                      </div>
-                      <div className="border border-[#BEBCBD] rounded-[5px] px-4 py-[2px] text-[10px]">
-                        600
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-[80%] flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8">
-                  <RentalCards data={data} />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="w-[15%] flex flex-col mt-10 items-center">
+              <div className={styles.showFilterDiv}>
+                <div className={styles.showFilterDivOne}>
+                  <span>Filter</span>
                   <img
+                    onClick={() => setShowFilter(false)}
                     src={images.filter}
-                    className="sm:w-5 sm:h-5 w-4 h-4 cursor-pointer relative sm:top-0 top-[-3.1rem]"
-                    onClick={() => setShowFilter(true)}
+                    className={styles.hideFilterDivImg}
                   />
-                  <hr className="w-[23px] border-none h-[1px] mt-3 bg-[#BEBCBD] sm:block hidden" />
                 </div>
-                <div className="sm:w-[60rem] w-full flex flex-col bg-white px-0 box-border pb-10 relative top-[-1.2rem] mr-8 justify-around">
-                  <RentalCards data={data} />
+                <div className={styles.showFilterDivTwo}>
+                  <div>Categories</div>
+                  <span className="pb-4 text-[12px]">Excavators</span>
+                  <span className="pb-4 text-[12px]"> Dozers</span>
+                  <span className="pb-4 text-[12px]">Cranes</span>
+                  <span className="pb-4 text-[12px]">Loaders</span>
+                  <span className="pb-4 text-[12px]">
+                    Asphalt, Pavers & Concrete
+                  </span>
+                  <span className="pb-4 text-[12px]">Roller Compactor</span>
+                  <span className="pb-4 text-[12px]">Dredger</span>
                 </div>
-              </>
+                <div className={styles.showFilterDivThree}>
+                  <div>Price</div>
+                  <Slider
+                    getAriaLabel={() => "Temperature range"}
+                    valueLabelDisplay="auto"
+                    sx={{ color: "#FFBA3F" }}
+                    value={value}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className={styles.showFilterDivFour}>
+                  <div>70</div>
+                  <div>600</div>
+                </div>
+              </div>
+            ) : (
+              <div className={styles.hideFilterDiv}>
+                <img
+                  src={images.filter}
+                  className={styles.hideFilterDivImg}
+                  onClick={() => setShowFilter(true)}
+                />
+                <hr className={styles.hideFilterDivHr} />
+              </div>
             )}
+            <div className={styles.secondDivSecond}>
+              <div className={styles.searchMainDiv}>
+                <div className={styles.searchDiv}>
+                  <img src={images.search} className={styles.searchImg} />
+                  <input placeholder="Search" className={styles.searchInput} />
+                </div>
+                <span>{`Showing ${currentPage}-${currentItems.length} of ${data?.length} results`}</span>
+              </div>
+              <div className={styles.mapMainDiv}>
+                {currentItems.map((item, index) => {
+                  return (
+                    <div key={index} className={styles.readDetailsCard}>
+                      <div className={styles.readDetailsCardRow}>
+                        <div className={styles.readDetailsCardRowRight}>
+                          <img
+                            className={styles.cardLocationImg}
+                            src={images.location}
+                          />
+                          <div className={styles.cardLocationText}>
+                            {item.location}
+                          </div>
+                        </div>
+                        <div className={styles.cardTextBold}>
+                          Rs {item.price}
+                        </div>
+                      </div>
+                      <div className={styles.readDetailsCardRow}>
+                        <div className={styles.cardTextBold}>{item.name}</div>
+                        <div className={styles.cardDayText}>per day</div>
+                      </div>
+                      <img className={styles.cardImage} src={item.image[0]} />
+                      <div className={styles.cardCommentText}>
+                        {item.comment}
+                      </div>
+                      <div
+                        className={styles.readDetailsBtn}
+                        onClick={() => {
+                          handleNavigation(item);
+                        }}
+                      >
+                        Read Details
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="m-auto block my-4">
+        <div className={styles.paginationDiv}>
           <UserPagination
             itemsPerPage={itemsPerPage}
             totalItems={data.length}
