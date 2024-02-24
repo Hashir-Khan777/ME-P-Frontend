@@ -4,6 +4,7 @@ import styles from "./style.module.css";
 import { Slider } from "@mui/material";
 import UserPagination from "../../components/UserPagination";
 import { useNavigate } from "react-router-dom";
+import Header from "../Rentals/Header";
 
 const Parts = () => {
   const navigate = useNavigate();
@@ -468,14 +469,7 @@ const Parts = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.textDiv}>
-          <div className={styles.text1}>{`HOME > PARTS`}</div>
-          <div className={styles.text2}>Parts</div>
-          <div className={styles.text3}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </div>
-        </div>
+      <Header title={"Parts"} para={"Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."} subTitle={"HOME > PARTS"}/>
         <div className={styles.containerTwo}>
           <div className={styles.secondDiv}>
             {showFilter ? (

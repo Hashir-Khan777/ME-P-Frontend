@@ -1,13 +1,13 @@
 import React from "react";
-import EquipmentHeader from "../../components/Equipment Header";
 import ProductFilter from "../../components/Product Filter";
+import Header from "../Rentals/Header";
 
 const Equipment = () => {
   return (
     <>
-      <EquipmentHeader />
+      <Header title={"Equipment"} para={"Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."} subTitle={"HOME > EQUIPMENT"}/>
       <ProductFilter />
-    </>
+  </>
   );
 };
 export default Equipment;
