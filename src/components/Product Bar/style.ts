@@ -10,9 +10,9 @@ background-color: ${Theme.YELLOW};
 height: 30px;
 display: flex;
 align-items: center;
-font-size: smaller;
+font-size: 12px;
+width:100vw;
 color: ${Theme.WHITE_COLOR};
-width: 100%;
 ${mobile`
    display: none;
 position: absolute;
