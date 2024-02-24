@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./style.module.css";

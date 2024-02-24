@@ -214,9 +214,6 @@ const ProductFilter = () => {
                   );
                 })}
                 <div>
-                  <Stack spacing={2}>
-                    <Pagination count={3} variant="outlined" shape="rounded" />
-                  </Stack>
                 </div>
               </FlexParent>
             </div>
