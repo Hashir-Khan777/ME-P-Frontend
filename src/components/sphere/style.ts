@@ -73,10 +73,12 @@ h1{
     margin: 5px auto;
 }
 
-min-height: 20vh;
+min-height: 40vh;
 padding: 0px;
 background-image: none;
 max-width: 100%;
+position: relative;
+top: -8rem;
 
 `}
 
