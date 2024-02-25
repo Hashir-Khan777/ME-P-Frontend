@@ -13,24 +13,16 @@ height: fit-content;
 align-items: center;
 justify-content: center;
 
-
-
 ${mobile`
 
 max-width: 90%;
-
 `}
 
 span p {
     text-align: right;
     padding: 0px;
     margin: 0px;
-
-   
-   
-
 }
-
 `
 
 export const ParentFlex = styled.div`
@@ -38,17 +30,11 @@ export const ParentFlex = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-
 width: 100%;
-
-
-
 margin: 50px auto auto auto;
 gap: 45px;
 
-
 ${mobile`
-
 flex-direction: column;
 padding: 15px;
 gap: 25px;
@@ -66,12 +52,9 @@ flex-direction: column;
 h1, h3 ,p {
     margin: 7px;
 }
-
-
 `
 
 export const FlexChild1 = styled.div`
-
 max-width: 40%;
 display: flex;
 align-items: start;
@@ -82,11 +65,10 @@ text-align: left ;
 padding: 10px 0px ;
 position: relative;
 
-
 .shape{
     position: absolute;
-    right: -50%;
-    top: 0px;
+    right: -46%;
+    top: 35px;
 
     img{
         max-width: 70%;
@@ -110,10 +92,23 @@ ${tablet`
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 36px;
-    letter-spacing: -2px;
-}
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
 
+}
+p {
+    color: #232536;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+.small-para{
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    max-width: 85%;
+}
 ${mobile`
 
 h1{
@@ -125,7 +120,6 @@ h1{
 `}
 
 .styledyellow{
-
     color: ${Theme.YELLOW};
 }
 
@@ -164,7 +158,7 @@ h1{
 
 export const FlexChild2 = styled.div`
 
-max-width: 50%;
+max-width: 45%;
 display: flex;
 align-items: start;
 justify-content: center;

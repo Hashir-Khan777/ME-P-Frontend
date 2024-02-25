@@ -11,7 +11,7 @@ align-items: center;
 justify-content: center;
 width: 65%;
 margin: 30px auto;
-
+overflow: hidden;
 
 `
 

@@ -8,13 +8,15 @@ import bar from "../../assets/bar.png"
 export const Styleddiv = styled.div`
 margin: 0px auto auto auto;
 display: flex;
-max-width: 84%;
+max-width: 80%;
 height: fit-content;
 position: relative;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-margin-top: 150px;
+overflow: hidden;
+left: 4rem;
+
 
 
 
@@ -48,13 +50,8 @@ background-color: ${Theme.LIGHT_GREY};
 padding: 50px;
 width: 100%;
 margin: 0px;
-
-
-
-
-gap: 50px;
-
-
+padding-top: 8rem;
+padding-bottom: 10px;
 ${mobile`
 
 flex-direction: column;
@@ -82,18 +79,27 @@ text-align: left ;
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 28;
-    letter-spacing: -1px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
     margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .styledyellow{
-
+    font-size: 28;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     color: ${Theme.YELLOW};
+    position: relative;
+    left: -1rem;
+    margin-bottom: 10px;
 }
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
+    font-size: 13px;
 }
 
 
@@ -131,21 +137,29 @@ justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
 
-
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 28;
-    letter-spacing: -1px;
-    margin: 0px auto
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .styledyellow{
-
+    font-size: 28;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     color: ${Theme.YELLOW};
+    position: relative;
+    left: -1rem;
+    margin-bottom: 10px;
 }
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
+    font-size: 13px;
 }
 
 

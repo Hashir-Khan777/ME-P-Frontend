@@ -5,12 +5,11 @@ import bar from "../../assets/bar.png"
 const AboutVision = () => {
   return (
     <>
-      <Styleddiv>
-        
+      <Styleddiv>        
         <ParentFlex>
           <FlexChild1>
             <p className="styledyellow">
-              <b>Our mision</b>
+              Our mission
             </p>
             <h1>Best Platform to Buy & Sell Construction Vehicles</h1>
             <p className="styledGrey">
@@ -20,7 +19,7 @@ const AboutVision = () => {
           </FlexChild1>
           <FlexChild2>
             <p className="styledyellow">
-              <b>Our Vision</b>
+              Our Vision
             </p>
             <h1>A platform that empowers individuals to improve</h1>
             <p className="styledGrey">

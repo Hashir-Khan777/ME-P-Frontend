@@ -17,7 +17,6 @@ const OverView = ()=>{
                 <div><h1>30k+</h1>
                 <p>Total active Users</p>
                 </div>
-
             </ChildFlex>
             <div className='bar'><img src={pattren} alt="pattren" /></div>
         </ParentFLex>

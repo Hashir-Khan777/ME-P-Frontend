@@ -68,7 +68,7 @@ h1, h3 ,p {
 
 export const FlexChild1 = styled.div`
 
-max-width: 40%;
+max-width: 45%;
 display: flex;
 align-items: start;
 justify-content: center;
@@ -81,11 +81,6 @@ padding: 10px;
 
  
 
-h1{
-    color: ${Theme.CHANNEL_BLACK};
-    font-size: 36px;
-    letter-spacing: -2px;
-}
 
 .styledyellow{
 
@@ -94,6 +89,25 @@ h1{
 
 .styledGrey{
     color:  ${Theme.CHANNEL_BLACK};
+}
+
+h1{
+    color: ${Theme.CHANNEL_BLACK};
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+p {
+    color: #232536;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+.small-para{
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    max-width: 85%;
 }
 
 
@@ -110,34 +124,25 @@ h1{
 ${tablet`
 max-width: 100%;
 border-bottom: 1px solid black;
-
-
-h1{
-    font-size: 130%;
-}
-
-
 `}
 `
 
 export const FlexChild2 = styled.div`
 
-max-width: 50%;
+max-width: 45%;
 display: flex;
 align-items: start;
 justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
-position: relative;
 img{
     max-width: 100%;
 }
 
 .shape{
-    position: absolute;
-    
-    bottom: -8%;
-    left:6%;
+    position: relative;
+    top: -1.5rem;
+    left: 3rem;
 
     img{
         max-width: 70%;

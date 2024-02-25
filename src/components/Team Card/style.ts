@@ -15,12 +15,18 @@ flex-wrap: wrap;
 margin-top: 50px;
 gap: 20px;
 margin: auto;
+overflow: hidden;
+
 
 
 h1{
-    font-size: 40px;
-    letter-spacing: -2px;
-
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    min-width: 100%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 }
 
 ${mobile`
@@ -32,12 +38,6 @@ letter-spacing: 0px;
 `
 }
 
-.fullHeading{
-    min-width: 100%;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-}
 .styledYellow{
     color: ${Theme.YELLOW};
 }
