@@ -10,7 +10,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 65%;
-margin: 30px auto;
+margin: 0 auto;
 overflow: hidden;
 
 `
@@ -20,34 +20,40 @@ export const FlexChild = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-max-width: 70%;
+max-width: 45%;
 flex-direction: column;
 text-align: center;
-background-image: url(${ovel});
 background-position: center;
 background-repeat: no-repeat;
-background-size:cover;
+background-size: cover;
 min-height: 45vh;
-padding: 180px;
+margin-top: 4rem;
+background-image: url(${ovel});
+
 h1{
-    font-size: 32px;
+    font-size: 1.8rem;
     letter-spacing: -2px;
     color: ${Theme.CHANNEL_BLACK};
-    margin: 5px auto;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 p{
     color: #6D6E76;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    max-width: 80%;
 }
 
 button{
-    border: none;
     background-color: ${Theme.YELLOW};
     color: ${Theme.BLACK_COLOR};
-    padding: 20px 50px;
-    font-size: large;
+    border: none;
+    padding: 10px 30px;
+    font-size: 15px;
     margin-top: 10px;
     cursor: pointer;
+    font-weight: 600;
     &:hover{
         background-color: ${Theme.BLACK_COLOR};
     color: ${Theme.YELLOW };

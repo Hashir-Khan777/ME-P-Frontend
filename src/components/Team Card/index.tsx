@@ -48,7 +48,6 @@ const TeamCard = () => {
 
     return (
         <>
-
             <FlexParent>
                 <h1>
                     <span className="styledblack">Our </span>{" "}
@@ -58,9 +57,9 @@ const TeamCard = () => {
                     return (
                         <div key={e.id}  >
                             <FlexCard style={{ backgroundColor: e.bg }}>
-                                <div><img className="profileimg" src={e.profile} alt="profile1" /></div>
-                                <div ><h2>{e.name}</h2></div>
-                                <div><p><small>{e.occupation}</small></p></div>
+                                <img className="profileimg" src={e.profile} alt="profile1" />
+                                <h2>{e.name}</h2>
+                                <p>{e.occupation}</p>
                                 <div>
                                     <div className="fleximg">
                                         <img src={fbp} alt="fbp" />
@@ -70,11 +69,11 @@ const TeamCard = () => {
                                     </div>
                                 </div>
                             </FlexCard>
-                        </div>
+                        </div >
                     )
                 })}
 
-            </FlexParent>
+            </FlexParent >
         </>
     )
 }
