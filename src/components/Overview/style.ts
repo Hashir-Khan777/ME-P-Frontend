@@ -58,11 +58,11 @@ export const ChildFlex = styled.div`
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 4%;
+  bottom: 6.5%;
   z-index: 5;
   left: 7rem;
   justify-content: space-between;
-  padding: 12px 0px;
+  padding: 8px 0px;
   min-width: 48%;
   flex-wrap: wrap;
   margin: auto;
