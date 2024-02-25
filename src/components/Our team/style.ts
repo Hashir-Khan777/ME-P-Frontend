@@ -121,9 +121,13 @@ ${mobile`
 
 h1{
     font-size: 18px;
-    letter-spacing: 0px;
-    text-align: center;
     margin: auto;
+}
+p {
+    font-size: 14px;
+}
+.small-para{
+    font-size: 12px;
 }
 `}
 

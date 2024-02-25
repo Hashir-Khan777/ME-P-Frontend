@@ -43,10 +43,9 @@ h1{
 p{
     color: ${Theme.CHANNEL_BLACK};
     margin: 0px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    text-align: center;
 }
 
 
@@ -58,12 +57,15 @@ ${mobile`
 left: 0rem;
 
 h1{
-        font-size: 18px;
+        font-size: 14px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0px;
     margin: 14px 0px;
         
+    }
+    p{
+    text-align: center;
     }
 `}
 
@@ -94,6 +96,7 @@ ${mobile`
     max-width: 100%;
     padding: 0px;
     p{
+    font-size: 12px;
         text-align: center;
         display: block;
         margin: auto;

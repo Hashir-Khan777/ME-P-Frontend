@@ -106,8 +106,9 @@ max-width: 100%;
 
 h1{
     font-size: 14px;
-    letter-spacing: 1px;
-    margin: 0px auto;
+}
+.styledGrey {
+    font-size: 12px;
 }
 
 

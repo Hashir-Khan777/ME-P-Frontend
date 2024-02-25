@@ -108,10 +108,14 @@ text-align: center;
 
 h1{
     font-size: 18px;
-    letter-spacing: 0px;
+    margin: auto;
 }
-
-
+p {
+    font-size: 14px;
+}
+.small-para{
+    font-size: 12px;
+}
 `}
 ${tablet`
 max-width: 100%;

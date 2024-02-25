@@ -24,19 +24,7 @@ export const ParentFLex = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  ${mobile`
-
-  min-height: 15vh;
-  margin-top: 3rem;
-
-`}
-  ${tablet`
-  min-height: 35vh;
-  margin-top: 64px;
-
-`}
-
-.bar {
+  .bar {
     position: absolute;
     bottom: 0px;
     margin: 0px;
@@ -48,6 +36,22 @@ export const ParentFLex = styled.div`
       max-width: 100%;
     }
   }
+  
+  ${mobile`
+
+  min-height: 20vh;
+  margin-top: 3rem;
+  .bar{
+    display: none;
+  }
+`}
+  ${tablet`
+  min-height: 35vh;
+  margin-top: 64px;
+
+`}
+
+
 `;
 
 export const ChildFlex = styled.div`
@@ -67,9 +71,9 @@ export const ChildFlex = styled.div`
 
   ${mobile`
 justify-content: center;
-bottom: auto;
+bottom: 0;
 left: auto;
-
+padding: 4px 0px;
 `}
 
   h1 {
@@ -88,11 +92,17 @@ left: auto;
 
   ${mobile`
 justify-content: center;
-flex-direction: column;
-
-h1{
-    font-size: large;
+h1 {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0;
 }
+p {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0;
+}
+
 
 `}
 `;

@@ -59,13 +59,6 @@ export const FlexCard = styled.div`
     font-weight: 700;
   }
 
-  ${mobile`
-
-h2{
-    font-size: 14px;
-    letter-spacing: 0px;
-}
-`}
   p {
     margin: 3px 0px 10px 0px;
     color: #6d6e76;
@@ -89,4 +82,19 @@ h2{
       max-width: 12.5%;
     }
   }
+
+  ${mobile`
+
+h2{
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+.fleximg {
+  max-width: 60%;
+  img {
+    max-width: 12.5%;
+  }
+}
+`}
+
 `;

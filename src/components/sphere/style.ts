@@ -13,7 +13,7 @@ width: 65%;
 margin: 0 auto;
 
 ${mobile`
-width: 80%;
+width: 65%;
 `}
 
 
@@ -78,7 +78,7 @@ padding: 0px;
 background-image: none;
 max-width: 100%;
 position: relative;
-top: -8rem;
+top: -4rem;
 
 `}
 
