@@ -14,16 +14,13 @@ position: relative;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-overflow: hidden;
 left: 4rem;
 
-
-
-
-
 ${mobile`
-
+left: 0;
 max-width: 90%;
+margin: 0 2.7rem;
+margin-top: 1rem;
 .barclass{
     display: none;
 }
@@ -55,7 +52,7 @@ padding-bottom: 10px;
 ${mobile`
 
 flex-direction: column;
-padding: 15px;
+padding: 30px;
 gap: 10px;
 
 `}
@@ -106,7 +103,6 @@ h1{
 
 ${mobile`
 max-width: 100%;
-border-bottom: 1px solid black;
 
 h1{
     font-size: 14px;

@@ -11,7 +11,12 @@ align-items: center;
 justify-content: center;
 width: 65%;
 margin: 0 auto;
-overflow: hidden;
+
+${mobile`
+width: 80%;
+`}
+
+
 
 `
 

@@ -14,7 +14,7 @@ position: relative;
 top: 2rem;
 
 ${mobile`
-    padding:30px 0px;
+
 `}
 
 ${tablet`
@@ -46,6 +46,7 @@ p{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1.5px;
+    text-align: center;
 }
 
 
@@ -54,6 +55,7 @@ ${mobile`
     font-size: 100%;
     padding: 0px;
     min-height: 10vh;
+left: 0rem;
 
 h1{
         font-size: 18px;
@@ -93,6 +95,10 @@ ${mobile`
     padding: 0px;
     p{
         text-align: center;
+        display: block;
+        margin: auto;
+        left: 0;
+        top: 0;
     }
 `}
 

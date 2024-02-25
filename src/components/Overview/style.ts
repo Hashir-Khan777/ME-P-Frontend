@@ -26,8 +26,8 @@ export const ParentFLex = styled.div`
 
   ${mobile`
 
-min-height: 40vh;
-margin-top: 0px;
+  min-height: 15vh;
+  margin-top: 3rem;
 
 `}
   ${tablet`

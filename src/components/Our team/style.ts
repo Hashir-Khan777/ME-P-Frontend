@@ -138,7 +138,6 @@ h1{
 
 ${mobile`
 max-width: 100%;
-border-bottom: 1px solid black;
 
 h1{
     font-size: 18px;
@@ -187,6 +186,7 @@ ${mobile`
 
 width: 100%;
 max-width: 100%;
+
 `}  
 ${tablet`
 max-width: 50%;

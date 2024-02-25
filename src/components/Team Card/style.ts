@@ -12,7 +12,6 @@ export const FlexParent = styled.div`
   margin-top: 50px;
   gap: 20px;
   margin: auto;
-  overflow: hidden;
 
   h1 {
     font-size: 1.8rem;
