@@ -25,7 +25,6 @@ const AboutVision = () => {
             <p className="styledGrey">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
             </p>
-            <br />
             
           </FlexChild2>
         </ParentFlex>

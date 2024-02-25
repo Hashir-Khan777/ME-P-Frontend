@@ -13,24 +13,15 @@ height: fit-content;
 align-items: center;
 justify-content: center;
 
-
-
 ${mobile`
-
 max-width: 90%;
-
 `}
 
 span p {
     text-align: right;
     padding: 0px;
     margin: 0px;
-
-   
-   
-
 }
-
 `
 
 export const ParentFlex = styled.div`
@@ -38,11 +29,7 @@ export const ParentFlex = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-
 width: 100%;
-
-
-
 margin: 0px auto auto auto;
 gap: 45px;
 
@@ -53,6 +40,10 @@ flex-direction: column;
 padding: 15px;
 gap: 25px;
 
+h1{
+    text-align: center;
+    }
+
 `}
 ${tablet`
 
@@ -62,7 +53,11 @@ flex-direction: column;
 h1, h3 ,p {
     margin: 7px;
 }
-
+h1, p {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
 
 `
 
@@ -76,10 +71,6 @@ flex-direction: column;
 flex-wrap: wrap;
 text-align: left ;
 padding: 10px;
-
-
-
- 
 
 
 .styledyellow{
@@ -117,13 +108,21 @@ text-align: center;
 
 h1{
     font-size: 18px;
-    letter-spacing: 0px;}
+    letter-spacing: 0px;
+}
 
 
 `}
 ${tablet`
 max-width: 100%;
-border-bottom: 1px solid black;
+
+p{
+    max-width: 60%;
+    text-align: center;
+}
+.small-para{
+    max-width: 60%;
+}
 `}
 `
 
@@ -149,7 +148,6 @@ img{
     } 
      }
 
-
      ${mobile`
     .shape{
         display: none;
@@ -157,9 +155,11 @@ img{
     `}   
 
 ${tablet`
+
     .shape{
         display: none;
     } 
+    
     `} 
 
 
@@ -177,7 +177,7 @@ h1{
 
 
 ${tablet`
-max-width: 100%;
+max-width: 50%;
 
 h1{
     font-size: 130%;

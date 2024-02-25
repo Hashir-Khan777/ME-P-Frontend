@@ -14,7 +14,6 @@ align-items: center;
 justify-content: center;
 
 ${mobile`
-
 max-width: 90%;
 `}
 
@@ -23,6 +22,10 @@ span p {
     padding: 0px;
     margin: 0px;
 }
+${tablet`
+margin: 1rem auto auto auto;
+`}
+
 `
 
 export const ParentFlex = styled.div`
@@ -51,6 +54,11 @@ flex-direction: column;
 
 h1, h3 ,p {
     margin: 7px;
+}
+h1, p {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 `
 
@@ -145,13 +153,19 @@ p,h3{
 `}
 ${tablet`
 max-width: 100%;
-border-bottom: 1px solid black;
 
 
 h1{
     font-size: 130%;
 }
 
+p{
+    max-width: 60%;
+    text-align: center;
+}
+.small-para{
+    max-width: 60%;
+}
 
 `}
 `
@@ -169,23 +183,13 @@ img{
     max-width: 100%;
 }
 
-
-
-
-
 ${mobile`
 
 width: 100%;
 max-width: 100%;
-
-
-
-
 `}  
-
-
 ${tablet`
-max-width: 100%;
+max-width: 50%;
 
 h1{
     font-size: 130%;

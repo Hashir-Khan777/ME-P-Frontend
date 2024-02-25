@@ -31,9 +31,8 @@ margin-top: 0px;
 
 `}
   ${tablet`
-
-min-height: 43vh;
-margin-top: 0px;
+  min-height: 35vh;
+  margin-top: 64px;
 
 `}
 

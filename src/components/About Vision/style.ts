@@ -62,6 +62,7 @@ gap: 10px;
 ${tablet`
 
 flex-direction: column;
+padding: 2rem 4rem;
 `}
 
 `
@@ -116,8 +117,8 @@ h1{
 
 `}
 ${tablet`
-max-width: 100%;
-border-bottom: 1px solid black;
+ max-width: 100%;
+ margin-bottom: 1.5rem;
 
 
 h1{

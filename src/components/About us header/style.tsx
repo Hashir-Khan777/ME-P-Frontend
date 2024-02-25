@@ -16,6 +16,11 @@ top: 2rem;
 ${mobile`
     padding:30px 0px;
 `}
+
+${tablet`
+top: 4rem;
+`}
+
 `
 
 export const ChildFlex = styled.div`
@@ -50,8 +55,7 @@ ${mobile`
     padding: 0px;
     min-height: 10vh;
 
-
-    h1{
+h1{
         font-size: 18px;
     line-height: 20px;
     text-align: center;
@@ -59,6 +63,13 @@ ${mobile`
     margin: 14px 0px;
         
     }
+`}
+
+${tablet`
+max-width: 50%;
+left: 2rem;
+padding: 0;
+min-height: 30vh;
 `}
 `
 
@@ -74,7 +85,7 @@ p{
     max-width: 80%;
     position: relative;
     left: 3rem;
-    top: 1rem;
+    top: 3rem;
 }
 
 ${mobile`
@@ -84,4 +95,10 @@ ${mobile`
         text-align: center;
     }
 `}
+
+${tablet`
+    max-width: 50%;
+    padding: 0px;
+`}
+
 `
