@@ -33,23 +33,28 @@ export const FlexChild1 = styled.div`
 
 max-width: 50%;
 text-align: left;
+position: relative;
+left: 1rem;
 
 h1{
-    margin-top: -20%;
-    font-size: 80px;
+    font-size: 3.5rem;
     margin-left: 50px;
     font-weight: 900;
-   
+   color: #313131;
+   line-height: 4rem;
+   margin-bottom: 1.5rem;
     
 }
 
 
 p{
     color: ${Theme.GREY_COLOR};
-    font-size: 24px;
+    font-size: 1rem;
     padding: 0px 30px;
     justify-content: last baseline;
     margin-left: 30px;
+    line-height: 2rem;
+    max-width: 80%;
 
 }
 
@@ -106,12 +111,12 @@ flex-wrap: wrap;
 background-image: url(${ornament});
 background-position: center;
 background-repeat: no-repeat;
-background-size: 80% 80%;
+background-size: 100% 100%;
 height: 70vh;
 img{
    width: 75%;
-   margin-top: -230px;
-
+   position: relative;
+   top: -4rem;
 }
 
 ${mobile`

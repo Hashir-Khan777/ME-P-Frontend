@@ -10,7 +10,7 @@ const HeroSection = ()=>{
         <>
         <ParentFlex>
         <FlexChild1>
-        <h1>Accompany your journey !!! </h1>
+        <h1>Accompany <br /> your journey</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         </FlexChild1>
         <FlexChild2>
