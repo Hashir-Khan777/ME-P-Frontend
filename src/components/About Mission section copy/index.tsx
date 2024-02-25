@@ -9,18 +9,15 @@ const AboutMission = () => {
         <span><p><img src={bar} alt="bar" /></p></span>
         <ParentFlex>
           <FlexChild1>
-            <span>
-              <span>ABOUT US</span>
-            </span>
+            <p>About Us</p>
             <h1>We are a community of enthusiasts who share their learnings</h1>
             <p className="styledGrey">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. 
             </p>
-            <span className="styledyellow">
-              <b>{`Read More >`}</b>
-            </span>
-            <br />
+            <p className="styledyellow">
+            {`Read More >`}
+            </p>
+            
           </FlexChild1>
           <FlexChild2>
             <span className="styledyellow">

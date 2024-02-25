@@ -6,7 +6,7 @@ import Theme from "../../constants/theme";
 
 
 export const Styleddiv = styled.div`
-margin: 200px auto auto auto;
+margin: 5rem auto auto auto;
 display: flex;
 max-width: 90%;
 height: fit-content;
@@ -14,11 +14,40 @@ position: relative;
 align-items: center;
 justify-content: center;
 
+h1{
+    color: ${Theme.CHANNEL_BLACK};
+    font-size: 1.5rem;
+    letter-spacing: 0.2px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.styledyellow{
+    font-size: 28;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: ${Theme.YELLOW};
+    margin-bottom: 10px;
+}
+
+.styledGrey{
+    color:  ${Theme.DIM_GREY_COLOR};
+    font-size: 13px;
+}
+
+
 
 ${mobile`
 
 max-width: 90%;
-
+h1{
+    font-size: 14px;
+}
+.styledGrey {
+    font-size: 12px;
+}
 `}
 
 span p {

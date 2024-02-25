@@ -16,7 +16,6 @@ const HeroSection = ()=>{
         <FlexChild2>
             <img src={truck} alt="" />
         </FlexChild2>
-
         </ParentFlex>
         <SearchBar/>
         </>

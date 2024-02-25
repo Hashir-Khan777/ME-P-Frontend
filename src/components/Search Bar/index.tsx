@@ -24,7 +24,7 @@ const SearchBar = () => {
     <>
       <FlexBox>
         <FlexChild>
-          <div>
+          <div className="relative top-[-0.2rem]">
             <p>Vehicle Type</p>
           </div>
           <div>
@@ -50,7 +50,6 @@ const SearchBar = () => {
                       autoWidth
                       label="Age"
                     >
-                      <MenuItem value=""></MenuItem>
                       <MenuItem value={"Excavators"}>Excavators</MenuItem>
                       <MenuItem value={"Dozers"}>Dozers</MenuItem>
                       <MenuItem value={"Cranes"}>Cranes</MenuItem>
@@ -71,11 +70,11 @@ const SearchBar = () => {
           </div>
         </FlexChild>
         <FlexChild>
-          <div className="mrtop">
-            <p>Location</p>
+          <div className="relative top-[-1.2rem]">
+            <p >Location</p>
           </div>
 
-          <div className=" mrbottom alignboth">
+          <div className="alignboth">
             <img
               src={location}
               alt="location"

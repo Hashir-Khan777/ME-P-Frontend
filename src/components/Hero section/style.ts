@@ -31,10 +31,10 @@ height: 60vh;
 
 export const FlexChild1 = styled.div`
 
-max-width: 50%;
+max-width: 40%;
 text-align: left;
 position: relative;
-left: 1rem;
+top: -2rem;
 
 h1{
     font-size: 3.5rem;
@@ -54,8 +54,6 @@ p{
     justify-content: last baseline;
     margin-left: 30px;
     line-height: 2rem;
-    max-width: 80%;
-
 }
 
 ${mobile`
@@ -114,8 +112,9 @@ background-repeat: no-repeat;
 background-size: 100% 100%;
 height: 70vh;
 img{
-   width: 75%;
+   width: 100vw;
    position: relative;
+   left: 2rem;
    top: -4rem;
 }
 

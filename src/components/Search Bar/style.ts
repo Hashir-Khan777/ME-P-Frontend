@@ -10,7 +10,6 @@ align-items: center;
 justify-content: space-around;
 max-width: 80%;
 margin: auto;
-margin-top: -13%;
 background-color: ${Theme.WHITE_COLOR};
 z-index: 10;
 position: relative;
@@ -18,7 +17,8 @@ flex-wrap: wrap;
 padding: 10px 15px;
 border-radius: 50px;
 box-shadow: ${Theme.BOX_SHADOW};
-
+position: relative;
+top: -9rem;
 
 
 
@@ -35,13 +35,14 @@ display: flex;
 justify-content:space-between ;
 align-items: center;
 flex-direction: column;
-/* padding-bottom: 25px; */
 
 p{
     color: ${Theme.DIM_GREY_COLOR};
     padding: 0px;
     font-weight: 100;
-    
+    position: relative;
+    top: 0.5rem;
+    left: -0.5rem
 }
 
 .MuiOutlinedInput-notchedOutline {
@@ -49,30 +50,14 @@ p{
   font-weight: 100;
 
 }
-.mrtop{
-    margin-top: -59px ;
-}
-.mrbottom{
-    margin-bottom: -40px ;
-}
+
 
 ${mobile`
-
-.mrtop{
-    margin-top: 0px ;
-}
-.mrbottom{
-    margin-bottom: 0px ;
-}
-
-`}
-
-${mobile`
-
 .bordermobile{
     border: 1px solid #ccc !important; 
        border-radius: 4px;
        padding:0px;
+       color: red !important;
 }
 `}
 
@@ -99,8 +84,6 @@ cursor: pointer;
     flex-wrap: nowrap;
     justify-content: center;
     font-weight: 100;
-
-
 }
 
 `

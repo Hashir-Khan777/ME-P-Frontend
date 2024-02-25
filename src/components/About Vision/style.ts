@@ -83,7 +83,6 @@ h1{
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 .styledyellow{
     font-size: 28;
     text-transform: uppercase;
