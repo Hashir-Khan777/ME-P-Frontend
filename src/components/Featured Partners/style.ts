@@ -13,16 +13,15 @@ margin: 39px auto 160px auto;
 gap: 20px;
 max-width: 90%;
 
-
-
 .heading{
     min-width: 100%;
     margin: auto;
     text-align: center;
 
     h1{
-
-font-size: 300%;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
 
 }
 
