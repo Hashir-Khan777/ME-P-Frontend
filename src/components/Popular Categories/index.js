@@ -64,16 +64,16 @@ const PopularCategories = () => {
       </h1>
       <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[80%] gap-12">
         {products.map((e, index) => (
-          <div key={e.id} className="max-w-sm bg-[#F4F4F4] h-[20rem] w-[15rem]">
+          <div key={e.id} className="max-w-sm bg-[#F4F4F4] h-[10rem] w-[15rem] mb-10">
             <a href="#">
               <img
-                className="w-[12rem] h-[12rem] object-cover m-auto block"
+                className="w-[12rem] h-[12rem] object-cover m-auto block relative top-[-4rem]"
                 src={e.image}
                 alt={e.name}
               />
             </a>
             <div className="p-5">
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 relative top-[-5.2rem] text-center">
                 {e.name}
               </p>
             </div>
