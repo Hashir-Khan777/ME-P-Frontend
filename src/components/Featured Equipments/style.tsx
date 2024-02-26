@@ -54,26 +54,10 @@ export const FlexCard = styled.div`
   width: 33vw;
   max-width: 33vw;
   background-color: #F4F4F4;
-  height: 25vh;
   margin: 2rem 0px;
 
-  .products-img {
-    width: 15vw;
-    position: relative;
-    top: -4rem;
-    height: auto;
-  }
-
-  h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: semibold;
-    letter-spacing: 1px;
-  }
-
   ${mobile`
-    width: 80%; /* Adjust width for mobile devices */
+    width: 80%;
   `}
 `;
 

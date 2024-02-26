@@ -1,25 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { ParentFlex, Parentdiv, StyledCard } from "./style";
-import { Key } from "@mui/icons-material";
-import HttpClient from "../../services/http-client";
-import images from "../../utils/Images";
 import { useDispatch, useSelector } from "react-redux";
 import { getEquipments } from "../../store/actions/equipment.action";
 import { getRentals } from "../../store/actions/rentals.action";
 import { getParts } from "../../store/actions/parts.action";
-import location from "../../assets/Location.png";
 import cranes from "../../assets/Cranes.png";
 import dozers from "../../assets/Dozers.png";
 import loaders from "../../assets/Loaders.png";
 import motor from "../../assets/Motor Grader.png";
 import excavators from "../../assets/Excavators.png";
 import roller from "../../assets/Roller Compactor.png";
-import {
-  Containerdiv,
-  FlexCard,
-  FlexParent,
-  Styledbutton,
-} from "../Featured Equipments/style";
 
 const PopularCategories = () => {
   const dispatch = useDispatch();
@@ -28,13 +17,12 @@ const PopularCategories = () => {
   const { rentals } = useSelector((state) => state.RentalReducer);
   const { parts } = useSelector((state) => state.PartReducer);
 
-  console.log(equipments, rentals, parts);
-
   useEffect(() => {
     dispatch(getEquipments());
     dispatch(getRentals());
     dispatch(getParts());
   }, [dispatch]);
+
   const products = [
     {
       id: 1,
@@ -74,30 +62,26 @@ const PopularCategories = () => {
         <span className="text-black">Popular</span>{" "}
         <span className="text-[#FFBA3F]">Categories</span>
       </h1>
-      <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[80%]">
+      <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[80%] gap-12">
         {products.map((e, index) => (
-          <div key={e.id} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-            <FlexParent>
-              <FlexCard>
+          <div key={e.id} className="max-w-sm bg-[#F4F4F4] h-[20rem] w-[15rem]">
+            <a href="#">
               <img
-                style={{ top: 
-                  e.name === "Cranes" ? "-7rem" :
-                  e.name === "Loaders" ? "-6rem" :
-                  e.name === "Dozers" ? "-1rem" : "-4rem"
-                }}
-                  className="w-[18vw] relative h-auto mx-auto"
-                  src={e.image}
-                  alt="products"
-                />
-                <h2 className="text-center mt-2">{e.name}</h2>
-              </FlexCard>
-            </FlexParent>
+                className="w-[12rem] h-[12rem] object-cover m-auto block"
+                src={e.image}
+                alt={e.name}
+              />
+            </a>
+            <div className="p-5">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                {e.name}
+              </p>
+            </div>
           </div>
         ))}
       </div>
     </>
   );
 };
-
 
 export default PopularCategories;
