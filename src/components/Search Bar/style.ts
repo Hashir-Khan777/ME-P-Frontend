@@ -68,6 +68,8 @@ ${mobile`
     border-radius: 40px;
     border: none;
     font-size: medium;
+    position: relative;
+    top: -0.6rem;
 cursor: pointer;
     &:hover{
         background-color: ${Theme.YELLOW};

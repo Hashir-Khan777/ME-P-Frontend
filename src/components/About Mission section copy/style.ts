@@ -8,11 +8,12 @@ import Theme from "../../constants/theme";
 export const Styleddiv = styled.div`
 margin: 5rem auto auto auto;
 display: flex;
-max-width: 90%;
+max-width: 80%;
 height: fit-content;
 position: relative;
 align-items: center;
 justify-content: center;
+
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
@@ -74,12 +75,13 @@ align-items: center;
 justify-content: space-around;
 background-color: ${Theme.LIGHT_GREY};
 padding: 50px;
+padding-top: 5rem;
 width: 100%;
 
 
 
 margin: 0px ;
-gap: 195px;
+gap: ;
 
 
 ${mobile`
@@ -109,15 +111,13 @@ text-align: left ;
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 34px;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 48px;
-    letter-spacing: -2px;
     text-align: top;
 }
 
 .styledyellow{
-
     color: ${Theme.YELLOW};
 }
 
