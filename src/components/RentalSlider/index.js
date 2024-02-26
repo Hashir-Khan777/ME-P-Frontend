@@ -1,15 +1,47 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import imagesData from "../../utils/Images"; // Renamed the imported variable to avoid conflicts
 import HttpClient from "../../services/http-client";
 import images from "../../utils/Images";
 import { useDispatch, useSelector } from "react-redux";
 import { getRentals } from "../../store/actions/rentals.action";
+import roller from "../../assets/Roller Compactor.png";
 
 const RentalSlider = () => {
   const [imageList, setImageList] = useState([]);
   const [visibleImages, setVisibleImages] = useState(4);
   const [startIndex, setStartIndex] = useState(0);
-
+  const products = [
+    {
+      id: 1,
+      name: "Roller Compactor",
+      location: "Karachi, Pakistan",
+      price: "PKR 2.500.000",
+      image: roller,
+    },
+    {
+      id: 2,
+      name: "Loaders",
+      location: "Karachi, Pakistan",
+      price: "PKR 2.500.000",
+      image: roller,
+    },
+    {
+      id: 3,
+      name: "Cranes",
+      location: "Karachi, Pakistan",
+      price: "PKR 2.500.000",
+      image: roller,
+    },
+    {
+      id: 4,
+      name: "Excavators",
+      location: "Karachi, Pakistan",
+      price: "PKR 2.500.000",
+      image: roller,
+    },
+  ];
   const { rentals } = useSelector((state) => state.RentalReducer);
 
   const dispatch = useDispatch();
@@ -64,46 +96,38 @@ const RentalSlider = () => {
   }, [dispatch]);
 
   return (
-    <div className=" mx-auto relative " style={{ width: "95%" }}>
-      <div className="text-center text-4xl font-bold mb-10">
-        Vehicles for <span className="text-yellow">Rent:</span>
-      </div>
-      <div
-        className="flex flex-row gap-4 overflow-hidden  mx-auto"
-        style={{ width: "95%" }}
-      >
-        {rentals?.length > 0 &&
-          rentals
-            .slice(startIndex, startIndex + visibleImages)
-            .map((item, index) => (
-              <div
-                key={index}
-                className={`w-full border-2 border-gray ${
-                  visibleImages === 4
-                    ? "xl:w-1/8"
-                    : visibleImages === 3
-                    ? "lg:w-1/6"
-                    : visibleImages === 2
-                    ? "md:w-1/4"
-                    : "sm:w-1/2"
-                }`}
-              >
-                <img
-                  src={images.RollerCompactor}
-                  alt={`Image ${index + startIndex + 1}`}
-                  className="w-full h-52 "
-                />
-                <div className="bg-gray">
-                  <div className="pl-3 pt-2 font-semibold">
-                    {item.rental_name}
-                  </div>
-                  <div className="pl-3 text-xs  text-gray2">
-                    {item.location}
-                  </div>
-                  <div className="pl-3 font-semibold pb-3">{`PKR ${item.price}`}</div>
-                </div>
-              </div>
-            ))}
+    <div className=" mx-auto relative " style={{ width: "100%" }}>
+      <h1 className="text-[2.5rem] pt-[40px] ml-0 text-center font-bold sm:ml-[100px] sm:pt-[100px]">
+        <span className="text-black">Vehicles for</span>
+        <span className="text-[#FFBA3F]">Rent:</span>
+      </h1>
+
+      <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[80%] gap-10 ">
+        {products.map((e, index) => (
+          <div
+            key={e.id}
+            className="h-[20rem] w-[15rem] mb-10  max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <img
+                className="w-[8rem] h-[8rem] object-cover m-auto block mt-12"
+                src={e.image}
+                alt={e.name}
+              />
+            </a>
+            <div className="h-[6rem] relative bg-[#f4f5f7] w-full p-4 top-[2.9rem] leading-3">
+              <p className="mb-3 text-[1rem] text-[#3a3a3a] font-semibold">
+                {e.name}
+              </p>
+              <p className="mb-3 text-[0.6rem] font-600 text-gray2">
+                {e.location}
+              </p>
+              <p className="mb-3 text-[0.8rem] text-[#3a3a3a] font-semibold">
+                {e.price}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="flex justify-center mt-4">

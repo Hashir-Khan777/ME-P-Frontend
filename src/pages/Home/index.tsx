@@ -19,16 +19,16 @@ const Home = () => {
     }
   };
   return (
-    <>
+    <div className="">
       <HeroSection />
       <AboutMission />
       <PopularCategories />
       {/* <CustomCarousel /> */}
-      {/* <RentalSlider /> */}
+      <RentalSlider />
       {/* <FeaturedEqp /> */}
       {/* <PopularParts /> */}
       {/* <FeaturedPartners /> */}
-    </>
+    </div>
   );
 };
 export default Home;
