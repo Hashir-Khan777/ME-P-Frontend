@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
@@ -98,15 +99,15 @@ const RentalSlider = () => {
   return (
     <div className=" mx-auto relative " style={{ width: "100%" }}>
       <h1 className="text-[2.5rem] pt-[40px] ml-0 text-center font-bold sm:ml-[100px] sm:pt-[100px]">
-        <span className="text-black">Vehicles for</span>
+        <span className="text-black">Vehicles for {" "}</span>
         <span className="text-[#FFBA3F]">Rent:</span>
       </h1>
 
-      <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[80%] gap-10 ">
+      <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[100%] gap-10 ">
         {products.map((e, index) => (
           <div
             key={e.id}
-            className="h-[20rem] w-[15rem] mb-10  max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
+            className="h-[20rem] w-[15rem] mb-10  max-w-sm bg-white border border-[#b9b8b9] rounded"
           >
             <a href="#">
               <img
@@ -135,13 +136,13 @@ const RentalSlider = () => {
           onClick={handlePrevious}
           src={images.left}
           className="mr-4 w-14 absolute cursor-pointer active:opacity-50"
-          style={{ bottom: "40%", left: "-20px" }}
+          style={{ bottom: "30%", left: "2rem" }}
         />
         <img
           onClick={handleNext}
           src={images.right}
           className="mr-4 w-14 absolute cursor-pointer active:opacity-50"
-          style={{ bottom: "40%", right: "-35px" }}
+          style={{ bottom: "30%", right: "2rem" }}
         />
       </div>
     </div>
