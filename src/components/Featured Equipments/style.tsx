@@ -6,26 +6,32 @@ import Theme from "../../constants/theme";
 export const Containerdiv = styled.div`
     
     width: 100%;
+    background-color: ${Theme.WHITE_COLOR};
     margin: 0px;
     margin-top: 100px;
+    padding: 20px 0px;
+
+   
+
+
     h1{
-text-align: center;
-font-size: 2.5rem;
-font-weight: bold;
+
+font-size: 64px;
 margin-left: 100px;
-padding-top: 100px;
+font-weight: bold;
 }
 
 ${mobile`
-    
-    h1{
 
-font-size: 26px;
-padding-top: 40px;
-margin-left: 0px;
-text-align: center;
+h1{
+    margin-left: 0px;
+    font-size: 26px;
+    padding: 0px;
+    text-align: center;
 
 }
+
+
 `}
 
 .styledYellow{
@@ -40,45 +46,126 @@ color: ${Theme.BLACK_COLOR};
 export const FlexParent = styled.div`
 
 display: flex;
-flex-direction: row;
 width: 100%;
 flex-wrap: wrap;
+gap: 89px;
+margin: auto;
 justify-content: center;
+align-items: center;
+
+
+${mobile`
+gap: 0px;
+
+
+`}
 `
 
 export const FlexCard = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 33vw;
-  max-width: 33vw;
-  background-color: #F4F4F4;
-  margin: 2rem 0px;
 
-  ${mobile`
-    width: 80%;
-  `}
-`;
 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: space-between;
+    width: 20rem;
+    max-width: 20rem;
+    background-color: ${Theme.GREY_93_COLOR};
+    padding: 0px 0px 14px 0px;
+    height: 25rem;
+    max-height: 25rem;
+    gap: 10px;
+    margin: 20px 0px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    ${mobile`
+    
+    max-width: 300px;
+    `}
+
+    .justifybtn{
+        display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0px 15px;
+    height: 15px;
+    
+    }
+    .greycolor{
+        color: ${Theme.DARK_GREY_COLOR};
+    }
+    .yellowcolor{
+        color: ${Theme.YELLOW};
+    }
+.imgclass{
+    margin: 15px 15px 0px 15px  ;
+    border-radius: 10px;
+    width: 18rem;
+    display: block;
+    margin: auto;
+
+
+    img{
+
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+
+.bgyellow{
+    background-color: ${Theme.YELLOW};
+    padding-top: 0px ;
+    margin-top: 0px;
+    padding: 10px 20px;
+    color: ${Theme.WHITE_COLOR};
+    font-size: 10px;
+}
+
+
+
+.pad{
+
+    
+    p{
+        /* padding: 0px 19px; */
+        /* margin: 5px 0px; */
+        font-size: small;
+    }
+}
+
+.para{
+    padding: 0px 15px 0px 15px;
+}
+
+`
 
 export const Styledbutton = styled.button`
 
 border: none;
 background-color: ${Theme.YELLOW};
 border-radius: 5px;
-padding: 10px 38px;
-color: ${Theme.BLACK_COLOR};
+padding: 6px 38px;
+color: ${Theme.WHITE_COLOR};
+background-color: ${Theme.BLACK_COLOR};
 font-weight: bold;
-width: 100%;
-margin: 16px 0px;
+width: 90%;
+margin:  0px auto;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 cursor: pointer;
+font-size: 0.8rem;
 
 &:hover{
-    color: ${Theme.WHITE_COLOR};
-    background-color: ${Theme.BLACK_COLOR};
 
+    color: ${Theme.BLACK_COLOR};
+background-color: ${Theme.WHITE_COLOR};
 }
+
 `
 
 export const BrowseButton = styled.div`
@@ -86,7 +173,6 @@ export const BrowseButton = styled.div`
 width: 100%;
 text-align: center;
 margin: auto;
-
 .styledbutton{
     padding: 15px 40px;
     border: 1px solid ${Theme.YELLOW};
@@ -95,28 +181,29 @@ margin: auto;
     font-weight: bold;
     background-color: ${Theme.WHITE_COLOR};
     width: 40%;
-    margin: 15px 0px;
     cursor: pointer;
-
-    &:hover{
+&:hover{
     color: ${Theme.YELLOW};
     background-color: ${Theme.BLACK_COLOR};
 
 }
+
     ${mobile`
 
 
 
     
-font-size: small;
-width: 85%;
+        font-size: small;
+        width: 85%;
+            
+
+
     
-
-
-
-
+ 
 
 
 `}
 }
+
+
 `

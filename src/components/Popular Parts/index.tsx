@@ -1,6 +1,5 @@
 /* eslint-disable no-restricted-globals */
 import React from "react";
-import { Default } from "react-toastify/dist/utils";
 import { BrowseButton, Containerdiv, FlexCard, FlexParent, Styledbutton } from "./style";
 import f1 from "../../assets/f1.png";
 import f2 from "../../assets/f2.png";
@@ -9,22 +8,6 @@ import location from "../../assets/Location.png";
 
 const PopularParts = () => {
 
-
-  const cardObj = [
-    {
-      id: 1,
-      img: f1
-    },
-    {
-      id: 2,
-      img: f2
-    },
-    {
-      id: 3,
-      img: f3
-    },
-
-  ]
   const products = [
     {
       id: 1,

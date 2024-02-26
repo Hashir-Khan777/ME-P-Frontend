@@ -5,113 +5,101 @@ import f1 from "../../assets/f1.png";
 import f2 from "../../assets/f2.png";
 import f3 from "../../assets/f3.png";
 import location from "../../assets/Location.png";
+import { data } from "../../pages/Rentals/ProductsData";
+import FilterView from "../../pages/Rentals/FilterView";
+import FeatureEquipmentProducts from "./FeatureEquipmentProducts";
 
 const FeaturedEqp = () => {
 
 
-const cardObj = [
+  const products = [
     {
-        id:1,
-        img: f1
+      id: 1,
+      title: "Engine",
+      location: "Clifton Karachi, Pakistan",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: f1,
     },
     {
-        id:2,
-        img: f2
+      id: 2,
+      title: "Engine",
+      location: "Clifton Karachi, Pakistan",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: f2,
     },
     {
-        id:3,
-        img: f3
+      id: 3,
+      title: "Engine",
+      location: "Clifton Karachi, Pakistan",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: f3,
     },
     {
-        id:4,
-        img: f1
+      id: 4,
+      title: "Engine",
+      location: "Clifton Karachi, Pakistan",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: f1,
     },
     {
-        id:5,
-        img: f2
+      id: 5,
+      title: "Engine",
+      location: "Clifton Karachi, Pakistan",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: f2,
     },
     {
-        id:6,
-        img: f3
+      id: 6,
+      title: "Engine",
+      location: "Clifton Karachi, Pakistan",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      image: f3,
     },
-]
+  ];
 
   return (
     <>
-      <Containerdiv>
+      <div className="mx-auto relative bg-[#f6f5f5] h-auto">
+        <h1 className="text-[2.5rem] pt-[40px] ml-0 font-bold sm:ml-[100px] sm:pt-[100px] relative left-[3.6rem]">
+          <span className="text-black">Featured {" "}</span>
+          <span className="text-[#FFBA3F]">Equipments :</span>
+        </h1>
+          <FeatureEquipmentProducts />
         <div>
-          <h1>
-            <span className="styledblack">Featured </span>
-            <span className="styledYellow"> Equipments :</span>
-          </h1>
-        </div>
+          {/* <div className="flex flex-wrap justify-center mt-12 m-auto max-w-[100%] gap-10 ">
+            {products.map((e, index) => (
+              <FlexCard key={e.id}>
+                <div className="bgyellow">
+                  <p>{e.location}</p>
+                </div>
 
-        <div>
-          <FlexParent>
-            {cardObj.map((e)=>{
-                    return(
-                        <FlexCard key={e.id}>
-              <div className="justifybtn">
+                <div className="imgclass">
+                  <img src={e.image} alt="f1" />
+                </div>
+                <div className="justifybtn">
+                  <div>
+                    <span className="text-sm">
+                      <b>{e.title}</b>
+                    </span>
+                  </div>{" "}
+                  <div>
+                    <span>
+                      <b>$</b> <b className="yellowcolor">46000</b>
+                    </span>
+                  </div>
+                </div>
+                <div className="mb-3 text-[0.7rem] text-[#3a3a3a] max-w-[90%] m-auto block leading-6">
+                  <p>{e.description}</p>
+                </div>
                 <div>
                   {" "}
-                  <div className="alignboth">
-                    <p className="greycolor">
-                      {" "}
-                      <img src={location} alt="location" />
-                    </p>
-                    <p style={{ fontSize: "small" }}>
-                      Clifton Karachi, Pakistan
-                    </p>
-                  </div>
-                  <p>
-                    <b>3 Ton Excavator</b>
-                  </p>
-                </div>{" "}
-                <div>
-                  <br />
-                  <p>
-                    <b>$</b> <b className="yellowcolor">46000</b>
-                  </p>
+                  <Styledbutton><b>EXPLORE</b></Styledbutton>
                 </div>
-              </div>
-
-              <div className="imgclass">
-                <img src={e.img} alt="f1" />
-              </div>
-
-              <div className="justifybtn pad">
-                <div>
-                  <p className="yellowcolor" style={{fontWeight:'600'}}>WEIGHT</p>
-                  <p>
-                    <b>5,842 lbs</b>
-                  </p>
-                </div>
-                <div className="borderLeft">
-                  <p className="yellowcolor" style={{fontWeight:'600'}}>ENGINE POWER</p>
-                  <p>
-                    <b>20 hp</b>
-                  </p>
-                </div>
-                <div className="borderLeft">
-                  <p className="yellowcolor" style={{fontWeight:'600'}}>DIG DEPTH</p>
-                  <p>
-                    <b>9 ft 12 in</b>
-                  </p>
-                </div>
-              </div>
-
-              
-              <div>
-                {" "}
-                <Styledbutton><b>EXPLORE</b></Styledbutton>
-              </div>
-            </FlexCard>
-                    )
-            })}
-            <BrowseButton> <button className="styledbutton">BROWSE EQUIPMENT</button></BrowseButton>
-          </FlexParent>
+              </FlexCard>
+            ))}
+          </div> */}
         </div>
-      </Containerdiv>
+      </div>
     </>
   );
 };

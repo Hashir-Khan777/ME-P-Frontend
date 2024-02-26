@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebarMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* overflow-y: auto; */
+}
+
+@media (max-width: 800px) {
+    /* .sidebarMobile {
+      display: none;
+    } */
+  }
+  
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    /* background-color: #FFBA3F; */
+}
+
+.containerTwo {
+    padding: 0 3%;
+}
+
+.textDiv {
+    width: 100%;
+    background-color: #F4F4F4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text1 {
+    font-weight: 500;
+    font-size: small;
+    text-align: center;
+}
+
+.text2 {
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text3 {
+    color: #6D6E76;
+    text-align: center;
+    font-size: small;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.secondDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+.hideFilterDiv {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.hideFilterDivHr {
+    width: 23px;
+    background-color: #BEBCBD;
+    border: none;
+    height: 1px;
+    margin-top: 15px;
+}
+
+.secondDivSecond {
+    width: 90%;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    display: block;
+    margin: auto;
+}
+
+.searchMainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.searchDiv {
+    width: 30%;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.searchImg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.searchInput {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 45px;
+    border-radius: 5px;
+}
+
+.searchInput::placeholder {
+    font-size: medium;
+}
+
+.mapMainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+    gap: 2rem;
+}
+
+.mapDiv {
+    width: 30%;
+    background-color: #F4F5F7;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.mapImg {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border-right: 2px solid #c6c5c6;
+    border-left: 2px solid #c6c5c6;
+    border-top: 2px solid #c6c5c6;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 25px 15px;
+}
+
+.mapText1 {
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.mapText2 {
+    font-size: small;
+    font-weight: 500;
+    color: #898989;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.mapText3 {
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    margin-left: 5%;
+    margin-top: 7px;
+}
+
+.showFilterDiv {
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+}
+
+.showFilterDivOne {
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid #BEBCBD;
+    padding-bottom: 20px;
+}
+
+.showFilterDivOne span {
+    color: #FFBA3F;
+    font-size: large;
+    font-weight: 600;
+}
+
+.showFilterDivTwo {
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.showFilterDivTwo span {
+    color: black;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.showFilterDivTwo div {
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.showFilterDivThree {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    margin-top: 35px;
+}
+
+.showFilterDivThree div {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.showFilterDivFour {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.showFilterDivFour div {
+    width: 35%;
+    padding: 6px 0px;
+    border-radius: 7px;
+    border: 1px solid #BEBCBD;
+    color: black;
+    font-size: medium;
+    text-align: center;
+    font-size: 12px;
+}
+
+.searchMainDiv span {
+    font-size: small;
+}
+
+.paginationDiv {
+    /* background-color: red; */
+    margin-top: 20vh;
+}
+
+.readDetailsCard {
+    background-color: #ffffff;
+    width: 30%;
+    box-shadow: 3px 3px 5px 0px rgb(231, 231, 231);
+    border-radius: 12px;
+    padding: 16px 12px;
+}
+
+.readDetailsCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.readDetailsCardRowRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardLocationImg {
+    height: 12px;
+    width: 12px;
+}
+
+.cardLocationText {
+    color: #898989;
+    font-size: 10px;
+
+}
+
+.cardTextBold {
+    color: black;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.cardDayText {
+    color: #979797;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    margin: 12px 0px;
+}
+
+.cardCommentText {
+    color: #8e8e8e;
+    font-size: 10px;
+}
+
+.readDetailsBtn {
+    width: 100%;
+    height: 32px;
+    background-color: #ffba3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    margin-top: 14px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .secondDiv {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .secondDivSecond {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .searchDiv {
+        width: 30%;
+    }
+
+    .sidebarMobile {
+        width: 30%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .mapMainDiv {
+        flex-direction: column;
+    }
+    .readDetailsCard{
+        margin-bottom: 2rem;
+        width: 75%;
+    }
+    .sidebarMobile {
+        width: 40%;
+    }
+    .searchInput {
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .searchInput::placeholder {
+        font-size: 12px;
+    }
+    .searchImg {
+        width: 14px;
+        height: 14px;
+    }
+    .searchDiv {
+        width: 35%;
+    }
+    .searchMainDiv {
+        position: relative;
+    }
+    .searchMainDiv span {
+        font-size: 10px;
+    }
+    .searchDiv{
+        position: relative;
+        left: 2rem;
+        top: 0.5rem;
+    }
+   
+    
+}

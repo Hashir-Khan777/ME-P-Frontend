@@ -19,13 +19,13 @@ const Home = () => {
     }
   };
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <HeroSection />
       <AboutMission />
       <PopularCategories />
       {/* <CustomCarousel /> */}
       <RentalSlider />
-      {/* <FeaturedEqp /> */}
+      <FeaturedEqp />
       <PopularParts />
       <FeaturedPartners />
     </div>
