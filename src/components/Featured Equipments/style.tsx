@@ -6,12 +6,11 @@ import Theme from "../../constants/theme";
 export const Containerdiv = styled.div`
     
     width: 100%;
-    background-color: ${Theme.LIGHT_GREY};
     margin: 0px;
     margin-top: 100px;
     h1{
-
-font-size: 64px;
+text-align: center;
+font-size: 2.5rem;
 font-weight: bold;
 margin-left: 100px;
 padding-top: 100px;
@@ -41,93 +40,43 @@ color: ${Theme.BLACK_COLOR};
 export const FlexParent = styled.div`
 
 display: flex;
+flex-direction: row;
 width: 100%;
 flex-wrap: wrap;
-gap: 50px;
-margin-left: auto;
-margin-right: auto;
 justify-content: center;
-align-items: center;
 `
 
 export const FlexCard = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 33vw;
+  max-width: 33vw;
+  background-color: #F4F4F4;
+  height: 25vh;
+  margin: 2rem 0px;
 
+  .products-img {
+    width: 15vw;
+    position: relative;
+    top: -4rem;
+    height: auto;
+  }
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: space-between;
-    
-    width: 413px;
-    
-    background-color: ${Theme.WHITE_COLOR};
-    padding: 14px;
-    height: 506px;
-    max-height: 506px;
-    gap: 10px;
-    margin: 20px 0px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-    .justifybtn{
-        display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: baseline;
+  h2 {
+    margin: 0;
     text-align: center;
-    }
-    .greycolor{
-        color: ${Theme.DARK_GREY_COLOR};
-    }
-    .yellowcolor{
-        color: ${Theme.YELLOW};
-    }
-.imgclass{
-    margin: auto;
-    max-width: 100%;
-    overflow: hidden;
+    font-size: 1rem;
+    font-weight: semibold;
+    letter-spacing: 1px;
+  }
 
-    img{
+  ${mobile`
+    width: 80%; /* Adjust width for mobile devices */
+  `}
+`;
 
-        max-width: 100%;
-        min-width: 100%;
-    }
-}
-.alignboth{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: start;
-    margin: 0px;
-    padding: 0px;
-    height: 25px;
-    margin-left: -5px;
-    
-
-}
-
-.borderLeft{
-    border-left: 1px solid ${Theme.LIGHT_GREY_COLOR};
-}
-
-.pad{
-
-    
-    p{
-        padding: 0px 19px;
-        margin: 5px 0px;
-        font-size: small;
-    }
-}
-
-${mobile`
-
-max-width: 300px;
-
-`}
-
-`
 
 export const Styledbutton = styled.button`
 

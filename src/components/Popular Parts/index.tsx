@@ -9,21 +9,21 @@ import location from "../../assets/Location.png";
 const PopularParts = () => {
 
 
-const cardObj = [
+  const cardObj = [
     {
-        id:1,
-        img: f1
+      id: 1,
+      img: f1
     },
     {
-        id:2,
-        img: f2
+      id: 2,
+      img: f2
     },
     {
-        id:3,
-        img: f3
+      id: 3,
+      img: f3
     },
-    
-]
+
+  ]
 
   return (
     <>
@@ -38,42 +38,42 @@ const cardObj = [
         <div>
           <FlexParent>
 
-            {cardObj.map((e)=>{
-                    return(
-                        <FlexCard key={e.id}>
-              <div className="bgyellow">
-                <p>Clifton Karachi, Pakistan</p>
-              </div>
+            {cardObj.map((e) => {
+              return (
+                <FlexCard key={e.id}>
+                  <div className="bgyellow">
+                    <p>Clifton Karachi, Pakistan</p>
+                  </div>
 
-              <div className="imgclass">
-                <img src={e.img} alt="f1" />
-              </div>
-              <div className="justifybtn">
-                <div>
-                 
-                 
-                  <span>
-                    <b>Engine</b>
-                  </span>
-                </div>{" "}
-                <div>
-                  
-                  <span>
-                    <b>$</b> <b className="yellowcolor">46000</b>
-                  </span>
-                </div>
-              </div>
-              <div className="para pad">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-              </div>
+                  <div className="imgclass">
+                    <img src={e.img} alt="f1" />
+                  </div>
+                  <div className="justifybtn">
+                    <div>
 
-              
-              <div>
-                {" "}
-                <Styledbutton><b>EXPLORE</b></Styledbutton>
-              </div>
-            </FlexCard>
-                    )
+
+                      <span>
+                        <b>Engine</b>
+                      </span>
+                    </div>{" "}
+                    <div>
+
+                      <span>
+                        <b>$</b> <b className="yellowcolor">46000</b>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="para pad">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                  </div>
+
+
+                  <div>
+                    {" "}
+                    <Styledbutton><b>EXPLORE</b></Styledbutton>
+                  </div>
+                </FlexCard>
+              )
             })}
             <BrowseButton> <button className="styledbutton">BROWSE PARTS</button></BrowseButton>
           </FlexParent>

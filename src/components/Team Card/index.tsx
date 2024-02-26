@@ -11,9 +11,7 @@ import lindedinp from '../../assets/linkedinp.png'
 
 
 const TeamCard = () => {
-
-
-    const cardObj = [
+const cardObj = [
 
         {
             id: 1,

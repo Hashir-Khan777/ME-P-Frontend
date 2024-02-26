@@ -27,7 +27,7 @@ const Home = () => {
       {/* <RentalSlider /> */}
       {/* <FeaturedEqp /> */}
       {/* <PopularParts /> */}
-      <FeaturedPartners />
+      {/* <FeaturedPartners /> */}
     </>
   );
 };
