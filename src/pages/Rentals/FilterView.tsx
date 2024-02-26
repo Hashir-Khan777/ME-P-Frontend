@@ -1,18 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import FilterSidebar from "./FilterSidebar";
 import styles from "./style.module.css";
 import images from "../../utils/Images";
 import { IoMdClose } from "react-icons/io";
 import ProductsGridView from './ProductsGridView';
 
-const FilterView = (props:any) => {
-    const {data} = props
-  const [showFilter, setShowFilter] = useState(false);
-  const [value, setValue] = useState([0, 100]);
-  const handleChange = (event:any, newValue:any) => {
-    setValue(newValue);
-  };
+const FilterView = (props: any) => {
+    const { data } = props
+    const [showFilter, setShowFilter] = useState(false);
+    const [value, setValue] = useState([0, 100]);
+    const handleChange = (event: any, newValue: any) => {
+        setValue(newValue);
+    };
     return (
         <>
             <div className={styles.containerTwo}>

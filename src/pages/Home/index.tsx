@@ -26,8 +26,8 @@ const Home = () => {
       {/* <CustomCarousel /> */}
       <RentalSlider />
       {/* <FeaturedEqp /> */}
-      {/* <PopularParts /> */}
-      {/* <FeaturedPartners /> */}
+      <PopularParts />
+      <FeaturedPartners />
     </div>
   );
 };

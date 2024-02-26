@@ -48,7 +48,6 @@ const cardObj = [
 
         <div>
           <FlexParent>
-
             {cardObj.map((e)=>{
                     return(
                         <FlexCard key={e.id}>

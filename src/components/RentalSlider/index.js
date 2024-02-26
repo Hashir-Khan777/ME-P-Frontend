@@ -103,7 +103,7 @@ const RentalSlider = () => {
         <span className="text-[#FFBA3F]">Rent:</span>
       </h1>
 
-      <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[100%] gap-10 ">
+      <div className="flex flex-wrap justify-center mt-12 m-auto max-w-[100%] gap-10 ">
         {products.map((e, index) => (
           <div
             key={e.id}

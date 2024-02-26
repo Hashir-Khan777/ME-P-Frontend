@@ -68,12 +68,12 @@ export const FlexCard = styled.div`
     justify-content: space-between;
     flex-direction: column;
     align-items: space-between;
-    width: 400px;
-    max-width: 400px;
+    width: 20rem;
+    max-width: 20rem;
     background-color: ${Theme.GREY_93_COLOR};
     padding: 0px 0px 14px 0px;
-    height: 520px;
-    max-height: 520px;
+    height: 25rem;
+    max-height: 25rem;
     gap: 10px;
     margin: 20px 0px;
     overflow: hidden;
@@ -100,11 +100,11 @@ export const FlexCard = styled.div`
         color: ${Theme.YELLOW};
     }
 .imgclass{
-    margin: auto;
-    max-width: 100%;
     margin: 15px 15px 0px 15px  ;
     border-radius: 10px;
-    max-height: 100%;
+    width: 18rem;
+    display: block;
+    margin: auto;
 
 
     img{
@@ -119,8 +119,9 @@ export const FlexCard = styled.div`
     background-color: ${Theme.YELLOW};
     padding-top: 0px ;
     margin-top: 0px;
-    padding: 0px 15px;
+    padding: 10px 20px;
     color: ${Theme.WHITE_COLOR};
+    font-size: 10px;
 }
 
 
@@ -146,7 +147,7 @@ export const Styledbutton = styled.button`
 border: none;
 background-color: ${Theme.YELLOW};
 border-radius: 5px;
-padding: 10px 38px;
+padding: 6px 38px;
 color: ${Theme.WHITE_COLOR};
 background-color: ${Theme.BLACK_COLOR};
 font-weight: bold;
@@ -157,6 +158,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+font-size: 0.8rem;
 
 &:hover{
 
