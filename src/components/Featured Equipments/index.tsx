@@ -5,8 +5,8 @@ const FeaturedEqp = () => {
   return (
     <>
       <div className="mx-auto relative bg-[#f6f5f5] h-auto">
-      <h1 className="md:text-[2.5rem] text-[2rem] pt-[40px] font-bold sm:pt-[100px] text-center">
-          <span className="text-black">Featured {" "}</span>
+        <h1 className="md:text-[2.5rem] text-[1.5rem] pt-[40px] font-bold sm:pt-[100px] text-center">
+        <span className="text-black">Featured {" "}</span>
           <span className="text-[#FFBA3F]">Equipments :</span>
         </h1>
           <FeatureEquipmentProducts />

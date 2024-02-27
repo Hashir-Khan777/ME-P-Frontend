@@ -58,22 +58,25 @@ const PopularCategories = () => {
 
   return (
     <>
-      <h1 className="text-[2.5rem] pt-[40px] ml-0 text-center font-bold sm:ml-[100px] sm:pt-[100px]">
+      <h1 className="md:text-[2.5rem] text-[1.5rem] pt-[40px] font-bold sm:pt-[100px] text-center">
         <span className="text-black">Popular</span>{" "}
         <span className="text-[#FFBA3F]">Categories</span>
       </h1>
       <div className="flex flex-wrap justify-center mt-24 m-auto max-w-[80%] gap-12">
         {products.map((e, index) => (
-          <div key={e.id} className="max-w-sm bg-[#F4F4F4] h-[10rem] w-[15rem] mb-10">
+          <div
+            key={e.id}
+            className="max-w-sm bg-[#F4F4F4] sm:h-[10rem] sm:w-[15rem] h-[8rem] w-[13rem] mb-10"
+          >
             <a href="#">
               <img
-                className="w-[12rem] h-[12rem] object-cover m-auto block relative top-[-4rem]"
+                className="sm:w-[12rem] sm:h-[12rem] w-[10rem] h-[10rem] object-cover m-auto block relative top-[-4rem]"
                 src={e.image}
                 alt={e.name}
               />
             </a>
             <div className="p-5">
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 relative top-[-5.2rem] text-center">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 relative top-[-5rem] text-center sm:text-[1rem] text-[0.8rem]">
                 {e.name}
               </p>
             </div>

@@ -98,7 +98,7 @@ const RentalSlider = () => {
 
   return (
     <div className=" mx-auto relative " style={{ width: "100%" }}>
-      <h1 className="text-[2.5rem] pt-[40px] ml-0 text-center font-bold sm:ml-[100px] sm:pt-[100px]">
+      <h1 className="sm:text-[2.5rem] text-[1.5rem] pt-[40px] ml-0 text-center font-bold sm:ml-[100px] sm:pt-[100px]">
         <span className="text-black">Vehicles for {" "}</span>
         <span className="text-[#FFBA3F]">Rent:</span>
       </h1>
@@ -107,16 +107,16 @@ const RentalSlider = () => {
         {products.map((e, index) => (
           <div
             key={e.id}
-            className="h-[20rem] w-[15rem] mb-10  max-w-sm bg-white border border-[#b9b8b9] rounded"
+            className="sm:h-[20rem] sm:w-[15rem] h-[16rem] w-[12rem] mb-10  max-w-sm bg-white border border-[#b9b8b9] rounded"
           >
             <a href="#">
               <img
-                className="w-[8rem] h-[8rem] object-cover m-auto block mt-12"
+                className="sm:w-[8rem] sm:h-[8rem] w-[6rem] h-[6rem] object-cover m-auto block mt-12"
                 src={e.image}
                 alt={e.name}
               />
             </a>
-            <div className="h-[6rem] relative bg-[#f4f5f7] w-full p-4 top-[2.9rem] leading-3">
+            <div className="h-[6rem] relative bg-[#f4f5f7] w-full p-4 sm:top-[2.9rem] top-[0.83rem] leading-3">
               <p className="mb-3 text-[1rem] text-[#3a3a3a] font-semibold">
                 {e.name}
               </p>
@@ -131,7 +131,7 @@ const RentalSlider = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-4">
+      <div className="justify-center mt-4 sm:flex hidden">
         <img
           onClick={handlePrevious}
           src={images.left}
