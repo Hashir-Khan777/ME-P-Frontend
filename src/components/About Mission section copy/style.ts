@@ -49,6 +49,9 @@ h1{
 .styledGrey {
     font-size: 12px;
 }
+.styledyellow {
+    font-size: 14px;
+}
 `}
 
 span p {
@@ -128,7 +131,8 @@ h1{
 
 ${mobile`
 max-width: 100%;
-border-bottom: 1px solid black;
+border-bottom: 1px solid #ccc;
+padding-bottom: 1rem;
 
 h1{
     font-size: 16px;
@@ -184,6 +188,7 @@ h1{
 
 ${mobile`
 max-width: 100%;
+padding-top: 1rem;
 
 
 h1{
