@@ -27,7 +27,7 @@ const Footer = () => {
                 131 Dartmouth St, 3rd Floor, Boston, MA 02116{" "}
               </p>
             </div>
-            <div>
+            <div className="lg:flex hidden">
               <p>
                 /
               </p>
@@ -37,7 +37,7 @@ const Footer = () => {
                 +92 3128456911
               </p>
             </div>
-            <div>
+            <div className="lg:flex hidden">
               <p>
                 /
               </p>
@@ -45,7 +45,7 @@ const Footer = () => {
             <div>
               <p>info@ME&P.com</p>
             </div>
-            <div className="flex">
+            <div className="flex m-auto sm:m-0 sm:mt-0 mt-[6px]">
               <img className="SocialMedia" src={sm1} alt="sm1" />
               <img className="SocialMedia" src={sm2} alt="sm2" />
               <img className="SocialMedia" src={sm3} alt="sm3" />

@@ -13,7 +13,7 @@ export const ParentContainer = styled.div`
     color: ${Theme.LIGHT_GREY_COLOR};
   }
   .line {
-    width: 92%;
+    width: 100%
     margin: auto;
     color: ${Theme.LIGHT_GREY_COLOR};
     padding: 2rem 0px;
@@ -26,10 +26,14 @@ export const FlexParent = styled.div`
   align-items: start;
   flex-wrap: wrap;
   margin-top: 2rem;
+  line-height: 3;
   color: ${Theme.LIGHT_GREY_COLOR};
 
   ${mobile`
 flex-direction: column;
+`}
+  ${tablet`
+line-height: 2;
 `}
 
   p {
@@ -67,18 +71,14 @@ export const FlexParent1 = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: start;
-  flex-wrap: wrap;
   gap: 5.8rem;
   color: ${Theme.LIGHT_GREY_COLOR};
 
   ${mobile`
-flex-direction: column;
 justify-content: center;
-align-items: center;
-text-align: center;
+gap: 1;
 `}
   ${tablet`
-flex-wrap: wrap;
 `}
 
 
@@ -102,7 +102,6 @@ export const FlexParent2 = styled.div`
   align-items: center;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   color: ${Theme.LIGHT_GREY_COLOR};
 
   img {
@@ -114,6 +113,8 @@ export const FlexParent2 = styled.div`
   ${mobile`
 
 flex-direction: column;
-
+img{
+  margin-top: 1rem;
+}
 `}
 `;
