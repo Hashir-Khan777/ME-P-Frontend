@@ -18,40 +18,41 @@ const Footer = () => {
         <FlexParent className="fontsize">
           <div>
             <p>
-              {" "}
               <img className="logoimg" src={footerlogo} alt="logo" />
             </p>
           </div>
           <div>
             <p>
-              {" "}
               131 Dartmouth St, 3rd Floor, Boston, MA 02116{" "}
-              <span>&nbsp; &nbsp; &nbsp; /</span>
-            </p>{" "}
+            </p>
           </div>
           <div>
-            {" "}
             <p>
-              +92 3128456911 <span>&nbsp; &nbsp; &nbsp; /</span>
+               /
+            </p>
+          </div>
+          <div>
+            <p>
+              +92 3128456911
+            </p>
+          </div>
+          <div>
+            <p>
+               /
             </p>
           </div>
           <div>
             <p>info@ME&P.com</p>
           </div>
-          <div>
-            <p>
-              {" "}
-              <img className="SocialMedia" src={sm1} alt="sm1" />
-              <img className="SocialMedia" src={sm2} alt="sm2" />
-              <img className="SocialMedia" src={sm3} alt="sm3" />
-              <img className="SocialMedia" src={sm4} alt="sm4" />
-            </p>
+          <div className="flex">
+            <img className="SocialMedia" src={sm1} alt="sm1" />
+            <img className="SocialMedia" src={sm2} alt="sm2" />
+            <img className="SocialMedia" src={sm3} alt="sm3" />
+            <img className="SocialMedia" src={sm4} alt="sm4" />
           </div>
         </FlexParent>
         <div className="line">
-          {" "}
-          <br />
-          <hr /> <br />
+          <hr />
         </div>
 
         <FlexParent1 className="fontsize">
@@ -96,9 +97,7 @@ const Footer = () => {
           </div>
         </FlexParent1>
         <div className="line">
-          {" "}
-          <br />
-          <hr /> <br />
+          <hr />
         </div>
 
         <FlexParent2>

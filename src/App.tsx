@@ -17,7 +17,7 @@ function App() {
       <AdminRouting />
       <Routing />
       <BuyerRouting />
-      {/* <Footer /> */}
+      <Footer />
       <ToastContainer />
     </Provider>
   );
