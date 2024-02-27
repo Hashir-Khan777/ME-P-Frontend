@@ -36,11 +36,11 @@ const SearchBar = () => {
                 <Box sx={{ minWidth: 100, border: "none", p: 0 }}>
                   <FormControl sx={{ m: 0, minWidth: 100, p: 0 }}>
                     <InputLabel
-                      className="fw"
+                      className="fw sm"
                       sx={{ color: "black", fontWeight: "100" }}
                       id="demo-simple-select-autowidth-label"
                     >
-                      <b style={{ fontWeight: "100" }}> Select</b>
+                      <b className="inputLabel" style={{ fontWeight: "100" }}> Select</b>
                     </InputLabel>
                     <Select
                       labelId="demo-simple-select-autowidth-label"
@@ -76,12 +76,13 @@ const SearchBar = () => {
 
           <div className="alignboth">
             <img
+            className="icon"
               src={location}
               alt="location"
               style={{ marginRight: "10px" }}
             />{" "}
             <span>
-              <b style={{ fontWeight: "100" }}>Choose Location</b>
+              <b className="inputLabel"  style={{ fontWeight: "100" }}>Choose Location</b>
             </span>
           </div>
         </FlexChild>

@@ -190,12 +190,12 @@ function ResponsiveAppBar() {
                 <>
                   <Link to={"/login"} style={{ textDecoration: "none" }}>
                     <Button sx={{ my: 2, color: "black", display: "block" }}>
-                      <span style={{ fontWeight: "600" }}>Login</span>
+                      <span className="sm:text-[1rem] text-[10px] font-bold">Login</span>
                     </Button>
                   </Link>
                   <Link to={"/signup"} style={{ textDecoration: "none" }}>
                     <Button sx={{ my: 2, color: "black", display: "block" }}>
-                      <span style={{ fontWeight: "600" }}>Sign Up</span>
+                      <span className="sm:text-[1rem] text-[10px] font-bold">Sign Up</span>
                     </Button>
                   </Link>
                 </>

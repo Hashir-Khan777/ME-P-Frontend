@@ -32,6 +32,17 @@ width: 100%;
 img{
   height: 34px;
 }
+
+${mobile`
+.logosize{
+  height: 50px;
+  width: 70px
+}
+img{
+  height: 24px;
+}
+`}
+
 `
 export const StyledImg = styled.div`
 display: flex;
