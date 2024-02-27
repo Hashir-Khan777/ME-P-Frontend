@@ -22,11 +22,10 @@ export const ParentContainer = styled.div`
 
 export const FlexParent = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: start;
   flex-wrap: wrap;
   margin-top: 2rem;
-  gap: 4rem;
   color: ${Theme.LIGHT_GREY_COLOR};
 
   ${mobile`
@@ -66,46 +65,49 @@ flex-direction: column;
 `;
 export const FlexParent1 = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: start;
   flex-wrap: wrap;
+  gap: 5.8rem;
   color: ${Theme.LIGHT_GREY_COLOR};
 
   ${mobile`
-
 flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
 `}
   ${tablet`
-
 flex-wrap: wrap;
-
 `}
 
 
     p {
-    font-size: medium;
+    font-size: 0.8rem;
+    line-height: 2.2;
   }
 
   .yellow {
     color: ${Theme.YELLOW};
     font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
   }
 `;
 
 export const FlexParent2 = styled.div`
-  display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
-  /* padding: 0px 22px; */
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   color: ${Theme.LIGHT_GREY_COLOR};
 
   img {
-    margin: 0px;
-    max-width: 70px;
+    margin: -18px;
+    max-width: 6rem;
     padding: 0px;
   }
 
