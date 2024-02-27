@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <>
       <ParentContainer>
-        <div className="max-w-[80%] block m-auto">
+        <div className="am:max-w-[80%] max-w-[90%] block m-auto">
           <FlexParent className="fontsize">
             <div>
               <p>
@@ -103,7 +103,7 @@ const Footer = () => {
 
           <FlexParent2>
             <div>
-              <p>2023 Copyright © ME&P.com</p>
+              <p className="sn:text-[1rem] text-[12px]">2023 Copyright © ME&P.com</p>
             </div>
             <div className="flex flex-wrap">
               <img src={payment1} alt="payment1" />

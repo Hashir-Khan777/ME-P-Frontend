@@ -51,20 +51,14 @@ line-height: 2;
   }
 
   ${mobile`
-      
+  p {
+    font-size: 0.6rem;
+  }
+  .logoimg {
+    max-width: 70px;
+    margin-bottom: 10px;
+  }
 
-    span{
-        display: none;
-        
-
-    }
-    `}
-  ${tablet`
-     
-
-    span{
-        display: none
-    }
     `}
 `;
 export const FlexParent1 = styled.div`
@@ -74,15 +68,7 @@ export const FlexParent1 = styled.div`
   gap: 5.8rem;
   color: ${Theme.LIGHT_GREY_COLOR};
 
-  ${mobile`
-justify-content: center;
-gap: 1;
-`}
-  ${tablet`
-`}
-
-
-    p {
+  p {
     font-size: 0.8rem;
     line-height: 2.2;
   }
@@ -94,6 +80,25 @@ gap: 1;
     letter-spacing: 1px;
     margin-bottom: 6px;
   }
+
+  ${mobile`
+justify-content: center;
+gap: 1rem;
+
+p {
+  font-size: 0.6rem;
+}
+
+.yellow {
+  font-size: 12px;
+}
+
+`}
+  ${tablet`
+`}
+
+
+   
 `;
 
 export const FlexParent2 = styled.div`
@@ -113,8 +118,9 @@ export const FlexParent2 = styled.div`
   ${mobile`
 
 flex-direction: column;
-img{
-  margin-top: 1rem;
+img {
+  max-width: 4rem;
+  margin-top: 6px;
 }
 `}
 `;
