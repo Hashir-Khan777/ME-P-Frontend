@@ -49,13 +49,10 @@ const FeatureEquipmentProducts = (props: any) => {
                                     <div className={styles.cardDayText}>per day</div>
                                 </div>
                                 <img className={styles.cardImage} src={item.image[0]} />
-                                {/* <div className={styles.cardCommentText}>
-                                    {item.comment}
-                                </div> */}
                                 <div className='flex flex-row justify-around'>
                                     <div>
-                                        <p className='text-[#fcb63a] text-[11px] font-semibold'>WEIGHT</p>
-                                        <p className='text-[#000] text-[11px] font-semibold'>5,842 Ibs</p>
+                                        <p className='text-[#fcb63a] sm:text-[11px] text-[9px] font-semibold'>WEIGHT</p>
+                                        <p className='text-[#000] sm:text-[11px] text-[9px] font-semibold'>5,842 Ibs</p>
                                     </div>
                                     <img
                                         className='w-[0.5px]'
@@ -63,8 +60,8 @@ const FeatureEquipmentProducts = (props: any) => {
                                         alt="line"
                                     />
                                     <div>
-                                        <p className='text-[#fcb63a] text-[11px] font-semibold'>WEIGHT</p>
-                                        <p className='text-[#000] text-[11px] font-semibold'>5,842 Ibs</p>
+                                        <p className='text-[#fcb63a] sm:text-[11px] text-[9px] font-semibold'>WEIGHT</p>
+                                        <p className='text-[#000] sm:text-[11px] text-[9px] font-semibold'>5,842 Ibs</p>
                                     </div>
                                     <img
                                         className='w-[0.5px]'
@@ -72,8 +69,8 @@ const FeatureEquipmentProducts = (props: any) => {
                                         alt="line"
                                     />
                                     <div>
-                                        <p className='text-[#fcb63a] text-[11px] font-semibold'>WEIGHT</p>
-                                        <p className='text-[#000] text-[11px] font-semibold'>5,842 Ibs</p>
+                                        <p className='text-[#fcb63a] sm:text-[11px] text-[9px] font-semibold'>WEIGHT</p>
+                                        <p className='text-[#000] sm:text-[11px] text-[9px] font-semibold'>5,842 Ibs</p>
                                     </div>
 
 

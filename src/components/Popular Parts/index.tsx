@@ -35,7 +35,7 @@ const PopularParts = () => {
   return (
     <>
       <div className="mx-auto relative">
-        <h1 className="text-[2.5rem] pt-[40px] ml-0 font-bold sm:ml-[100px] sm:pt-[100px] relative left-[3.6rem]">
+        <h1 className="md:text-[2.5rem] text-[1.5rem] pt-[40px] font-bold sm:pt-[100px] text-center">
           <span className="text-black">Popular {" "}</span>
           <span className="text-[#FFBA3F]">Parts :</span>
         </h1>
@@ -62,7 +62,7 @@ const PopularParts = () => {
                     </span>
                   </div>
                 </div>
-                <div className="mb-3 text-[0.7rem] text-[#3a3a3a] max-w-[90%] m-auto block leading-6">
+                <div className="mb-3 sm:text-[0.7rem] text-[0.6rem] text-[#3a3a3a] max-w-[90%] m-auto block leading-6">
                   <p>{e.description}</p>
                 </div>
                 <div>

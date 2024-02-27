@@ -28,7 +28,7 @@ max-width: 90%;
 ${mobile`
 h1{
 
-    font-size: 26px;
+    font-size: 1.5rem;
     padding: 0px;
     
     }
@@ -57,7 +57,7 @@ flex-direction: column;
 div{
     max-width: 120px;
     img{
-        max-width: 100%;
+        max-width: 70%;
     }
     
 }

@@ -80,8 +80,7 @@ export const FlexCard = styled.div`
     border-radius: 15px;
 
     ${mobile`
-    
-    max-width: 300px;
+    max-width: 16rem;
     `}
 
     .justifybtn{
@@ -114,6 +113,22 @@ export const FlexCard = styled.div`
     }
 }
 
+${mobile`
+.imgclass{
+    margin: 15px 15px 0px 15px  ;
+    border-radius: 10px;
+    width: 14rem;
+    display: block;
+    margin: auto;
+
+
+    img{
+
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+`}
 
 .bgyellow{
     background-color: ${Theme.YELLOW};
@@ -165,6 +180,9 @@ font-size: 0.8rem;
     color: ${Theme.BLACK_COLOR};
 background-color: ${Theme.WHITE_COLOR};
 }
+${mobile`
+font-size: 0.7rem;
+`}
 
 `
 
