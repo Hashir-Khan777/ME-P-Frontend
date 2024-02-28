@@ -407,4 +407,8 @@
         margin-top: 1rem;
         width: 100%;
     }
+    .reviewDiv .reviewImg {
+        width: 4rem;
+        height: 3rem;
+    }
 }
