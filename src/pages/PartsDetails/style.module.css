@@ -61,8 +61,6 @@
 
 .detailsDivChild {
     width: 25%;
-    /* height: 50px; */
-    /* background-color: blue; */
 }
 
 .userDetailsMainDiv {
@@ -400,5 +398,13 @@
     .userDetailsDiv h1 {
         font-size: 0.6rem;
         margin-left: 10px;
+    }
+    .detailsDiv {
+        width: 100%;
+        flex-direction: column;
+    }
+    .detailsDivChild {
+        margin-top: 1rem;
+        width: 100%;
     }
 }
