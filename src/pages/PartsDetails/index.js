@@ -32,7 +32,7 @@ export default function PartsDetails() {
 
   return (
     <div className={styles.container}>
-      <div className="max-w-[90%] m-auto block">
+      <div className="sm:max-w-[90%] max-w-[100%] m-auto block">
         <div className={styles.titleDiv}>
           Home / Parts / <span>{data.name}</span>
         </div>

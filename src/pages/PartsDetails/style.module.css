@@ -13,7 +13,7 @@
     width: 100;
     font-size: small;
     color: #807D7E;
-    margin-top: 15px;
+    margin-top: 2rem;
 }
 
 .titleDiv span {
@@ -186,7 +186,7 @@
     width: 70%;
     border: 1px solid #D8DFE0;
     border-radius: 3px;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     padding: 20px 15px;
@@ -229,7 +229,7 @@
     width: 70%;
     border: 1px solid #D8DFE0;
     border-radius: 3px;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
@@ -312,12 +312,10 @@
 
 .RelatedProductMapMainDiv {
     width: 100%;
-    /* background-color: green; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
-    /* margin-top: 40px; */
+    margin-bottom: 6.5rem;
 }
 
 .mapDiv {
@@ -363,4 +361,44 @@
     color: black;
     margin-left: 5%;
     margin-top: 7px;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 800px) {
+    .container{
+        padding: 0 1rem;
+    }
+    .productImgDiv, .priceDiv, .disDiv, .reviewDiv{
+        width: 100%;
+    }
+    .userDetailsDiv h1 {
+        font-size: 0.6rem;
+    }
+    .productDetailsDiv h1 {
+        font-size: 0.6rem;
+    }
+    .priceDiv h1 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .disDiv h1 {
+        font-size: 1rem;
+    }
+    .reviewDiv h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black;
+    }
+    .relatedProductDiv h1 {
+        font-size: 1.2rem;
+    }
+    .userDetailsDiv h1 {
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
 }
