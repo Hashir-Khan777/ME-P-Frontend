@@ -46,8 +46,8 @@ h1{
 p{
     color: #6D6E76;
     margin-bottom: 1rem;
-    font-size: 14px;
-    max-width: 80%;
+    font-size: 1rem;
+    max-width: 90%;
 }
 
 button{
@@ -73,12 +73,17 @@ h1{
     margin: 5px auto;
 }
 
+p{
+    font-size: 0.8rem;
+}
+
 min-height: 40vh;
 padding: 0px;
 background-image: none;
 max-width: 100%;
 position: relative;
 top: -4rem;
+
 
 `}
 

@@ -96,7 +96,7 @@ h1{
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
-    font-size: 13px;
+    font-size: 1rem;
 }
 
 
@@ -107,7 +107,7 @@ h1{
     font-size: 14px;
 }
 .styledGrey {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 
@@ -156,7 +156,7 @@ h1{
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
-    font-size: 13px;
+    font-size: 1rem;
 }
 
 
@@ -168,6 +168,9 @@ h1{
     font-size: 14px;
     letter-spacing: 1px;
     margin: 0px auto;
+}
+.styledGrey{
+    font-size: 0.8rem;
 }
 
 `}  

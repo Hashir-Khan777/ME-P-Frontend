@@ -10,7 +10,7 @@ const ContactHeading = () => {
                 <div className='flex flex-row'>
                     <span className='font-bold tracking-[1px] text-[2rem] my-[5px] mx-0 '> Let's Start a <span className="styledyellow">Conversation</span> </span></div>
                 <div>
-                    <p className='styledGrey text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    <p className='styledGrey'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
                 </div>
             </FlexParent>
         </>

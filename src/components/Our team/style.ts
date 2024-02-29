@@ -112,7 +112,7 @@ p {
     font-weight: 600;
 }
 .small-para{
-    font-size: 0.85rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
     font-weight: 500;
     max-width: 85%;
@@ -127,7 +127,7 @@ p {
     font-size: 14px;
 }
 .small-para{
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 `}
 

@@ -43,7 +43,7 @@ h1{
 p{
     color: ${Theme.CHANNEL_BLACK};
     margin: 0px;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 1.5px;
 }
@@ -66,6 +66,7 @@ h1{
     }
     p{
     text-align: center;
+    font-size:0.8rem
     }
 `}
 
@@ -85,18 +86,17 @@ background-color: ${Theme.WHITE_COLOR};
 
 p{
     color: ${Theme.DIM_GREY_COLOR};
-    font-size: 14px;
-    max-width: 80%;
+    font-size: 1rem;
+    max-width: 90%;
     position: relative;
     left: 3rem;
-    top: 3rem;
 }
 
 ${mobile`
     max-width: 100%;
     padding: 0px;
     p{
-    font-size: 12px;
+    font-size: 0.8rem;
         text-align: center;
         display: block;
         margin: auto;

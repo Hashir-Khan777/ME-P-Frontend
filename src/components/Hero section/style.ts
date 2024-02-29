@@ -60,7 +60,7 @@ text-align: center;
 
  }
  p{
-    font-size: 10px;
+    font-size: 0.8rem;
     line-height: 1.2rem;
     max-width: 60%;
     margin: auto;
