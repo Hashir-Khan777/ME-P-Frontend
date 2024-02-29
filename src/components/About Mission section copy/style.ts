@@ -126,6 +126,7 @@ h1{
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
+    font-size: 0.8rem;
 }
 
 
@@ -140,6 +141,10 @@ h1{
     line-height: 19px;
     letter-spacing: 0px;
     text-align: top;
+}
+
+.styledGrey{
+    font-size: 0.6rem;
 }
 
 
@@ -177,12 +182,12 @@ h1{
 }
 
 .styledyellow{
-
     color: ${Theme.YELLOW};
 }
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
+    font-size: 0.8rem;
 }
 
 
@@ -197,6 +202,9 @@ h1{
     line-height: 19px;
     letter-spacing: 0px;
     text-align: top;
+}
+.styledGrey{
+    font-size: 0.6rem;
 }
 
 `}  

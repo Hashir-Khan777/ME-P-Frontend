@@ -116,11 +116,11 @@ const RentalSlider = () => {
                 alt={e.name}
               />
             </a>
-            <div className="h-[6rem] relative bg-[#f4f5f7] w-full p-4 sm:top-[2.9rem] top-[0.83rem] leading-3">
+            <div className="h-[6rem] relative bg-[#f4f5f7] w-full p-4 sm:top-[2.85rem] rounded top-[0.82rem] leading-3">
               <p className="mb-3 text-[1rem] text-[#3a3a3a] font-semibold">
                 {e.name}
               </p>
-              <p className="mb-3 text-[0.6rem] font-600 text-gray2">
+              <p className="mb-3 text-[0.8rem] font-600 text-gray2">
                 {e.location}
               </p>
               <p className="mb-3 text-[0.8rem] text-[#3a3a3a] font-semibold">
