@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import React from "react";
-import { BrowseButton, Containerdiv, FlexCard, FlexParent, Styledbutton } from "./style";
+import { BrowseBtn, FlexCard, FlexParent, Styledbutton } from "./style";
 import f1 from "../../assets/f1.png";
 import f2 from "../../assets/f2.png";
 import f3 from "../../assets/f3.png";
@@ -69,10 +69,12 @@ const PopularParts = () => {
                   {" "}
                   <Styledbutton><b>EXPLORE</b></Styledbutton>
                 </div>
+
               </FlexCard>
             ))}
           </div>
         </div>
+        <BrowseBtn>BROWSE PARTS</BrowseBtn>
       </div>
     </>
   );

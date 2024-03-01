@@ -60,6 +60,31 @@ gap: 0px;
 
 `}
 `
+export const BrowseBtn = styled.div`
+
+margin: auto;
+width: 24vw;
+height: 8vh;
+color: #ffba3f;
+border: 0.5px solid #ffba3f;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 6px;
+background-color: white;
+font-weight: 600;
+margin-top: 14px;
+cursor: pointer;
+font-size: 12px;
+margin-top: 2rem;
+
+${mobile`
+width: 50vw;
+height: 5vh;
+font-size: 8px;
+margin-bottom: 1rem;
+`}
+`
 
 export const FlexCard = styled.div`
 

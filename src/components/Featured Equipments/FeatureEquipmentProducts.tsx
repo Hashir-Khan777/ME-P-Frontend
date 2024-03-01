@@ -87,6 +87,11 @@ const FeatureEquipmentProducts = (props: any) => {
                         );
                     })}
                 </div>
+                <div
+                    className={styles.browseBtn}
+                >
+                    BROWSE EQUIPMENT
+                </div>
             </div>
         </>
     )

@@ -58,7 +58,7 @@ const PopularCategories = () => {
 
   return (
     <>
-      <h1 className="md:text-[2.5rem] text-[1.5rem] pt-[40px] font-bold sm:pt-[100px] text-center">
+      <h1 className="md:text-[2.5rem] text-[1.5rem] mt-[40px] font-bold sm:mt-[8rem] text-center">
         <span className="text-black">Popular</span>{" "}
         <span className="text-[#FFBA3F]">Categories</span>
       </h1>
