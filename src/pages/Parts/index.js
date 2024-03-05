@@ -7,6 +7,10 @@ import { Slider } from "@mui/material";
 import UserPagination from "../../components/UserPagination";
 import { useNavigate } from "react-router-dom";
 import { data } from "./PartsData";
+import { IoMdClose } from "react-icons/io";
+import FilterSidebar from "../Rentals/FilterSidebar";
+import Header from "../Rentals/Header";
+
 const Parts = () => {
   const navigate = useNavigate();
   const [showFilter, setShowFilter] = useState(false);
@@ -42,17 +46,16 @@ const Parts = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.textDiv}>
-          <div className={styles.text1}>{`HOME > PARTS`}</div>
-          <div className={styles.text2}>Parts</div>
-          <div className={styles.text3}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </div>
-        </div>
+        <Header
+          title={"Parts"}
+          para={
+            "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          }
+          subTitle={"HOME > PARTS"}
+        />
         <div className={styles.containerTwo}>
           <div className={styles.secondDiv}>
-            {showFilter ? (
+            {/* {showFilter ? (
               <div className={styles.showFilterDiv}>
                 <div className={styles.showFilterDivOne}>
                   <span>Filter</span>
@@ -89,6 +92,31 @@ const Parts = () => {
                 <img
                   src={images.filter}
                   className={styles.hideFilterDivImg}
+                  onClick={() => setShowFilter(true)}
+                />
+                <hr className={styles.hideFilterDivHr} />
+              </div>
+            )} */}
+            {showFilter ? (
+              <>
+                <div className={styles.sidebarMobile}>
+                  <IoMdClose
+                    className={styles.closeIcon}
+                    onClick={() => setShowFilter(false)}
+                  />
+                  <FilterSidebar
+                    images={images}
+                    setShowFilter={setShowFilter}
+                    value={value}
+                    handleChange={handleChange}
+                  />
+                </div>
+              </>
+            ) : (
+              <div className={styles.hideFilterDiv}>
+                <img
+                  src={images.filter}
+                  className={"w-[22px] h-[24px] cursor-pointer"}
                   onClick={() => setShowFilter(true)}
                 />
                 <hr className={styles.hideFilterDivHr} />

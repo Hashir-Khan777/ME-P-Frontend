@@ -4,26 +4,26 @@ import styles from "./style.module.css";
 import images from "../../utils/Images";
 import { useNavigate } from "react-router-dom";
 
-const ProductsGridView = (props:any) => {
-    const {data} = props;
+const ProductsGridView = (props: any) => {
+    const { data } = props;
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(3);
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-    const handleNavigation = (item:any) => {
+    const handleNavigation = (item: any) => {
         const relatedProduct = data
-          .filter((obj:any) => obj.name === item.name)
-          .slice(0, 4);
+            .filter((obj: any) => obj.name === item.name)
+            .slice(0, 4);
         navigate(`details/${item._id}`, {
-          state: {
-            data: item,
-            relatedProduct,
-          },
+            state: {
+                data: item,
+                relatedProduct,
+            },
         });
-      };
-    
+    };
+
     return (
         <>
             <div className={styles.secondDivSecond}>
@@ -35,9 +35,11 @@ const ProductsGridView = (props:any) => {
                     <span>{`Showing ${currentPage}-${currentItems.length} of ${data?.length} results`}</span>
                 </div>
                 <div className={styles.mapMainDiv}>
-                    {currentItems.map((item:any, index:number) => {
+                    {currentItems.map((item: any, index: number) => {
                         return (
-                            <div key={index} className={styles.readDetailsCard}>
+                            <div key={index} className={styles.readDetailsCard} onClick={() => {
+                                handleNavigation(item);
+                            }}>
                                 <div className={styles.readDetailsCardRow}>
                                     <div className={styles.readDetailsCardRowRight}>
                                         <img
