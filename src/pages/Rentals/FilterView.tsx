@@ -4,6 +4,7 @@ import FilterSidebar from "./FilterSidebar";
 import styles from "./style.module.css";
 import images from "../../utils/Images";
 import { IoMdClose } from "react-icons/io";
+import ProductsGridView from './ProductsGridView';
 
 const FilterView = (props: any) => {
     const { data } = props
@@ -41,7 +42,7 @@ const FilterView = (props: any) => {
                             <hr className={styles.hideFilterDivHr} />
                         </div>
                     )}
-                    {/* <PartsGridView /> */}
+                    <ProductsGridView data={data} />
                 </div>
             </div>
         </>

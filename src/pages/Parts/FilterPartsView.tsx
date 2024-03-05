@@ -4,11 +4,9 @@ import styles from "./style.module.css";
 import images from "../../utils/Images";
 import { IoMdClose } from "react-icons/io";
 import FilterSidebar from '../Rentals/FilterSidebar';
-import { useNavigate } from "react-router-dom";
 import PartsGridView from './PartsGridView';
 
 const FilterPartsView = (props: any) => {
-  const navigate = useNavigate();
     const { data } = props
     const [showFilter, setShowFilter] = useState(false);
     const [value, setValue] = useState([0, 100]);
@@ -16,17 +14,6 @@ const FilterPartsView = (props: any) => {
         setValue(newValue);
     };
 
-    const handleNavigation = (item: any) => {
-        const relatedProduct = data
-          .filter((obj:any) => obj.name === item.name)
-          .slice(0, 4);
-        navigate(`Details/${item._id}`, {
-          state: {
-            data: item,
-            relatedProduct,
-          },
-        });
-      };
     
     return (
         <>

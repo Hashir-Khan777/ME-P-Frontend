@@ -192,7 +192,7 @@
 }
 
 .showFilterDiv {
-    width: 100%;
+    width: 25%;
     /* background-color: red; */
     margin-top: 40px;
 }
@@ -373,7 +373,83 @@
     .sidebarMobile {
         width: 30%;
     }
+    .mapDiv {
+        width: 30%;
+        background-color: #F4F5F7;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
     
+}
+
+@media (max-width: 768px) {
+    .mapDiv {
+        width: 40%;
+    }
+    .mapImg {
+        width: 85%;
+        height: 200px;
+    }
+    .mapMainDiv {
+        flex-direction: column;
+    }
+    .readDetailsCard{
+        margin-bottom: 2rem;
+        width: 75%;
+    }
+    .sidebarMobile {
+        width: 40%;
+    }
+    .searchInput {
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .searchInput::placeholder {
+        font-size: 12px;
+    }
+    .searchImg {
+        width: 14px;
+        height: 14px;
+    }
+    .searchDiv {
+        width: 35%;
+    }
+    .searchMainDiv {
+        position: relative;
+    }
+    .searchMainDiv span {
+        font-size: 10px;
+    }
+    .searchDiv{
+        position: relative;
+        left: 2rem;
+        top: 0.5rem;
+    }
+   
+    
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .secondDiv {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .secondDivSecond {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .searchDiv {
+        width: 30%;
+    }
+
+    .sidebarMobile {
+        width: 30%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -413,6 +489,4 @@
         left: 2rem;
         top: 0.5rem;
     }
-   
-    
 }
