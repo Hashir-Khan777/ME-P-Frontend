@@ -18,27 +18,12 @@ export default function Stores() {
               setTabName("newStores");
             }}
           >
-            NEW STORES
-          </Tab>
-          <Tab
-            className={
-              tabName === "exipredStores"
-                ? "storeTabBarBtn"
-                : "storeTabBarBtnWhite"
-            }
-            onClick={() => {
-              setTabName("exipredStores");
-            }}
-          >
-            EXPIRED STORES
+            STORES
           </Tab>
         </TabList>
 
         <TabPanel>
-          <NewStores name={"New Stores"} />
-        </TabPanel>
-        <TabPanel>
-          <ExpiredStores name={"Expired Stores"} />
+          <NewStores name={"Stores"} />
         </TabPanel>
       </Tabs>
     </div>

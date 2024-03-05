@@ -16,17 +16,19 @@ const AdminSidebar = () => {
         />
         <img src={images.sidebarLine} className="sidebarLine" />
         <Link
-          to={"/"}
-          className={`link ${location.pathname === "/" ? "active" : "link"}`}
+          to={"/admin/dashboard"}
+          className={`link ${
+            location.pathname === "/admin/dashboard" ? "active" : "link"
+          }`}
         >
           <img src={images.dashboardSidebar} className="sidebarImgsDashboard" />
           <span className="sideBarText">Dashboard</span>
         </Link>
 
         <Link
-          to={"/Stores"}
+          to={"/admin/Stores"}
           className={`link ${
-            location.pathname === "/Stores" ? "active" : "link"
+            location.pathname === "/admin/Stores" ? "active" : "link"
           }`}
         >
           <img src={images.dashboardStores} className="sidebarImgs" />
@@ -34,18 +36,18 @@ const AdminSidebar = () => {
         </Link>
 
         <Link
-          to={"/Earnings"}
+          to={"/admin/Earnings"}
           className={`link ${
-            location.pathname === "/Earnings" ? "active" : "link"
+            location.pathname === "/admin/Earnings" ? "active" : "link"
           }`}
         >
           <img src={images.dashboardEarnings} className="sidebarImgs" />
           <span className="sideBarText">Earnings</span>
         </Link>
         <Link
-          to={"/Querries"}
+          to={"/admin/Querries"}
           className={`link ${
-            location.pathname === "/Querries" ? "active" : "link"
+            location.pathname === "/admin/Querries" ? "active" : "link"
           }`}
         >
           <img src={images.dashboardQuerries} className="sidebarImgs" />
@@ -54,9 +56,9 @@ const AdminSidebar = () => {
 
         <div className="sidebarText3">ACCOUNT PAGES</div>
         <Link
-          to={"profile"}
+          to={"/admin/profile"}
           className={`link ${
-            location.pathname === "/profile" ? "active" : "link"
+            location.pathname === "/admin/profile" ? "active" : "link"
           }`}
         >
           <img src={images.profileSidebar} className="sidebarImgs" />

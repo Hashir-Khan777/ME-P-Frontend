@@ -63,7 +63,7 @@ const RentalModal = ({
 
   const getAllCategories = async () => {
     try {
-      const response = await HttpClient.get("/api/category/");
+      const response = await HttpClient.get("/category/");
       // console.log(response.data.categories);
       setAllCategory(response.data.categories);
     } catch (error) {

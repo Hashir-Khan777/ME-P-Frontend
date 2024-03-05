@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createStore } from "../actions/store.action";
+import { createStore, getStores } from "../actions/store.action";
 
 const initialState = {
   loading: false,
   store: {},
+  stores: [],
 };
 
 export default createSlice({
@@ -18,6 +19,16 @@ export default createSlice({
       state.store = payload;
     });
     builder.addCase(createStore.rejected, (state) => {
+      state.loading = false;
+    });
+    builder.addCase(getStores.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(getStores.fulfilled, (state, { payload }) => {
+      state.loading = false;
+      state.stores = payload;
+    });
+    builder.addCase(getStores.rejected, (state) => {
       state.loading = false;
     });
   },

@@ -49,7 +49,7 @@ const RentalSlider = () => {
 
   const getAllRental = async () => {
     try {
-      const response = await HttpClient.get("/api/rental/");
+      const response = await HttpClient.get("/rental/");
       console.log("rental res=--==-=-=-", response.data.rentals.length);
       setImageList(response.data.rentals);
     } catch (error) {
@@ -99,7 +99,7 @@ const RentalSlider = () => {
   return (
     <div className=" mx-auto relative " style={{ width: "100%" }}>
       <h1 className="sm:text-[2.5rem] text-[1.5rem] pt-[40px] ml-0 text-center font-bold sm:ml-[100px] sm:pt-[100px]">
-        <span className="text-black">Vehicles for {" "}</span>
+        <span className="text-black">Vehicles for </span>
         <span className="text-[#FFBA3F]">Rent:</span>
       </h1>
 

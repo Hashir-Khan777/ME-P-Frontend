@@ -12,7 +12,7 @@ import RentalSlider from "../../components/RentalSlider";
 const Home = () => {
   const getAllCategory = async () => {
     try {
-      const response = await HttpClient.get("/api/category/");
+      const response = await HttpClient.get("/category/");
       const categoriesForSet = response?.data?.categories.slice(0, 6);
     } catch (error) {
       console.log("allCategory-=-=-=-=error", error);

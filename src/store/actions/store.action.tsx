@@ -24,3 +24,22 @@ export const createStore: any = createAsyncThunk(
     }
   }
 );
+
+export const getStores: any = createAsyncThunk(
+  "store/get",
+  async (obj, { rejectWithValue, dispatch }) => {
+    try {
+      const { data } = await HttpClient.get("/store", {
+        headers: { Authorization: `Bearer ${cookies.get("_user")}` },
+      });
+      return data;
+    } catch (err: any) {
+      showErrorToast(
+        err.response.data.message ? err.response.data.message : err.message
+      );
+      return rejectWithValue(
+        err.response.data.message ? err.response.data.message : err.message
+      );
+    }
+  }
+);

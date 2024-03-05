@@ -3,6 +3,8 @@ import "./newStores.css";
 import images from "../../utils/Images";
 import Pagination from "../Pagination.js";
 import NewStoresModal from "../NewStoresModal";
+import { useDispatch, useSelector } from "react-redux";
+import { getStores } from "../../store/actions/store.action";
 
 export default function NewStores(props) {
   const { name } = props;
@@ -138,9 +140,14 @@ export default function NewStores(props) {
   const [itemsPerPage, setItemsPerPage] = useState(6);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
   const [open, setOpen] = React.useState(false);
   const [selectedItem, setSelectedItem] = useState();
+
+  const { stores } = useSelector((state) => state.StoreReducer);
+
+  const currentItems = stores.slice(indexOfFirstItem, indexOfLastItem);
+
+  const dispatch = useDispatch();
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -153,12 +160,7 @@ export default function NewStores(props) {
   const handleClose = () => setOpen(false);
 
   useEffect(() => {
-    console.log(name);
-    if (name === "Recent Stores") {
-      setItemsPerPage(6);
-    } else {
-      setItemsPerPage(6);
-    }
+    dispatch(getStores());
   }, []);
 
   return (
@@ -190,9 +192,9 @@ export default function NewStores(props) {
                   : "newStoresDataHeadingMainChild"
               }
             >
-              Plan
+              Address
             </div>
-            <div className="newStoresDataHeadingMainChild2">PRICE</div>
+            <div className="newStoresDataHeadingMainChild2">POSTAL CODE</div>
             <div
               className={
                 name === "Recent Stores"
@@ -219,10 +221,20 @@ export default function NewStores(props) {
                         : "newStoresDataMapMainChild"
                     }
                   >
-                    {item.storeId}
+                    {item._id}
+                  </div>
+                  <div className="newStoresDataMapMainChild2">{item.name}</div>
+                  <div
+                    className={
+                      name === "Recent Stores"
+                        ? "newStoresDataHeadingMainChildWithML"
+                        : "newStoresDataMapMainChild"
+                    }
+                  >
+                    {item.address}
                   </div>
                   <div className="newStoresDataMapMainChild2">
-                    {item.storeName}
+                    {item.postalCode}
                   </div>
                   <div
                     className={
@@ -231,17 +243,7 @@ export default function NewStores(props) {
                         : "newStoresDataMapMainChild"
                     }
                   >
-                    {item.plan}
-                  </div>
-                  <div className="newStoresDataMapMainChild2">{item.price}</div>
-                  <div
-                    className={
-                      name === "Recent Stores"
-                        ? "newStoresDataHeadingMainChildWithML"
-                        : "newStoresDataMapMainChild"
-                    }
-                  >
-                    {item.date}
+                    {new Date(item.createdAt).toLocaleString("en-CA")}
                   </div>
                   {name !== "Recent Stores" && (
                     <div

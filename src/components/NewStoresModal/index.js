@@ -41,7 +41,7 @@ const NewStoresModal = ({ open, onClose, title, selectedItem }) => {
                 Store ID:
               </div>
               <div className="newStoresModalContextDivChild1Text2">
-                {selectedItem?.storeId}
+                {selectedItem?._id}
               </div>
             </div>
             <div className="newStoresModalContextDivChild2">
@@ -49,7 +49,7 @@ const NewStoresModal = ({ open, onClose, title, selectedItem }) => {
                 Store Name:
               </div>
               <div className="newStoresModalContextDivChild1Text2">
-                {selectedItem?.storeName}
+                {selectedItem?.name}
               </div>
             </div>
             <div className="newStoresModalContextDivChild2">
@@ -79,7 +79,7 @@ const NewStoresModal = ({ open, onClose, title, selectedItem }) => {
             <div className="newStoresModalContextDivChild2">
               <div className="newStoresModalContextDivChild1Text1">Date:</div>
               <div className="newStoresModalContextDivChild1Text2">
-                {selectedItem?.date}
+                {new Date(selectedItem?.createdAt).toLocaleString("en-CA")}
               </div>
             </div>
           </div>
