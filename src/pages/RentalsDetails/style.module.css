@@ -42,7 +42,8 @@
 
 .productImg {
     width: 100%;
-    height: 80vh;
+    height: auto;
+
 }
 
 .leftImg {
@@ -95,14 +96,14 @@
 
 .userDetailsDiv h1 {
     color: black;
-    font-size: medium;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-left: 10px;
 }
 
 .userDetailsDiv h2 {
     color: #807D7E;
-    font-size: small;
+    font-size: 0.7rem;
     font-weight: 100;
     margin-left: 10px;
 }
@@ -114,6 +115,7 @@
     margin-left: 10px;
     cursor: pointer;
 }
+
 
 .addToCardBtn {
     width: 90%;
@@ -135,7 +137,7 @@
     /* height: 30px; */
     background-color: white;
     color: black;
-    font-size: small;
+    font-size: 12px;
     font-weight: 600;
     text-align: center;
     padding: 5px 0px;
@@ -151,8 +153,8 @@
 }
 
 .emailBtn img {
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 16px;
 }
 
 .addToCardBtn:active {
@@ -178,12 +180,12 @@
 
 .productDetailsDiv h1 {
     color: black;
-    font-size: medium;
+    font-size: 0.9rem;
     font-weight: 600;
-    /* background-color: aqua; */
-    width: 95%;
+    width: 90%;
     align-self: center;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .productDetailsDiv h2 {
@@ -194,9 +196,6 @@
     width: 90%;
     align-self: center;
     margin-bottom: 5px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 5px;
 }
 
 .productDetailsDiv h3 {
@@ -217,34 +216,37 @@
     color: black;
     font-size: small;
     font-weight: 500;
-    margin-left: 3px;
 }
+
 
 .add_idDiv {
     text-align: right;
     color: #525351;
     margin-top: 15px;
+    font-size: 0.9rem;
 }
 
 .priceDiv {
     width: 70%;
     border: 1px solid #D8DFE0;
     border-radius: 3px;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     padding: 20px 15px;
+    line-height: 1.8;
 }
 
 .priceDiv h1 {
-    font-size: medium;
+    font-size: 1.2rem;
     font-weight: 700;
     color: black;
     margin-left: 5px;
+    letter-spacing: 1px;
 }
 
 .priceDiv h2 {
-    font-size: medium;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #FFBA3F;
     margin-left: 5px;
@@ -263,7 +265,7 @@
 }
 
 .priceDivLocationDiv span {
-    font-size: small;
+    font-size: 0.8rem;
     color: black;
 }
 
@@ -271,14 +273,16 @@
     width: 70%;
     border: 1px solid #D8DFE0;
     border-radius: 3px;
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
+    line-height: 1.8;
 }
 
 .disDiv h1 {
-    font-size: medium;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     font-weight: 700;
     color: black;
 }
@@ -286,6 +290,7 @@
 .disDiv span {
     margin-top: 10px;
     white-space: pre-line;
+    font-size: 0.8rem;
 }
 
 .reviewDiv {
@@ -431,6 +436,21 @@
     padding: 16px 12px;
     margin-right: 2%;
 }
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .readDetailsCard {
+        width: 30%; 
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 1127px) {
+    .readDetailsCard {
+        width: 40%; 
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+}
 
 .readDetailsCardRow {
     display: flex;
@@ -518,4 +538,88 @@
 .locationDiv img {
     width: 30px;
     height: 20px;
+}
+
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .emailBtn {
+        font-size: 10px;
+        padding: 4px 0px;
+    }
+    
+    
+}
+
+@media (max-width: 800px) {
+    .container{
+        padding: 0 1rem;
+    }
+    .productImgDiv, .priceDiv, .disDiv, .reviewDiv{
+        width: 100%;
+    }
+    .userDetailsDiv h1 {
+        font-size: 0.6rem;
+    }
+    .productDetailsDiv h1 {
+        font-size: 0.6rem;
+    }
+    .priceDiv h1 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .disDiv h1 {
+        font-size: 1rem;
+    }
+    .reviewDiv h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black;
+    }
+    .relatedProductDiv h1 {
+        font-size: 1.2rem;
+    }
+    .userDetailsDiv h1 {
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+    .detailsDiv {
+        width: 100%;
+        flex-direction: column;
+    }
+    .detailsDivChild {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .reviewDiv .reviewImg {
+        width: 4rem;
+        height: 3rem;
+    }
+    .readDetailsCard {
+        width: 60%; 
+        margin-right: 0;
+        padding: 12px 8px;
+    }
+}
+@media (max-width: 768px) {
+    h1, .cardTextBold, .cardDayText {
+        font-size: smaller; /* Adjust font sizes */
+    }
+
+    .cardImage {
+        margin: 8px 0;
+    }
+
+    /* Adjust paddings and margins as needed */
+}
+
+@media (max-width: 480px) {
+    .container, .priceDiv, .disDiv, .userDetailsDiv, .productDetailsDiv {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .emailBtn, .addToCardBtn {
+        font-size: smaller; /* Adjust button font sizes */
+    }
 }
