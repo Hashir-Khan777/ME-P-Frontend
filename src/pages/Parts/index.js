@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import images from "../../utils/Images";
@@ -101,7 +102,7 @@ const Parts = () => {
                 </div>
                 <span>{`Showing ${currentPage}-${currentItems.length} of ${data?.length} results`}</span>
               </div>
-              <div className="flex flex-wrap justify-center mt-12 m-auto max-w-[100%] gap-10">
+              <div className="flex flex-wrap mt-12 max-w-[100%] gap-10 m-auto justify-center">
                 {currentItems.map((e, index) => {
                   return (
                     <div
@@ -113,7 +114,7 @@ const Parts = () => {
                     >
                       <a href="#">
                         <img
-                          className="sm:w-[8rem] sm:h-[8rem] w-[6rem] h-[6rem] object-cover m-auto block mt-12"
+                          className="sm:w-[14rem] sm:h-[8rem] w-[6rem] h-[6rem] object-cover m-auto block mt-12"
                           src={e.image[0]}
                         />
                       </a>
