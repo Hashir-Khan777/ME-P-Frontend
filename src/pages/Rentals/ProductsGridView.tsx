@@ -62,9 +62,7 @@ const ProductsGridView = (props:any) => {
                                 </div>
                                 <div
                                     className={styles.readDetailsBtn}
-                                    onClick={() => {
-                                        handleNavigation(item);
-                                    }}
+                                    onClick={() => navigate("/EquipmentDetails")}
                                 >
                                     Read Details
                                 </div>
