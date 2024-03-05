@@ -218,6 +218,7 @@ const ProductFilter = () => {
                     <Pagination count={3} variant="outlined" shape="rounded" />
                   </Stack>
                 </div>
+                
               </FlexParent>
             </div>
           </ChildFlex2>

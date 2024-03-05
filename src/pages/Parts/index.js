@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 import UserPagination from "../../components/UserPagination";
 import Header from "../Rentals/Header";
 import { data } from "./PartsData";
-import FilterView from "../Rentals/FilterView";
+import FilterPartsView from "./FilterPartsView";
 
 const Parts = () => {
 
@@ -18,6 +18,7 @@ const Parts = () => {
     setCurrentPage(pageNumber);
   };
 
+  
   return (
     <>
       <div className={styles.container}>
@@ -27,8 +28,9 @@ const Parts = () => {
             "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
           }
           subTitle={"HOME > PARTS"}
+
         />
-        <FilterView data={data} />
+        <FilterPartsView data={data} />
         <div className={styles.paginationDiv}>
           <UserPagination
             itemsPerPage={itemsPerPage}

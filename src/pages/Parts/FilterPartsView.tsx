@@ -1,17 +1,33 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react'
-import FilterSidebar from "./FilterSidebar";
 import styles from "./style.module.css";
 import images from "../../utils/Images";
 import { IoMdClose } from "react-icons/io";
+import FilterSidebar from '../Rentals/FilterSidebar';
+import { useNavigate } from "react-router-dom";
+import PartsGridView from './PartsGridView';
 
-const FilterView = (props: any) => {
+const FilterPartsView = (props: any) => {
+  const navigate = useNavigate();
     const { data } = props
     const [showFilter, setShowFilter] = useState(false);
     const [value, setValue] = useState([0, 100]);
     const handleChange = (event: any, newValue: any) => {
         setValue(newValue);
     };
+
+    const handleNavigation = (item: any) => {
+        const relatedProduct = data
+          .filter((obj:any) => obj.name === item.name)
+          .slice(0, 4);
+        navigate(`Details/${item._id}`, {
+          state: {
+            data: item,
+            relatedProduct,
+          },
+        });
+      };
+    
     return (
         <>
             <div className={styles.containerTwo}>
@@ -41,11 +57,11 @@ const FilterView = (props: any) => {
                             <hr className={styles.hideFilterDivHr} />
                         </div>
                     )}
-                    {/* <PartsGridView /> */}
+                    <PartsGridView data={data} />
                 </div>
             </div>
         </>
     )
 }
 
-export default FilterView
+export default FilterPartsView
