@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <>
       <ParentContainer>
-        <div className="am:max-w-[80%] max-w-[90%] block m-auto">
+        <div className="sm:max-w-[80%] max-w-[90%] block m-auto">
           <FlexParent className="fontsize">
             <div>
               <p>

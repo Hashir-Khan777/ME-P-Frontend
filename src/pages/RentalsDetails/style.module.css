@@ -478,7 +478,7 @@
 .cardTextBold {
     color: black;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .cardDayText {
@@ -495,7 +495,7 @@
 
 .cardCommentText {
     color: #8e8e8e;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .readDetailsBtn {
@@ -509,6 +509,7 @@
     color: white;
     font-weight: 600;
     margin-top: 14px;
+    font-size: 14px;
 }
 
 .locationDiv {
@@ -604,7 +605,7 @@
 }
 @media (max-width: 768px) {
     h1, .cardTextBold, .cardDayText {
-        font-size: smaller; /* Adjust font sizes */
+        font-size: 11px; /* Adjust font sizes */
     }
 
     .cardImage {
@@ -620,6 +621,6 @@
     }
 
     .emailBtn, .addToCardBtn {
-        font-size: smaller; /* Adjust button font sizes */
+        font-size: 11px; /* Adjust button font sizes */
     }
 }
