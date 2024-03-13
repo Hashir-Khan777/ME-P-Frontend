@@ -50,9 +50,9 @@ function ProductBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
               className='filter'
-              
+
             >
-               <p > <FilterAltIcon/> </p> <p><b>Filter</b></p>
+              <p > <FilterAltIcon /> </p> <p><b>Filter</b></p>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -69,7 +69,7 @@ function ProductBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none', },justifyContent:'space-around'
+                display: { xs: 'block', md: 'none', }, justifyContent: 'space-around'
               }}
             >
               {pages.map((page) => (
@@ -79,13 +79,13 @@ function ProductBar() {
               ))}
             </Menu>
           </Box>
-         
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent:'space-around', alignItems:'center', fontSize:'12px' }}>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-around', alignItems: 'center', fontSize: '12px' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ color: 'white', display: 'block',  }}
+                sx={{ color: 'white', display: 'block', }}
               >
                 {page}
               </Button>

@@ -19,7 +19,7 @@ const Home = () => {
     }
   };
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       <HeroSection />
       <AboutMission />
       <PopularCategories />

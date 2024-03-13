@@ -15,7 +15,7 @@ function UserPagination({
   );
 
   return (
-    <nav>
+    <nav className="mb-[4rem]">
       <ul className={styles.pagination}>
         {currentPage > 1 && (
           <li>
