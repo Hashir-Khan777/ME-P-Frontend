@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
-import { isFormValid } from "../../helpers";
+import { isEmpty, isFormValid } from "../../helpers";
 import {
   createEquipment,
   uploadEquipmentImages,
@@ -21,9 +21,12 @@ export default function AddEquipment() {
       description: "",
       condition: "",
       price: "",
+      store: "",
       images: [],
     },
   });
+
+  const { store } = useSelector((state) => state.StoreReducer);
 
   const { categories } = useSelector((state) => state.CategoryReducer);
   const { images } = useSelector((state) => state.EquipmentReducer);
@@ -80,6 +83,12 @@ export default function AddEquipment() {
       changeValue("images", images);
     }
   }, [images]);
+
+  useEffect(() => {
+    if (!isEmpty(store)) {
+      setForm({ ...form, data: { ...form.data, store: store?._id } });
+    }
+  }, [store]);
 
   return (
     <>

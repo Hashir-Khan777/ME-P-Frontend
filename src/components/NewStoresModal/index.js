@@ -3,6 +3,8 @@ import "./newStoresModal.css";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { useDispatch } from "react-redux";
+import { approveStore, getStores } from "../../store/actions/store.action";
 
 const style = {
   position: "absolute",
@@ -21,6 +23,14 @@ const NewStoresModal = ({ open, onClose, title, selectedItem }) => {
   //   console.log(selectedItem);
   //   const { date, plan, price, storeId, storeName } = selectedItem;
   //   console.log(storeName);
+  const dispatch = useDispatch();
+
+  const approve = () => {
+    dispatch(approveStore({ _id: selectedItem?._id }));
+    dispatch(getStores());
+    onClose();
+  };
+
   return (
     <Modal
       //   className="modalContainer"
@@ -54,26 +64,34 @@ const NewStoresModal = ({ open, onClose, title, selectedItem }) => {
             </div>
             <div className="newStoresModalContextDivChild2">
               <div className="newStoresModalContextDivChild1Text1">
+                Store Status:
+              </div>
+              <div className="newStoresModalContextDivChild1Text2">
+                {selectedItem?.approve ? "Approved" : "Not Approved"}
+              </div>
+            </div>
+            {/* <div className="newStoresModalContextDivChild2">
+              <div className="newStoresModalContextDivChild1Text1">
                 Membership Plan:
               </div>
               <div className="newStoresModalContextDivChild1Text2">
                 {selectedItem?.plan}
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="newStoresModalContextDiv">
-            <div className="newStoresModalContextDivChild1">
+            {/* <div className="newStoresModalContextDivChild1">
               <div className="newStoresModalContextDivChild1Text1">Price:</div>
               <div className="newStoresModalContextDivChild1Text2">
                 {selectedItem?.price}
               </div>
-            </div>
+            </div> */}
             <div className="newStoresModalContextDivChild2">
               <div className="newStoresModalContextDivChild1Text1">
-                Purchase Date:
+                Pricing Plan:
               </div>
               <div className="newStoresModalContextDivChild1Text2">
-                14/05/23
+                {selectedItem?.pricingPlan}
               </div>
             </div>
             <div className="newStoresModalContextDivChild2">
@@ -83,8 +101,31 @@ const NewStoresModal = ({ open, onClose, title, selectedItem }) => {
               </div>
             </div>
           </div>
-          <div className="newStoresModalBtn" onClick={onClose}>
-            Cancel
+          <div className="newStoresModalContextDiv">
+            <div className="newStoresModalContextDivChild2">
+              <div className="newStoresModalContextDivChild1Text1">
+                Payment Screen Shot:
+              </div>
+              <div className="newStoresModalContextDivChild1Text2">
+                <img src={selectedItem?.paymentScreenShot} />
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <div className="newStoresModalBtn" onClick={onClose}>
+              Cancel
+            </div>
+            {!selectedItem?.approve ? (
+              <div className="newStoresModalBtn" onClick={approve}>
+                Approve
+              </div>
+            ) : null}
           </div>
         </div>
       </Box>

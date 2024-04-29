@@ -40,7 +40,10 @@ const SearchBar = () => {
                       sx={{ color: "black", fontWeight: "100" }}
                       id="demo-simple-select-autowidth-label"
                     >
-                      <b className="inputLabel" style={{ fontWeight: "100" }}> Select</b>
+                      <b className="inputLabel" style={{ fontWeight: "100" }}>
+                        {" "}
+                        Select
+                      </b>
                     </InputLabel>
                     <Select
                       labelId="demo-simple-select-autowidth-label"
@@ -71,18 +74,20 @@ const SearchBar = () => {
         </FlexChild>
         <FlexChild>
           <div className="relative top-[-1.2rem]">
-            <p >Location</p>
+            <p>Location</p>
           </div>
 
           <div className="alignboth">
             <img
-            className="icon"
+              className="icon"
               src={location}
               alt="location"
               style={{ marginRight: "10px" }}
             />{" "}
             <span>
-              <b className="inputLabel"  style={{ fontWeight: "100" }}>Choose Location</b>
+              <b className="inputLabel" style={{ fontWeight: "100" }}>
+                Choose Location
+              </b>
             </span>
           </div>
         </FlexChild>

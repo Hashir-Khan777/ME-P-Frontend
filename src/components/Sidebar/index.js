@@ -32,15 +32,6 @@ const Sidebar = () => {
           }}
         > */}
         {/* <div className="sidebarChildernsInside"> */}
-        <Link
-          to={"/seller/category"}
-          className={`link ${
-            location.pathname === "/seller/category" ? "active" : "link"
-          }`}
-        >
-          <img src={images.categortSidebar} className="sidebarImgs" />
-          <span className="sideBarText">Category</span>
-        </Link>
         {/* <img src={images.categortSidebar} className="sidebarImgs" /> */}
         {/* <span className="sideBarText">Category</span> */}
         {/* {categoryMenu ? (
@@ -212,31 +203,31 @@ const Sidebar = () => {
         )} */}
 
         <Link
-          to={"Order"}
+          to={"/seller/order"}
           className={`link ${
-            location.pathname === "/Order" ? "active" : "link"
+            location.pathname === "/seller/order" ? "active" : "link"
           }`}
         >
           <img src={images.orderSidebar} className="sidebarImgs" />
-          <span className="sideBarText">Order</span>
+          <span className="sideBarText">Orders</span>
         </Link>
         <div className="sidebarText3">ACCOUNT PAGES</div>
         <Link
-          to={"profile"}
+          to={"/seller/profile"}
           className={`link ${
-            location.pathname === "/profile" ? "active" : "link"
+            location.pathname === "/seller/profile" ? "active" : "link"
           }`}
         >
           <img src={images.profileSidebar} className="sidebarImgs" />
           <span className="sideBarText">Profile</span>
         </Link>
-        <Link
+        {/* <Link
           // to={"/"}
           className={`link ${location.pathname === "" ? "active" : "link"}`}
         >
           <img src={images.paymentSidebar} className="sidebarImgs" />
           <span className="sideBarText">Payments</span>
-        </Link>
+        </Link> */}
         {/* <div
           className="sidebarChilderns2"
           onClick={() => {
@@ -270,24 +261,24 @@ const Sidebar = () => {
           </div>
         )} */}
         <Link
-          to={"/Reviews"}
+          to={"/seller/reviews"}
           className={`link ${
-            location.pathname === "/Reviews" ? "active" : "link"
+            location.pathname === "/seller/reviews" ? "active" : "link"
           }`}
         >
           <img src={images.manageReviewSidebar} className="sidebarImgs" />
-          <span className="sideBarText">Review</span>
+          <span className="sideBarText">Reviews</span>
         </Link>
         {/* <div className="sidebarChilderns">
           <img src={images.manageReviewSidebar} className="sidebarImgs" />
           <span className="sideBarText">Manage Review</span>
         </div> */}
-        <div className="sidebarDoscDiv">
+        {/* <div className="sidebarDoscDiv">
           <img src={images.sidebarDocsImg} className="sidebarDocsImg" />
           <span className="sidebarDocsText">Need help?</span>
           <span className="sidebarDocsText2">Please check our docs</span>
           <button className="sidebarDocsBtn">DOCUMENTATION</button>
-        </div>
+        </div> */}
       </div>
     </>
   );

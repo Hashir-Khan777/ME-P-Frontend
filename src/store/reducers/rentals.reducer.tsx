@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
   createRental,
+  getRentalById,
   getRentals,
   uploadRentalImages,
 } from "../actions/rentals.action";
@@ -44,6 +45,16 @@ export default createSlice({
       state.images = payload;
     });
     builder.addCase(uploadRentalImages.rejected, (state) => {
+      state.loading = false;
+    });
+    builder.addCase(getRentalById.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(getRentalById.fulfilled, (state, { payload }) => {
+      state.loading = false;
+      state.rental = payload;
+    });
+    builder.addCase(getRentalById.rejected, (state) => {
       state.loading = false;
     });
   },

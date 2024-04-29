@@ -57,3 +57,20 @@ export const getRentals = createAsyncThunk(
     }
   }
 );
+
+export const getRentalById = createAsyncThunk(
+  "rental/get/id",
+  async (obj: any, { rejectWithValue, dispatch }) => {
+    try {
+      const { data } = await HttpClient.get(`/rental/${obj._id}`);
+      return data;
+    } catch (err: any) {
+      showErrorToast(
+        err.response.data.message ? err.response.data.message : err.message
+      );
+      return rejectWithValue(
+        err.response.data.message ? err.response.data.message : err.message
+      );
+    }
+  }
+);

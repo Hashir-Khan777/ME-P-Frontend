@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFBA3F;
+  background: #ffba3f;
   border-radius: 13px;
   width: 5px;
 }
@@ -21,15 +21,14 @@
   background-color: #cd9533;
 }
 
-
 /* ::-webkit-scrollbar-thumb:hover {
   width: 10px;
 } */
 
 .mainContainer {
-  background-color: #F8F9FA;
-  min-height: 100vh;
-  width: 100%;
+  background-color: #f8f9fa;
+  /* height: 100vh; */
+  /* width: 100vw; */
   display: flex;
   flex-direction: row;
 }

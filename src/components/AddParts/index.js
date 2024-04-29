@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
-import { isFormValid } from "../../helpers";
+import { isEmpty, isFormValid } from "../../helpers";
 import { createPart, uploadPartImages } from "../../store/actions/parts.action";
 import { getCategories } from "../../store/actions/category.action";
 
@@ -15,9 +15,12 @@ export default function AddParts() {
       location: "",
       condition: "",
       description: "",
+      store: "",
       images: [],
     },
   });
+
+  const { store } = useSelector((state) => state.StoreReducer);
 
   const { categories } = useSelector((state) => state.CategoryReducer);
   const { images } = useSelector((state) => state.PartReducer);
@@ -71,6 +74,12 @@ export default function AddParts() {
       changeValue("images", images);
     }
   }, [images]);
+
+  useEffect(() => {
+    if (!isEmpty(store)) {
+      setForm({ ...form, data: { ...form.data, store: store?._id } });
+    }
+  }, [store]);
 
   return (
     <>

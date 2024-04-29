@@ -41,11 +41,28 @@ export const uploadPartImages = createAsyncThunk(
   }
 );
 
-export const getParts = createAsyncThunk(
+export const getParts: any = createAsyncThunk(
   "part/get",
   async (obj, { rejectWithValue, dispatch }) => {
     try {
       const { data } = await HttpClient.get("/part");
+      return data;
+    } catch (err: any) {
+      showErrorToast(
+        err.response.data.message ? err.response.data.message : err.message
+      );
+      return rejectWithValue(
+        err.response.data.message ? err.response.data.message : err.message
+      );
+    }
+  }
+);
+
+export const getPartById: any = createAsyncThunk(
+  "part/get/id",
+  async (obj: any, { rejectWithValue, dispatch }) => {
+    try {
+      const { data } = await HttpClient.get(`/part/${obj._id}`);
       return data;
     } catch (err: any) {
       showErrorToast(

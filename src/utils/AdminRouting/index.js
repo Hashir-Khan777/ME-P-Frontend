@@ -7,12 +7,14 @@ import AdminProfile from "../../pages/AdminProfile";
 import Stores from "../../pages/Stores";
 import Querries from "../../pages/Querries";
 import Earnings from "../../pages/Earnings";
+import Category from "../../pages/AddCategory";
 
 const AdminRouting = () => {
   const routeTitles = {
     "/admin/dashboard": "Admin",
     "/admin/profile": "Syed Ahsan",
     "/admin/Stores": "Stores",
+    "/admin/category": "Category",
     "/admin/Querries": "Querries",
     "/admin/Earnings": "Earnings",
   };
@@ -39,6 +41,14 @@ const AdminRouting = () => {
             element={
               <>
                 <AdminProfile />
+              </>
+            }
+          />
+          <Route
+            path="/admin/category"
+            element={
+              <>
+                <Category />
               </>
             }
           />

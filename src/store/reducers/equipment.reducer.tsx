@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
   createEquipment,
+  getEquipmentById,
   getEquipments,
   uploadEquipmentImages,
 } from "../actions/equipment.action";
@@ -44,6 +45,16 @@ export default createSlice({
       state.images = payload;
     });
     builder.addCase(uploadEquipmentImages.rejected, (state) => {
+      state.loading = false;
+    });
+    builder.addCase(getEquipmentById.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(getEquipmentById.fulfilled, (state, { payload }) => {
+      state.loading = false;
+      state.equipment = payload;
+    });
+    builder.addCase(getEquipmentById.rejected, (state) => {
       state.loading = false;
     });
   },

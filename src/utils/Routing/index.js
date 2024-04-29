@@ -20,12 +20,11 @@ const Routing = () => {
   const routeTitles = {
     "/seller/dashboard": "Dashboard",
     "/seller/equipment": "Equipment",
-    "/seller/category": "Category",
     "/seller/rental": "Rental",
     "/seller/parts": "Parts",
     "/seller/profile": "Profile",
-    "/seller/Order": "Order",
-    "/seller/Reviews": "Reviews",
+    "/seller/order": "Order",
+    "/seller/reviews": "Reviews",
   };
   const location = useLocation();
   const currentPath = location.pathname;
@@ -41,14 +40,6 @@ const Routing = () => {
             element={
               <>
                 <Dashboard />
-              </>
-            }
-          />
-          <Route
-            path="/seller/category"
-            element={
-              <>
-                <Category />
               </>
             }
           />
@@ -85,7 +76,7 @@ const Routing = () => {
             }
           />
           <Route
-            path="/seller/Order"
+            path="/seller/order"
             element={
               <>
                 <NewOrderScreen />
@@ -93,7 +84,7 @@ const Routing = () => {
             }
           />
           <Route
-            path="/seller/Reviews"
+            path="/seller/reviews"
             element={
               <>
                 <Reviews />

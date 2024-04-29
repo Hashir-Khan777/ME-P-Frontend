@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
   createPart,
+  getPartById,
   getParts,
   uploadPartImages,
 } from "../actions/parts.action";
@@ -44,6 +45,16 @@ export default createSlice({
       state.images = payload;
     });
     builder.addCase(uploadPartImages.rejected, (state) => {
+      state.loading = false;
+    });
+    builder.addCase(getPartById.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(getPartById.fulfilled, (state, { payload }) => {
+      state.loading = false;
+      state.part = payload;
+    });
+    builder.addCase(getPartById.rejected, (state) => {
       state.loading = false;
     });
   },

@@ -93,7 +93,7 @@ const MembershipPlan = () => {
                   </p>
                 </div>
                 <div>
-                  <Link to="/createstore">
+                  <Link to={`/createstore/${e.title}`}>
                     <button style={{ backgroundColor: e.bg1 }}>
                       <b>Get Started</b>
                     </button>

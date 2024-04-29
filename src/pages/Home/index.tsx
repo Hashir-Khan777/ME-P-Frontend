@@ -10,16 +10,8 @@ import HttpClient from "../../services/http-client";
 import RentalSlider from "../../components/RentalSlider";
 
 const Home = () => {
-  const getAllCategory = async () => {
-    try {
-      const response = await HttpClient.get("/category/");
-      const categoriesForSet = response?.data?.categories.slice(0, 6);
-    } catch (error) {
-      console.log("allCategory-=-=-=-=error", error);
-    }
-  };
   return (
-    <div className="overflow-hidden">
+    <div>
       <HeroSection />
       <AboutMission />
       <PopularCategories />

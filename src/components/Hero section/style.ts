@@ -11,7 +11,6 @@ export const ParentFlex = styled.div`
   background-color: ${Theme.LIGHT_GREY};
   max-width: 100%;
   padding: 0px 10px;
-  overflow: hidden;
 
   ${mobile`
 height: 50vh;
@@ -26,8 +25,6 @@ height: 85vh;
 export const FlexChild1 = styled.div`
   max-width: 40%;
   text-align: left;
-  position: relative;
-  top: -2rem;
 
   h1 {
     font-size: 3.5rem;
@@ -97,12 +94,6 @@ export const FlexChild2 = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 70vh;
-  img {
-    width: 100vw;
-    position: relative;
-    left: 2rem;
-    top: -4rem;
-  }
 
   ${mobile`
 

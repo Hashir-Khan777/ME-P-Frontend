@@ -22,7 +22,7 @@ import { auth } from "../../utils/firebase/auth";
 import { signOut } from "firebase/auth";
 import ProductBar from "../Product Bar";
 import { useDispatch, useSelector } from "react-redux";
-import { verifyUser, logout } from "../../store/actions/auth.action";
+import { logout } from "../../store/actions/auth.action";
 import Cookies from "universal-cookie";
 
 const pages = ["About", "Equipment", "Parts", "Rentals", "Contact"];
@@ -62,12 +62,6 @@ function ResponsiveAppBar() {
   };
 
   const token = cookies.get("_user");
-
-  React.useEffect(() => {
-    if (token) {
-      dispatch(verifyUser());
-    }
-  }, [dispatch, token]);
 
   return (
     <>
@@ -190,12 +184,16 @@ function ResponsiveAppBar() {
                 <>
                   <Link to={"/login"} style={{ textDecoration: "none" }}>
                     <Button sx={{ my: 2, color: "black", display: "block" }}>
-                      <span className="sm:text-[1rem] text-[10px] font-bold">Login</span>
+                      <span className="sm:text-[1rem] text-[10px] font-bold">
+                        Login
+                      </span>
                     </Button>
                   </Link>
                   <Link to={"/signup"} style={{ textDecoration: "none" }}>
                     <Button sx={{ my: 2, color: "black", display: "block" }}>
-                      <span className="sm:text-[1rem] text-[10px] font-bold">Sign Up</span>
+                      <span className="sm:text-[1rem] text-[10px] font-bold">
+                        Sign Up
+                      </span>
                     </Button>
                   </Link>
                 </>

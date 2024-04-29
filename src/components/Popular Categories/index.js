@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getEquipments } from "../../store/actions/equipment.action";
-import { getRentals } from "../../store/actions/rentals.action";
-import { getParts } from "../../store/actions/parts.action";
 import cranes from "../../assets/Cranes.png";
 import dozers from "../../assets/Dozers.png";
 import loaders from "../../assets/Loaders.png";
@@ -12,16 +9,6 @@ import roller from "../../assets/Roller Compactor.png";
 
 const PopularCategories = () => {
   const dispatch = useDispatch();
-
-  const { equipments } = useSelector((state) => state.EquipmentReducer);
-  const { rentals } = useSelector((state) => state.RentalReducer);
-  const { parts } = useSelector((state) => state.PartReducer);
-
-  useEffect(() => {
-    dispatch(getEquipments());
-    dispatch(getRentals());
-    dispatch(getParts());
-  }, [dispatch]);
 
   const products = [
     {

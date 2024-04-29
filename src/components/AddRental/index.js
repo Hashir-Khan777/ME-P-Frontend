@@ -6,7 +6,7 @@ import "react-calendar/dist/Calendar.css";
 import "react-clock/dist/Clock.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getCategories } from "../../store/actions/category.action";
-import { isFormValid } from "../../helpers";
+import { isEmpty, isFormValid } from "../../helpers";
 import {
   createRental,
   uploadRentalImages,
@@ -29,9 +29,12 @@ export default function AddRental() {
       reserved: false,
       images: [],
       available_from: "",
+      store: "",
       end_date: "",
     },
   });
+
+  const { store } = useSelector((state) => state.StoreReducer);
 
   const { categories } = useSelector((state) => state.CategoryReducer);
   const { images } = useSelector((state) => state.RentalReducer);
@@ -101,6 +104,12 @@ export default function AddRental() {
       changeValue("images", images);
     }
   }, [images]);
+
+  useEffect(() => {
+    if (!isEmpty(store)) {
+      setForm({ ...form, data: { ...form.data, store: store?._id } });
+    }
+  }, [store]);
 
   return (
     <>

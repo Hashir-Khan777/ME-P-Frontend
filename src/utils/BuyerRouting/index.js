@@ -62,7 +62,7 @@ const BuyerRouting = () => {
             }
           />
           <Route
-            path="Parts/Details/:_id"
+            path="part/details/:_id"
             element={
               <>
                 <PartsDetails />
@@ -70,7 +70,7 @@ const BuyerRouting = () => {
             }
           />
           <Route
-            path="Rentals/details/:_id"
+            path="rental/details/:_id"
             element={
               <>
                 <RentalsDetails />
@@ -78,7 +78,7 @@ const BuyerRouting = () => {
             }
           />
           <Route
-            path="Equipment/detail/:_id"
+            path="equipment/details/:_id"
             element={
               <>
                 <EquipmentDetails />
@@ -136,7 +136,7 @@ const BuyerRouting = () => {
           />
           <Route path="login" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
-          <Route path="createstore" element={<CreateStore />} />
+          <Route path="createstore/:plan" element={<CreateStore />} />
         </Routes>
       </div>
     </div>

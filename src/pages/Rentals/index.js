@@ -1,13 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import UserPagination from "../../components/UserPagination";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import FilterView from "./FilterView";
 import { data } from "./ProductsData";
+import { getRentals } from "../../store/actions/rentals.action";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 const Rentals = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { rentals } = useSelector((state) => state.RentalReducer);
 
   const [value, setValue] = useState([0, 100]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,7 +26,10 @@ const Rentals = () => {
     setCurrentPage(pageNumber);
   };
 
-  console.log(value);
+  useEffect(() => {
+    dispatch(getRentals());
+  }, [dispatch]);
+
   return (
     <>
       <div className={styles.container}>
@@ -31,7 +40,7 @@ const Rentals = () => {
           }
           subTitle={"HOME > RENTALS"}
         />
-        <FilterView data={data} />
+        <FilterView data={rentals} />
         <div className={styles.paginationDiv}>
           <UserPagination
             itemsPerPage={itemsPerPage}

@@ -9,11 +9,7 @@ const AdminSidebar = () => {
   return (
     <>
       <div className="sidebar">
-        <img
-          src={images.Logo}
-          className="sidebarLogoImg"
-          onClick={() => navigate("/")}
-        />
+        <img src={images.Logo} className="sidebarLogoImg" />
         <img src={images.sidebarLine} className="sidebarLine" />
         <Link
           to={"/admin/dashboard"}
@@ -33,6 +29,16 @@ const AdminSidebar = () => {
         >
           <img src={images.dashboardStores} className="sidebarImgs" />
           <span className="sideBarText">Stores</span>
+        </Link>
+
+        <Link
+          to={"/admin/category"}
+          className={`link ${
+            location.pathname === "/admin/category" ? "active" : "link"
+          }`}
+        >
+          <img src={images.categortSidebar} className="sidebarImgs" />
+          <span className="sideBarText">Category</span>
         </Link>
 
         <Link
@@ -64,13 +70,13 @@ const AdminSidebar = () => {
           <img src={images.profileSidebar} className="sidebarImgs" />
           <span className="sideBarText">Profile</span>
         </Link>
-        <Link
+        {/* <Link
           // to={"/"}
           className={`link ${location.pathname === "" ? "active" : "link"}`}
         >
           <img src={images.paymentSidebar} className="sidebarImgs" />
           <span className="sideBarText">Payments</span>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

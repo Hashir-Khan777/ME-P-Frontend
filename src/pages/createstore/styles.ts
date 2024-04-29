@@ -26,6 +26,8 @@ const styles = {
     color: "black",
     fontWeight: "bold",
   },
+  boldHeading: { fontWeight: 600 },
+  paymentFlexBox: { display: "flex", alignItems: "center", gap: "10px" },
 };
 
 export default styles;

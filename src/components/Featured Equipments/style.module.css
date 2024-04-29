@@ -1,172 +1,164 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .secondDivSecond {
-    width: 90%;
-    box-sizing: border-box;
-    padding-bottom: 40px;
-    display: block;
-    margin: auto;
+  width: 90%;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  display: block;
+  margin: auto;
 }
-
 
 .mapMainDiv {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; 
-    margin-top: 40px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto; 
-    gap: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
 }
 
-
-
-
 .readDetailsCard {
-    background-color: #ffffff;
-    width: 30%;
-    box-shadow: 3px 3px 5px 0px rgb(231, 231, 231);
-    border-radius: 12px;
-    padding: 16px 12px;
+  background-color: #ffffff;
+  width: 30%;
+  box-shadow: 3px 3px 5px 0px rgb(231, 231, 231);
+  border-radius: 12px;
+  padding: 16px 12px;
 }
 
 .readDetailsCardRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
 }
 
 .readDetailsCardRowRight {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .cardLocationImg {
-    height: 12px;
-    width: 12px;
+  height: 12px;
+  width: 12px;
 }
 
 .cardLocationText {
-    color: #898989;
-    font-size: 10px;
-
+  color: #898989;
+  font-size: 10px;
 }
 
 .cardTextBold {
-    color: black;
-    font-weight: 700;
-    font-size: 10px;
+  color: black;
+  font-weight: 700;
+  font-size: 10px;
 }
 
 .cardDayText {
-    color: #979797;
-    font-weight: 600;
-    font-size: 10px;
+  color: #979797;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 .cardImage {
-    width: 100%;
-    height: auto;
-    margin: 12px 0px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin: 12px 0px;
+  border-radius: 12px;
 }
 
 .cardCommentText {
-    color: #8e8e8e;
-    font-size: 10px;
+  color: #8e8e8e;
+  font-size: 10px;
 }
 
 .readDetailsBtn {
-    width: 100%;
-    height: 32px;
-    background-color: #ffba3f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    color: white;
-    font-weight: 600;
-    margin-top: 14px;
-    cursor: pointer;
-    font-size: 12px;
+  width: 100%;
+  height: 32px;
+  background-color: #ffba3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  margin-top: 14px;
+  cursor: pointer;
+  font-size: 12px;
 }
 .browseBtn {
-    margin: auto;
-    width: 24vw;
-    height: 8vh;
-    color: #ffba3f;
-    border: 0.5px solid #ffba3f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background-color: white;
-    font-weight: 600;
-    margin-top: 14px;
-    cursor: pointer;
-    font-size: 12px;
-    margin-top: 2rem;
+  margin: auto;
+  width: 24vw;
+  height: 8vh;
+  color: #ffba3f;
+  border: 0.5px solid #ffba3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 14px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 2rem;
 }
 
 /* Media Queries for Tablet and Mobile */
 @media (max-width: 1024px) {
-    .secondDiv {
-        flex-direction: column;
-        padding-top: 20px;
-    }
+  .secondDiv {
+    flex-direction: column;
+    padding-top: 20px;
+  }
 
-    .secondDivSecond {
-        width: 100%;
-        padding: 0 15px;
-        margin-top: 20px;
-    }
-
-   
-    
+  .secondDivSecond {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    .mapMainDiv {
-        flex-direction: column;
-        gap: 0;
-        max-width: 100%;
-
-    }
-    .secondDivSecond {
-        padding: 0;
-    }
-    .readDetailsCard{
-        margin-bottom: 2rem;
-        width: 65%;
-    }
-    .readDetailsBtn {
-        height: 22px;
-        font-size: 10px;
-    }   
-    .cardLocationText {
-        font-size: 8px;
-    }
-    .cardTextBold {
-        font-size: 8px;
-    }
-    .cardDayText {
-        font-size: 8px;
-    }
-    .browseBtn {
-        width: 50vw;
-        height: 5vh;
-        font-size: 8px;
-        margin-bottom: 1rem;
-    }
-    
+  .mapMainDiv {
+    flex-direction: column;
+    gap: 0;
+    max-width: 100%;
+  }
+  .secondDivSecond {
+    padding: 0;
+  }
+  .readDetailsCard {
+    margin-bottom: 2rem;
+    width: 65%;
+  }
+  .readDetailsBtn {
+    height: 22px;
+    font-size: 10px;
+  }
+  .cardLocationText {
+    font-size: 8px;
+  }
+  .cardTextBold {
+    font-size: 8px;
+  }
+  .cardDayText {
+    font-size: 8px;
+  }
+  .browseBtn {
+    width: 50vw;
+    height: 5vh;
+    font-size: 8px;
+    margin-bottom: 1rem;
+  }
 }

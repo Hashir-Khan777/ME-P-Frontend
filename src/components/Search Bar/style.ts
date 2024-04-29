@@ -15,8 +15,6 @@ export const FlexBox = styled.div`
   padding: 10px 15px;
   border-radius: 50px;
   box-shadow: ${Theme.BOX_SHADOW};
-  position: relative;
-  top: -9rem;
 
   ${tablet`
     max-width:95%;
