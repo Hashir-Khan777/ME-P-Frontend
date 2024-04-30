@@ -5,11 +5,11 @@ const RentalCard = ({ item }) => {
   return (
     <div
       key={item._id}
-      className="sm:w-[15rem] w-[12rem] mb-10  max-w-sm bg-white border border-[#b9b8b9] rounded"
+      className="sm:w-80 w-3/4 mb-10 max-h-2/4 bg-white border border-[grey] rounded"
     >
       <Link to={`/rental/details/${item._id}`}>
         <img
-          className="sm:h-[8rem] h-[8rem] object-cover w-full"
+          className="sm:h-84 h-64 object-cover w-full"
           src={item.images[0]}
           alt={item.rental_name}
         />

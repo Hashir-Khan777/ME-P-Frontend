@@ -26,6 +26,7 @@ export const FlexParent = styled.div`
   align-items: start;
   flex-wrap: wrap;
   margin-top: 2rem;
+  gap:10px;
   line-height: 3;
   color: ${Theme.LIGHT_GREY_COLOR};
 
@@ -33,16 +34,17 @@ export const FlexParent = styled.div`
 flex-direction: column;
 `}
   ${tablet`
+flex-direction: column;
 line-height: 2;
 `}
 
   p {
-    font-size: 0.8rem;
+    font-size: 12px;
     color: #d4d4d4;
   }
 
-  .logoimg {
-    max-width: 100px;
+  .logoimg {'
+  max-width: 100px;
   }
 
   .SocialMedia {
@@ -52,11 +54,10 @@ line-height: 2;
 
   ${mobile`
   p {
-    font-size: 0.6rem;
+    font-size: 12px;
   }
   .logoimg {
     max-width: 70px;
-    margin-bottom: 10px;
   }
 
     `}
@@ -65,11 +66,15 @@ export const FlexParent1 = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: start;
-  gap: 5.8rem;
+  flex-wrap: wrap;
   color: ${Theme.LIGHT_GREY_COLOR};
 
+  .flexChild {
+    width: 180px;
+  }
+
   p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 2.2;
   }
 
@@ -82,11 +87,16 @@ export const FlexParent1 = styled.div`
   }
 
   ${mobile`
-justify-content: center;
+justify-content: start;
 gap: 1rem;
 
 p {
-  font-size: 0.6rem;
+  font-size: 12px;
+}
+
+.flexChild{
+  padding:10px 20px;
+  width:300px
 }
 
 .yellow {
@@ -94,11 +104,13 @@ p {
 }
 
 `}
+
   ${tablet`
+.flexChild{
+width:250px;
+
+}
 `}
-
-
-   
 `;
 
 export const FlexParent2 = styled.div`

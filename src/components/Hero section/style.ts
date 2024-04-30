@@ -7,13 +7,15 @@ export const ParentFlex = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 90vh;
+  height: 105vh;
   background-color: ${Theme.LIGHT_GREY};
   max-width: 100%;
   padding: 0px 10px;
+  margin-bottom: 40px;
 
   ${mobile`
 height: 50vh;
+margin-bottom: 20px ;
 
 
 `}
@@ -27,7 +29,7 @@ export const FlexChild1 = styled.div`
   text-align: left;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-left: 50px;
     font-weight: 900;
     color: #313131;
@@ -47,21 +49,22 @@ export const FlexChild1 = styled.div`
   ${mobile`
 top: 0;
 max-width: 100%;
-text-align: center; 
+text-align: center;
+ 
 
  h1{
     font-size: 1.5rem;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin: 20px auto;
     line-height: 2rem;
 
  }
- p{
-    font-size: 0.8rem;
+ p{  
+    font-size: 0.9rem;
     line-height: 1.2rem;
-    max-width: 60%;
-    margin: auto;
+    width: 100%;    
     display: block;
+    margin:auto;
+
  }
 
 
@@ -73,11 +76,15 @@ text-align: center;
 margin-bottom: 10px;
 
  h1{
-    font-size: 60px;
-    margin-top: 0px;
+    font-size: 50px;
+    width:60%;
+    margin:auto;
+    margin-bottom:30px;
  }
  p{
-    font-size: 16px;
+    font-size: 18px;
+    width:70%;
+    margin:auto;
  }
 `}
 `;

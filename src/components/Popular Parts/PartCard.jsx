@@ -27,8 +27,8 @@ const PartCard = ({ item }) => {
           </span>
         </div>
       </div>
-      <div className="mb-3 sm:text-[0.7rem] text-[0.6rem] text-[#3a3a3a] max-w-[90%] m-auto block leading-6">
-        <p>{item.description}</p>
+      <div className="mb-3 px-2 ">
+        <p className="text-center text-[13px]" >{item.description}</p>
       </div>
       <Link to={`/part/details/${item._id}`}>
         <div>

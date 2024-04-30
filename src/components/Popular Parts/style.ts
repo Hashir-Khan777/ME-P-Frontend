@@ -8,13 +8,13 @@ export const Containerdiv = styled.div`
   margin: 0px;
   margin-top: 100px;
   padding: 20px 0px;
-
+  
   h1 {
     font-size: 64px;
     margin-left: 100px;
     font-weight: bold;
   }
-
+  
   ${mobile`
 
 h1{
@@ -53,8 +53,8 @@ gap: 0px;
 `;
 export const BrowseBtn = styled.div`
   margin: auto;
-  width: 24vw;
-  height: 8vh;
+  width: 300px;
+  height: 45px;
   color: #ffba3f;
   border: 0.5px solid #ffba3f;
   display: flex;
@@ -65,13 +65,12 @@ export const BrowseBtn = styled.div`
   font-weight: 600;
   margin-top: 14px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 2rem;
 
   ${mobile`
-width: 50vw;
-height: 5vh;
-font-size: 8px;
+  width:250px;
+font-size: 13px;
 margin-bottom: 1rem;
 `}
 `;
@@ -88,10 +87,11 @@ export const FlexCard = styled.div`
   gap: 10px;
   margin: 20px 0px;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 12px;
 
   ${mobile`
-    max-width: 16rem;
+
+    width: 80%;
     `}
 
   .justifybtn {
@@ -139,17 +139,15 @@ export const FlexCard = styled.div`
     margin-top: 0px;
     padding: 10px 20px;
     color: ${Theme.WHITE_COLOR};
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .pad {
     p {
-      /* padding: 0px 19px; */
-      /* margin: 5px 0px; */
-      font-size: small;
+      font-size: medium;
     }
   }
-
+  
   .para {
     padding: 0px 15px 0px 15px;
   }
@@ -164,20 +162,21 @@ export const Styledbutton = styled.button`
   background-color: ${Theme.BLACK_COLOR};
   font-weight: bold;
   width: 90%;
+  height:40px;
   margin: 0px auto;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 15px;
 
   &:hover {
     color: ${Theme.BLACK_COLOR};
     background-color: ${Theme.WHITE_COLOR};
   }
   ${mobile`
-font-size: 0.7rem;
+font-size: 13px;
 `}
 `;
 
@@ -200,17 +199,12 @@ export const BrowseButton = styled.div`
     }
 
     ${mobile`
-
-
-
     
         font-size: small;
-        width: 85%;
+        width: 90%;
             
 
 
-    
- 
 
 
 `}

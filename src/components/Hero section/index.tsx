@@ -10,7 +10,7 @@ const HeroSection = () => {
       <ParentFlex>
         <FlexChild1>
           <h1>
-            Accompany <br /> your journey
+            Accompany your journey
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

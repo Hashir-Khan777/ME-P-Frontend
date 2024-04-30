@@ -33,7 +33,7 @@ const SearchBar = () => {
                 <img src={car} alt="car" />
               </div>
               <div>
-                <Box sx={{ minWidth: 100, border: "none", p: 0 }}>
+                <Box sx={{minWidth: 100, border: "none", p: 0 }}>
                   <FormControl sx={{ m: 0, minWidth: 100, p: 0 }}>
                     <InputLabel
                       className="fw sm"
@@ -95,7 +95,7 @@ const SearchBar = () => {
           <p>Pick Up</p>
           <>
             {" "}
-            <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DemoContainer
                 components={[
                   "DatePicker",
@@ -103,12 +103,12 @@ const SearchBar = () => {
                   "DesktopDatePicker",
                   "StaticDatePicker",
                 ]}
-                sx={{ maxWidth: "170px" }}
+                sx={{width: "80%"}}
               >
                 <DemoItem>
                   <DatePicker
                     defaultValue={dayjs("2022-04-17")}
-                    sx={{ fill: "orange" }}
+                    sx={{fill: "orange" }}
                     className="bordermobile"
                   />
                 </DemoItem>
@@ -128,7 +128,7 @@ const SearchBar = () => {
                   "DesktopDatePicker",
                   "StaticDatePicker",
                 ]}
-                sx={{ maxWidth: "170px" }}
+                sx={{width:"80%"}}
               >
                 <DemoItem>
                   <DatePicker

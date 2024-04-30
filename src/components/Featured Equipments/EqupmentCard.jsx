@@ -21,28 +21,28 @@ const EquipmentCard = ({ item }) => {
       <img className={styles.cardImage} src={item.images[0]} />
       <div className="flex flex-row justify-around">
         <div>
-          <p className="text-[#fcb63a] sm:text-[11px] text-[9px] font-semibold">
+          <p className="text-[#fcb63a] sm:text-[16px] text-[14px] font-semibold">
             Make
           </p>
-          <p className="text-[#000] sm:text-[11px] text-[9px] font-semibold">
+          <p className="text-[#000] sm:text-[12px] text-[12px] font-semibold">
             {item.make}
           </p>
         </div>
         <img className="w-[0.5px]" src={images.line} alt="line" />
         <div>
-          <p className="text-[#fcb63a] sm:text-[11px] text-[9px] font-semibold">
+          <p className="text-[#fcb63a] sm:text-[16px] text-[14px] font-semibold">
             Model
           </p>
-          <p className="text-[#000] sm:text-[11px] text-[9px] font-semibold">
+          <p className="text-[#000] sm:text-[12px] text-[12px] font-semibold">
             {item.model}
           </p>
         </div>
         <img className="w-[0.5px]" src={images.line} alt="line" />
         <div>
-          <p className="text-[#fcb63a] sm:text-[11px] text-[9px] font-semibold">
+          <p className="text-[#fcb63a] sm:text-[16px] text-[14px] font-semibold">
             Year
           </p>
-          <p className="text-[#000] sm:text-[11px] text-[9px] font-semibold">
+          <p className="text-[#000] sm:text-[12px] text-[12px] font-semibold">
             {item.year}
           </p>
         </div>

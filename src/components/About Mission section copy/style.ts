@@ -3,12 +3,10 @@ import { mobile, tablet } from "../../utils/responsive";
 import Theme from "../../constants/theme";
 
 
-
-
 export const Styleddiv = styled.div`
 margin: 5rem auto auto auto;
-display: flex;
-max-width: 80%;
+display: flex   ;
+width: 80%;
 height: fit-content;
 position: relative;
 align-items: center;
@@ -17,7 +15,7 @@ justify-content: center;
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 1.5rem;
+    font-size:10px;
     letter-spacing: 0.2px;
     margin: 0px auto;
     font-weight: bold;
@@ -35,10 +33,8 @@ h1{
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
-    font-size: 13px;
+    font-size: 30px;
 }
-
-
 
 ${mobile`
 
@@ -47,7 +43,8 @@ h1{
     font-size: 14px;
 }
 .styledGrey {
-    font-size: 12px;
+    font-size: 20px;
+
 }
 .styledyellow {
     font-size: 14px;
@@ -78,7 +75,7 @@ align-items: center;
 justify-content: space-around;
 background-color: ${Theme.LIGHT_GREY};
 padding: 50px;
-padding-top: 5rem;
+padding-top: 4rem;
 width: 100%;
 
 
@@ -103,7 +100,7 @@ flex-direction: column;
 
 export const FlexChild1 = styled.div`
 
-max-width: 45%;
+max-width: 40%;
 display: flex;
 align-items: start;
 justify-content: center;
@@ -114,10 +111,11 @@ text-align: left ;
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 48px;
+    font-size: 20px;
+    font-weight: semibold;
+    line-height: 1.2em;
     text-align: top;
+
 }
 
 .styledyellow{
@@ -126,7 +124,7 @@ h1{
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
-    font-size: 0.8rem;
+    font-size: 15px;
 }
 
 
@@ -144,7 +142,7 @@ h1{
 }
 
 .styledGrey{
-    font-size: 0.6rem;
+    font-size: 13px;
 }
 
 
@@ -152,6 +150,7 @@ h1{
 ${tablet`
 max-width: 100%;
 border-bottom: 1px solid black;
+margin-bottom:20px;
 
 
 h1{
@@ -164,7 +163,7 @@ h1{
 
 export const FlexChild2 = styled.div`
 
-max-width: 45%;
+max-width: 40%;
 display: flex;
 align-items: start;
 justify-content: center;
@@ -174,10 +173,9 @@ flex-wrap: wrap;
 
 h1{
     color: ${Theme.CHANNEL_BLACK};
-    font-size: 34px;
-    font-weight: bold;
-    line-height: 48px;
-    letter-spacing: -2px;
+    font-size: 20px;
+    font-weight: semibold;
+    line-height: 1.2;
     text-align: top;
 }
 
@@ -187,7 +185,7 @@ h1{
 
 .styledGrey{
     color:  ${Theme.DIM_GREY_COLOR};
-    font-size: 0.8rem;
+    font-size: 15px;
 }
 
 
@@ -204,7 +202,7 @@ h1{
     text-align: top;
 }
 .styledGrey{
-    font-size: 0.6rem;
+    font-size: 13px;
 }
 
 `}  

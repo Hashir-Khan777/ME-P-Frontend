@@ -63,7 +63,7 @@ const PopularCategories = () => {
               />
             </a>
             <div className="p-5">
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 relative top-[-5rem] text-center sm:text-[1rem] text-[0.8rem]">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 relative top-[-5rem] text-center sm:text-lg text-md">
                 {e.name}
               </p>
             </div>

@@ -6,23 +6,23 @@ export const FlexBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   background-color: ${Theme.WHITE_COLOR};
   z-index: 10;
   position: relative;
-  flex-wrap: wrap;
   padding: 10px 15px;
-  border-radius: 50px;
+  border-radius: 30px;
   box-shadow: ${Theme.BOX_SHADOW};
 
   ${tablet`
     max-width:95%;
   `}
   ${mobile`
-  max-width:60%;
+  width:80%;
     flex-direction: column;
-    padding: 10px 15px;
+    padding: 10px 0px;
+    gap:10px;
     top: 2rem;
 
   `}
@@ -32,6 +32,7 @@ export const FlexChild = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   flex-direction: column;
 
   p {
@@ -49,26 +50,41 @@ export const FlexChild = styled.div`
   .MuiOutlinedInput-notchedOutline {
     border: none !important;
     font-weight: 100;
+    w: 100%;
   }
   .icon {
     width: 1.4rem;
   }
 
+  ${tablet`
+  p{
+    font-size:14px;
+  }
+
+  .inputLabel {    
+    font-size: 14px;
+  }
+
+
+  `}
+
   ${mobile`
     .bordermobile {
       border: 1px solid #ccc !important; 
       border-radius: 4px;
+      width:100%;
+      margin:auto;
       padding: 0px;
+      text-Align:center;
       color: red !important;
-      width: 6rem;
       height: 3.8rem;
       font-size: 10px;
     }
     p{
-        font-size: 11px;
+        font-size: 16px;
     }
     .inputLabel{
-        font-size: 12px;
+        font-size: 16px;
       }
       .icon{
         width: 1rem;
@@ -94,8 +110,9 @@ export const FlexChild = styled.div`
 
   ${mobile`
   .searchButton {
-    padding: 8px 14px;
-    font-size: 10px;
+    padding: 10px 0;
+    width: 80%;
+    font-size: 16px;
 }
 `}
 

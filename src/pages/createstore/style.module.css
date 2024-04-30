@@ -1,0 +1,124 @@
+.mainHeading {
+  font-size: 40px;
+  font-weight: bold;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.infoContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border: "2px solid black";
+}
+
+.secondaryHeading {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.paymentFlexBox {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.boldHeading {
+  font-weight: 600;
+}
+
+.info {
+  color: #ffba3f;
+  text-decoration: underline;
+}
+
+.formHeading {
+  font-size: 25px;
+  font-weight: 600;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.formContainer {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.input {
+  width: 50%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.button {
+  width: 250px;
+  border: none;
+  height: 40px;
+  background-color: #FFBA3F;
+  border-radius: 5px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .formContainer {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .paymentFlexBox{
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .infoContainer {
+    width: 90%;
+  }
+
+  .secondaryHeading {
+    font-size: 20px;
+  }
+
+  .formHeading {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+
+  .inputContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+  .input {
+    width: 100%;
+  }
+}

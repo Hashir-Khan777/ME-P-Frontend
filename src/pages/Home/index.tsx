@@ -11,7 +11,7 @@ import RentalSlider from "../../components/RentalSlider";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroSection />
       <AboutMission />
       <PopularCategories />
@@ -20,7 +20,7 @@ const Home = () => {
       <FeaturedEqp />
       <PopularParts />
       <FeaturedPartners />
-    </div>
+    </>
   );
 };
 export default Home;

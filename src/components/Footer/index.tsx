@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
           <FlexParent1 className="fontsize">
-            <div>
+            <div className="flexChild" >
               <p className="yellow"> EQUIPMENT </p>
               <p> Excavators </p>
               <p> Dozers </p>
@@ -67,7 +67,7 @@ const Footer = () => {
               <p> Roller Compactor </p>
               <p> Dredger </p>
             </div>
-            <div>
+            <div className="flexChild">
               <p className="yellow"> FOR RENT </p>
               <p> Excavators </p>
               <p> Dozers </p>
@@ -78,7 +78,7 @@ const Footer = () => {
               <p> Dredger </p>
             </div>
 
-            <div>
+            <div className="flexChild">
               <p className="yellow"> PARTS </p>
               <p> All Equipment Parts </p>
               <p> Engine </p>
@@ -86,7 +86,7 @@ const Footer = () => {
               <p> Filters </p>
             </div>
 
-            <div>
+            <div className="flexChild">
               <p className="yellow"> QUICK LINKS </p>
               <p> About us </p>
               <p> Contact </p>
