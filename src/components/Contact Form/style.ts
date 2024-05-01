@@ -1,82 +1,85 @@
 import { styled } from "styled-components";
 import Theme from "../../constants/theme";
-import { mobile } from "../../utils/responsive";
-
-
-
+import { mobile, tablet } from "../../utils/responsive";
 
 export const ParentFlex = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  gap: 20px;
+  flex-direction: column;
+  margin: 30px auto;
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 2px solid ${Theme.LIGHT_GREY};
 
-display: flex;
-align-items: center;
-justify-content: center;
-max-width: 60%;
-gap: 15px;
-flex-direction: column;
-margin: auto;
-padding: 60px 0px;
+  div,
+  input,
+  textarea {
+    border-radius:5px;
+    min-width: 100%;
+  }
+  
+  input,
+  textarea {
+    min-height: 50px;
+    border: 1px solid ${Theme.DARK_GREY_COLOR};
+    font-size: 15px;
+    outline:none;
+    padding:0px 20px;
+  }
 
-div, input, textarea {
-    min-width: 90%;
-}
+  textarea{
+    padding-top:20px;
+  }
 
-input, textarea{
+  select {
+    border-radius:5px;
+    min-width: 100%;
     min-height: 50px;
     border: 1px solid ${Theme.DARK_GREY_COLOR};
     font-size: 12px;
-    
-}
+    padding: 0px 20px;
+  }
 
-select{
-    min-width: 90%;
-    min-height: 50px;
-    border: 1px solid ${Theme.DARK_GREY_COLOR};
-    font-size: 12px;
-    padding: 24px 20px;
+  select,
+  option,
+  input::placeholder,
+  textarea::placeholder {
+    color: ${Theme.CHANNEL_BLACK};
+    font-size: 14px;
+  }
 
-}
-
-select, option, input::placeholder, textarea::placeholder{
-color: ${Theme.CHANNEL_BLACK};
-font-size: 12px;
-
-}
-
-input::placeholder, textarea::placeholder{
-    padding: 24px 20px;
-}
-
-button{
-    min-width: 91%;
+  button {
     border: none;
     background-color: ${Theme.YELLOW};
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    min-height: 54px;
+    width:250px;
+    border-radius:10px;
+    height:50px;
     text-align: center;
     cursor: pointer;
-    &:hover{
-        color: ${Theme.YELLOW};
-        background-color: ${Theme.BLACK_COLOR};
-
+    &:hover {
+      color: ${Theme.YELLOW};
+      background-color: ${Theme.BLACK_COLOR};
     }
-}
+  }
 
-${mobile`
+  ${tablet`
 
-max-width: 100%;
-button{
-    font-size: 16px;
+width:80%;
 
-}
 
-select{
-    min-width: 90%;
-    
-   
-
-}
 
 `}
 
-`
+  ${mobile`
+
+width:90%;
+padding:20px 20px;
+
+
+`}
+`;

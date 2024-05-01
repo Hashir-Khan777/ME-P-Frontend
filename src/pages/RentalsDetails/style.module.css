@@ -23,18 +23,16 @@
 
 .detailsDiv {
   width: 100%;
-  /* height: 20px; */
-  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .productImgDiv {
-  width: 70%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,31 +61,26 @@
 }
 
 .detailsDivChild {
-  width: 25%;
-  /* height: 50px; */
-  /* background-color: blue; */
+  width: 35%;
 }
 
 .userDetailsMainDiv {
   width: 100%;
-  /* height: 100px; */
-  /* background-color: blueviolet; */
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   border: 1px solid #d8dfe0;
   border-radius: 3px;
+  margin: 0;
 }
 
 .userDetailsDiv {
   width: 90%;
-  /* height: 60px; */
-  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
   margin-top: 10px;
 }
 
@@ -98,21 +91,21 @@
 
 .userDetailsDiv h1 {
   color: black;
-  font-size: 0.8rem;
+  font-size: 15px;
   font-weight: 600;
   margin-left: 10px;
 }
 
 .userDetailsDiv h2 {
   color: #807d7e;
-  font-size: 0.7rem;
+  font-size: 13px;
   font-weight: 100;
   margin-left: 10px;
 }
 
 .userDetailsDiv h3 {
   color: black;
-  font-size: x-small;
+  font-size: 14px;
   font-weight: 600;
   margin-left: 10px;
   cursor: pointer;
@@ -164,19 +157,10 @@
 
 .productDetailsDiv {
   width: 100%;
-  /* height: 100px; */
-  /* background-color: blueviolet; */
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: space-evenly; */
   border: 1px solid #d8dfe0;
   border-radius: 3px;
-  padding: 10px 0px;
+  padding: 15px 10px;
   margin-top: 20px;
-  padding: 0px 5px;
-  padding-top: 10px;
-  padding-bottom: 15px;
 }
 
 .productDetailsDiv h1 {
@@ -191,9 +175,8 @@
 
 .productDetailsDiv h2 {
   color: #807d7e;
-  font-size: small;
+  font-size: 14px;
   font-weight: 600;
-  /* background-color: aqua; */
   width: 90%;
   align-self: center;
   margin-bottom: 5px;
@@ -201,16 +184,14 @@
 
 .productDetailsDiv h3 {
   color: #807d7e;
-  font-size: small;
+  font-size: 14px;
   font-weight: 600;
-  /* background-color: aqua; */
-  width: 90%;
+  width: 60%;
   align-self: center;
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .productDetailsDiv span {
@@ -227,7 +208,7 @@
 }
 
 .priceDiv {
-  width: 70%;
+  width: 65%;
   border: 1px solid #d8dfe0;
   border-radius: 3px;
   margin-top: 2rem;
@@ -265,15 +246,15 @@
 }
 
 .priceDivLocationDiv span {
-  font-size: 0.8rem;
+  font-size: 14px;
   color: black;
 }
 
 .disDiv {
-  width: 70%;
+  width: 65%;
   border: 1px solid #d8dfe0;
   border-radius: 3px;
-  margin-top: 2rem;
+  margin: 2rem 0px;
   display: flex;
   flex-direction: column;
   padding: 20px 20px;
@@ -284,23 +265,19 @@
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: 700;
-  color: black;
 }
 
 .disDiv span {
   margin-top: 10px;
   white-space: pre-line;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 
 .reviewDiv {
   width: 70%;
-  /* border: 1px solid #D8DFE0; */
-  /* border-radius: 3px; */
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  /* padding: 20px 20px; */
 }
 
 .reviewDiv h1 {
@@ -413,18 +390,15 @@
   margin-top: 7px;
 }
 
-.flexRow {
+.flex {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 .flexRow2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .readDetailsCard {
@@ -546,23 +520,28 @@
     font-size: 10px;
     padding: 4px 0px;
   }
+  .productImgDiv,
+  .detailsDivChild {
+    width: 50%;
+  }
+  .priceDiv,
+  .disDiv {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
   .container {
     padding: 0 1rem;
   }
-  .productImgDiv,
-  .priceDiv,
-  .disDiv,
-  .reviewDiv {
+  .productImgDiv {
     width: 100%;
   }
   .userDetailsDiv h1 {
     font-size: 0.6rem;
   }
   .productDetailsDiv h1 {
-    font-size: 0.6rem;
+    font-size: 15px;
   }
   .priceDiv h1 {
     font-size: 1rem;
@@ -586,10 +565,8 @@
   }
   .detailsDiv {
     width: 100%;
-    flex-direction: column;
   }
   .detailsDivChild {
-    margin-top: 1rem;
     width: 100%;
   }
   .reviewDiv .reviewImg {
@@ -602,6 +579,17 @@
     padding: 12px 8px;
   }
 }
+
+@media (max-width: 700px) {
+  .detailsDiv {
+    flex-direction: column;
+  }
+  .productImgDiv,
+  .detailsDivChild {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   h1,
   .cardTextBold,
@@ -628,19 +616,5 @@
   .emailBtn,
   .addToCardBtn {
     font-size: 11px; /* Adjust button font sizes */
-  }
-}
-
-@media (max-width: 1024px) {
-  .productImgDiv,
-  .detailsDivChild {
-    width: 50%;
-  }
-}
-
-@media (max-width: 425px) {
-  .productImgDiv,
-  .detailsDivChild {
-    width: 100%;
   }
 }

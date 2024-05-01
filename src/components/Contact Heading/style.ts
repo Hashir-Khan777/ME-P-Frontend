@@ -17,6 +17,11 @@ export const FlexParent = styled.div`
     font-size: 48px;
     margin: 5px 0px;
   }
+
+  h2{
+    font-size:20px
+  }
+
   p {
     width: 60%;
     margin: auto;
@@ -45,6 +50,7 @@ h1{
 }
 
 p{
+width:80%;
     font-size:small;
 }
 .styleGrey{

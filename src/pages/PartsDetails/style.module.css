@@ -30,11 +30,11 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .productImgDiv {
-  width: 70%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,7 @@
 }
 
 .detailsDivChild {
-  width: 25%;
+  width: 35%;
 }
 
 .emailBtn {
@@ -121,21 +121,21 @@
 
 .userDetailsDiv h1 {
   color: black;
-  font-size: 0.8rem;
+  font-size: 15px;
   font-weight: 600;
   margin-left: 10px;
 }
 
 .userDetailsDiv h2 {
   color: #807d7e;
-  font-size: 0.7rem;
+  font-size: 13px;
   font-weight: 100;
   margin-left: 10px;
 }
 
 .userDetailsDiv h3 {
   color: black;
-  font-size: x-small;
+  font-size: 14px;
   font-weight: 600;
   margin-left: 10px;
   cursor: pointer;
@@ -143,7 +143,6 @@
 
 .addToCardBtn {
   width: 90%;
-  /* height: 30px; */
   background-color: black;
   color: white;
   font-size: 0.8rem;
@@ -176,19 +175,18 @@
 
 .productDetailsDiv h1 {
   color: black;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 600;
   width: 90%;
   align-self: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .productDetailsDiv h2 {
   color: #807d7e;
-  font-size: small;
+  font-size: 14px;
   font-weight: 600;
-  /* background-color: aqua; */
   width: 90%;
   align-self: center;
   margin-bottom: 5px;
@@ -196,7 +194,7 @@
 
 .productDetailsDiv span {
   color: black;
-  font-size: small;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -209,7 +207,7 @@
 }
 
 .priceDiv {
-  width: 70%;
+  width: 65%;
   border: 1px solid #d8dfe0;
   border-radius: 3px;
   margin-top: 2rem;
@@ -252,10 +250,10 @@
 }
 
 .disDiv {
-  width: 70%;
+  width: 65%;
   border: 1px solid #d8dfe0;
   border-radius: 3px;
-  margin-top: 2rem;
+  margin: 2rem 0px;
   display: flex;
   flex-direction: column;
   padding: 20px 20px;
@@ -272,7 +270,7 @@
 .disDiv span {
   margin-top: 10px;
   white-space: pre-line;
-  font-size: 0.8rem;
+  font-size: 14px;
 }
 
 .reviewDiv {
@@ -394,13 +392,22 @@
     font-size: 10px;
     padding: 4px 0px;
   }
+
+  .productImgDiv,
+  .detailsDivChild {
+    width: 50%;
+  }
+
+  .priceDiv,
+  .disDiv {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
   .container {
     padding: 0 1rem;
   }
-  .productImgDiv,
   .priceDiv,
   .disDiv,
   .reviewDiv {
@@ -409,9 +416,7 @@
   .userDetailsDiv h1 {
     font-size: 0.6rem;
   }
-  .productDetailsDiv h1 {
-    font-size: 0.6rem;
-  }
+
   .priceDiv h1 {
     font-size: 1rem;
     letter-spacing: 1px;
@@ -432,17 +437,20 @@
     font-size: 0.6rem;
     margin-left: 10px;
   }
-  .detailsDiv {
-    width: 100%;
-    flex-direction: column;
-  }
-  .detailsDivChild {
-    margin-top: 1rem;
-    width: 100%;
-  }
+ 
   .reviewDiv .reviewImg {
     width: 4rem;
     height: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .detailsDiv {
+    flex-direction: column;
+  }
+  .productImgDiv,
+  .detailsDivChild {
+    width: 100%;
   }
 }
 
@@ -453,16 +461,12 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .productImgDiv,
-  .detailsDivChild {
-    width: 50%;
-  }
-}
-
 @media (max-width: 425px) {
   .productImgDiv,
   .detailsDivChild {
     width: 100%;
+  }
+  .disDiv span{
+    font-size: 12px;
   }
 }

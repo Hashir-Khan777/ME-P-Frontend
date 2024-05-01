@@ -97,31 +97,34 @@ export default function EquipmentDetails() {
             </div>
             <div className={styles.productDetailsDiv}>
               <h1>Details</h1>
-              <div className={styles.flexRow}>
-                <div style={{ flex: 1 }}>
-                  <h2>
-                    Make: <span>{equipment?.make}</span>
-                  </h2>
-                  <h2>
-                    Model: <span>{equipment?.model}</span>
-                  </h2>
-                  <h2>
-                    Category: <span>{equipment?.category?.category_name}</span>
-                  </h2>
-                </div>
-                <div style={{ flex: 1 }}>
-                  <h3>
-                    Condition: <span>{equipment?.condition}</span>
-                  </h3>
-                  <h3>
-                    SKU: <span>{equipment?.sku}</span>
-                  </h3>
-                  <h3>
-                    Year:{" "}
-                    <span>{new Date(equipment?.createdAt).getFullYear()}</span>
-                  </h3>
-                </div>
+              {/* <div className={styles.flexRow}> */}
+              <div className={styles.flex}>
+                <h2>
+                  Make: <span>{equipment?.make}</span>
+                </h2>
+                <h3>
+                  Condition: <span>{equipment?.condition}</span>
+                </h3>
               </div>
+              <div className={styles.flex}>
+                <h2>
+                  Model: <span>{equipment?.model}</span>
+                </h2>
+
+                <h3>
+                  SKU: <span>{equipment?.sku}</span>
+                </h3>
+              </div>
+              <div className={styles.flex}>
+                <h2>
+                  Category: <span>{equipment?.category?.category_name}</span>
+                </h2>
+                <h3>
+                  Year:{" "}
+                  <span>{new Date(equipment?.createdAt).getFullYear()}</span>
+                </h3>
+              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>

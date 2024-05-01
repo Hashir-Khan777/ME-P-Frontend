@@ -95,31 +95,31 @@ export default function RentalsDetails() {
               </div>
               <div className={styles.productDetailsDiv}>
                 <h1>Details</h1>
-                <div className={styles.flexRow}>
-                  <div style={{ flex: 1 }}>
+                  <div className={styles.flex}>
                     <h2>
                       Make: <span>{rental?.make}</span>
                     </h2>
-                    <h2>
-                      Model: <span>{rental?.model}</span>
-                    </h2>
-                    <h2>
-                      Category: <span>{rental?.category?.category_name}</span>
-                    </h2>
-                  </div>
-                  <div style={{ flex: 1 }}>
                     <h3>
                       Condition: <span>{rental?.condition}</span>
                     </h3>
+                  </div>
+                  <div className={styles.flex}>
+                    <h2>
+                      Model: <span>{rental?.model}</span>
+                    </h2>
                     <h3>
                       SKU: <span>{rental?.sku}</span>
                     </h3>
+                  </div>
+                  <div className={styles.flex}>
+                    <h2>
+                      Category: <span>{rental?.category?.category_name}</span>
+                    </h2>
                     <h3>
                       Year:{" "}
                       <span>{new Date(rental?.createdAt).getFullYear()}</span>
                     </h3>
                   </div>
-                </div>
               </div>
             </div>
           </div>
