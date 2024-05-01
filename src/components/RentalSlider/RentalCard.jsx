@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const RentalCard = ({ item }) => {
   return (
-    <div
+    <div 
       key={item._id}
-      className="sm:w-80 w-3/4 mb-10 max-h-2/4 bg-white border border-[grey] rounded"
+      className="md:w-80 w-80% mb-10 bg-white border border-[grey] rounded"
     >
       <Link to={`/rental/details/${item._id}`}>
         <img

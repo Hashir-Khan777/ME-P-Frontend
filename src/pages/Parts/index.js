@@ -129,7 +129,7 @@ const Parts = () => {
                 </div>
                 <span>{`Showing ${currentPage}-${currentItems.length} of ${data?.length} results`}</span>
               </div>
-              <div className="flex flex-wrap mt-12 max-w-[100%] gap-10 m-auto justify-center">
+              <div className="flex flex-wrap mt-12 gap-10 justify-center md:justify-start">
                 {parts.map((e) => {
                   return <PartCard item={e} />;
                 })}

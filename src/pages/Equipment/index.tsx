@@ -114,7 +114,6 @@ const Equipment = () => {
                 className={"w-[22px] h-[24px] cursor-pointer"}
                 onClick={() => setShowFilter(true)}
               />
-              <hr className={styles.hideFilterDivHr} />
             </div>
           )}
           <div className={styles.secondDivSecond}>
@@ -125,7 +124,7 @@ const Equipment = () => {
               </div>
               <span>{`Showing ${currentPage}-${currentItems.length} of ${data?.length} results`}</span>
             </div>
-            <div className="flex flex-wrap mt-12 max-w-[100%] gap-10 justify-center">
+            <div className="flex flex-wrap mt-12 max-w-[100%] justify-center md:justify-start gap-10">
               {equipments.map((item: any) => {
                 return <EquipmentCard item={item} />;
               })}
