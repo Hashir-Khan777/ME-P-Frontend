@@ -66,7 +66,7 @@ const SignIn = () => {
     <ParentFlex>
       <FlexChild1></FlexChild1>
       <FlexChild2>
-        <h1 className="tracking-[0.5px] font-bold text-blackBrown">Sign In Using</h1>
+        <h1 className="relative left-0 md:left-[4rem] xl:left-0 tracking-[0.5px] font-bold text-blackBrown">Sign In Using</h1>
         <button className="secondary-button">
           <img src={google} alt="google" /> Sign In With Google
         </button>
@@ -80,7 +80,7 @@ const SignIn = () => {
         <br />
         <form style={{ width: "75%" }} onSubmit={handleSubmit}>
           <label>Email Address</label>
-          <input placeholder="designer@gmail.com" value={email} onChange={handleEmailChange} required />
+          <input className="placeholder:text-[13px]" placeholder="designer@gmail.com" value={email} onChange={handleEmailChange} required />
           {email && !isEmailValid && (
             <p className="validation-message">Invalid email</p>
           )}
@@ -124,7 +124,7 @@ const SignIn = () => {
               cursor: "pointer",
             }}
           >
-            <p  className="fa m-0 underline text-[12px]">
+            <p  className="fa m-0 underline text-[13px]">
               Forget your password
             </p>
           </label>

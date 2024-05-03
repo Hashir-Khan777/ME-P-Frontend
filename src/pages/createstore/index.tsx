@@ -53,7 +53,7 @@ const CreateStore = () => {
   }, [plan]);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className={style.container}>
       <h1 className={style.mainHeading}>
         <span className="text-black">Create</span>{" "}
         <span className="text-[#FFBA3F]">Store</span>

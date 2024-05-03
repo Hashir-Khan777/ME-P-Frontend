@@ -8,15 +8,28 @@ export const ParentFlex = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
-max-height: 150vh;
+height: 145vh;
+gap:40px;
 padding-bottom: 0px;
 overflow: hidden;
+
+${tablet`
+height: 100%;
+
+
+`}
+
+${mobile`
+height:100%;
+`}
+
+
 `
 
 export const FlexChild1 = styled.div`
 overflow: hidden;
 min-width: 50%;
-min-height: 150vh;
+height:100%;
 background-image: url(${banner});
 background-size: cover; 
   background-repeat: no-repeat;
@@ -40,8 +53,6 @@ justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
 position: relative;
-top: -8rem;
-left: 2rem;
 
 .validation-message{
     color: red;
@@ -62,7 +73,7 @@ left: 2rem;
     margin: 10px 0px;
     font-weight: 600;
     width: 300px;
-    font-size: 0.8rem;
+    font-size: 0.8rem;  
     margin-bottom: 1rem
 }
 button{
@@ -79,10 +90,12 @@ button{
     margin: 10px 0px;
     font-weight: 600;
     width: 12vw;
-    font-size:1rem;
+    font-size:13px;
     margin-bottom: 1rem
 }
+
 ${mobile`
+padding:20px 15px;
     button {
       font-size: 10px !important;
     }
@@ -93,6 +106,7 @@ ${mobile`
     left: 0;
   `}
 ${tablet`
+padding:20px 15px;
     button {
       font-size: 12px !important;
     }
@@ -112,7 +126,7 @@ ${mobile`
 
 h1{
     margin: 0px 0px 0px 0px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 button{
@@ -124,7 +138,7 @@ button{
     margin: 10px 0px;
     font-size:12px !important;
     max-width: 75%;    
-    width: 24vw;
+    width: 30vw;
 
     img{
         max-width: 7%;

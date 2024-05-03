@@ -10,7 +10,7 @@ const FeaturedEqp = () => {
           <span className="text-[#FFBA3F]">Equipments :</span>
         </h1>
           <FeatureEquipmentProducts />
-        <div>
+        <div> 
         </div>
       </div>
     </>

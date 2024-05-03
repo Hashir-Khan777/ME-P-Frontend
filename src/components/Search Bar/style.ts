@@ -11,6 +11,7 @@ export const FlexBox = styled.div`
   background-color: ${Theme.WHITE_COLOR};
   z-index: 10;
   position: relative;
+  bottom:3.5rem;
   padding: 10px 15px;
   border-radius: 30px;
   box-shadow: ${Theme.BOX_SHADOW};
@@ -19,10 +20,10 @@ export const FlexBox = styled.div`
     max-width:95%;
   `}
   ${mobile`
-  width:80%;
+  width:320px;
     flex-direction: column;
     padding: 10px 0px;
-    gap:10px;
+    gap:15px;
     top: 2rem;
 
   `}
@@ -30,7 +31,7 @@ export const FlexBox = styled.div`
 
 export const FlexChild = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction: column;
@@ -39,12 +40,9 @@ export const FlexChild = styled.div`
     color: ${Theme.DIM_GREY_COLOR};
     padding: 0px;
     font-weight: 100;
-    position: relative;
-    top: 0.5rem;
-    left: -0.5rem;
   }
   .inputLabel {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .MuiOutlinedInput-notchedOutline {
@@ -65,7 +63,6 @@ export const FlexChild = styled.div`
     font-size: 14px;
   }
 
-
   `}
 
   ${mobile`
@@ -75,6 +72,7 @@ export const FlexChild = styled.div`
       width:100%;
       margin:auto;
       padding: 0px;
+      margin-top:15px;
       text-Align:center;
       color: red !important;
       height: 3.8rem;

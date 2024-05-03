@@ -11,11 +11,9 @@ export const ParentFlex = styled.div`
   background-color: ${Theme.LIGHT_GREY};
   max-width: 100%;
   padding: 0px 10px;
-  margin-bottom: 40px;
 
   ${mobile`
-height: 50vh;
-margin-bottom: 20px ;
+height: 260px;
 
 
 `}
@@ -53,13 +51,13 @@ text-align: center;
  
 
  h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 20px auto;
     line-height: 2rem;
 
  }
  p{  
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.2rem;
     width: 100%;    
     display: block;

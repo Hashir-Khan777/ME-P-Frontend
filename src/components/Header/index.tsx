@@ -157,7 +157,11 @@ function ResponsiveAppBar() {
                     <Button
                       key={page}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "black", display: "block" }}
+                      sx={{
+                        my: 2,
+                        color: "black",
+                        display: "block",
+                      }}
                     >
                       <span style={{ fontWeight: "600" }}>{page}</span>
                     </Button>
@@ -234,6 +238,13 @@ function ResponsiveAppBar() {
                     ))}
                     <MenuItem onClick={() => handleLogout()}>
                       <Typography textAlign="center">Logout</Typography>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to={"/BecomeSeller"} >
+                        <Typography textAlign="center">
+                          Become a seller
+                        </Typography>
+                      </Link>
                     </MenuItem>
                   </Menu>
                 </Box>

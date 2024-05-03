@@ -28,7 +28,7 @@ const RentalCards = (props: any) => {
     return (
         <>
             <div className="w-full flex flex-row items-end justify-between">
-                <div className=" bg-[#F6F6F6] flex flex-row items-center rounded-[10px]">
+                <div className="bg-[#F6F6F6] flex flex-row items-center rounded-[10px]">
                     <img src={images.search} className="sm:w-5 sm:h-5 w-4 h-4 absolute ml-4" />
                     <input placeholder="Search" className={"w-full h-[40px] bg-transparent outline-none border-none pl-[45px] rounded-[5px] text-[#807d7e] sm:block hidden"} />
                 </div>

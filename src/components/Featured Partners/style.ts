@@ -9,13 +9,13 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: center;
-margin: 39px auto 160px auto;
+margin: 39px auto 100px auto;
 gap: 20px;
 max-width: 90%;
 
 .heading{
     min-width: 100%;
-    margin: auto;
+    margin:40px auto ;
     text-align: center;
 
     h1{
@@ -26,6 +26,7 @@ max-width: 90%;
 }
 
 ${mobile`
+
 h1{
 
     font-size: 1.5rem;
@@ -53,11 +54,22 @@ div{
 
 ${mobile`
 flex-direction: column;
+justify-content: space-evenly;
+gap:30px;
+
+
+.heading{
+    margin:20px auto;
+}
+
+
+
 
 div{
     max-width: 120px;
     img{
-        max-width: 70%;
+        width: 80px;
+            height:30px;
     }
     
 }

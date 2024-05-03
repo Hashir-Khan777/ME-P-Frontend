@@ -8,15 +8,26 @@ export const ParentFlex = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
-max-height: 150vh;
+height: 130vh;
 padding-bottom: 0px;
 overflow: hidden;
+
+${tablet`
+height: 100%;
+
+
+`}
+
+${mobile`
+height:100%;
+`}
+
 `
 
 export const FlexChild1 = styled.div`
 overflow: hidden;
 min-width: 50%;
-min-height: 150vh;
+height: 130vh;
 background-image: url(${banner});
 background-size: cover; 
   background-repeat: no-repeat;
@@ -40,8 +51,6 @@ justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
 position: relative;
-top: -8rem;
-left: 2rem;
 
 .validation-message{
     color: red;
@@ -78,13 +87,14 @@ button{
     gap: 10px;
     margin: 10px 0px;
     font-weight: 600;
-    width: 12vw;
-    font-size:1rem;
+    width: 18vw;
+    font-size:16px;
     margin-bottom: 1rem
 }
 ${mobile`
+padding:20px 0;
     button {
-      font-size: 10px !important;
+      font-size: 18px !important;
     }
     label {
       font-size: 10px;
@@ -93,6 +103,7 @@ ${mobile`
     left: 0;
   `}
 ${tablet`
+padding:20px 15px;
     button {
       font-size: 12px !important;
     }
@@ -123,9 +134,9 @@ button{
     justify-content: center;
     gap: 10px;
     margin: 10px 0px;
-    font-size:12px !important;
+    font-size:14px !important;
     max-width: 75%;    
-    width: 24vw;
+    width: 26vw;
 
     img{
         max-width: 7%;
@@ -165,6 +176,11 @@ width: 100%
 `}
 
 ${tablet`
+
+button{
+    font-size:12px !important ;
+}
+
 span{
     display: none;
 }
@@ -179,6 +195,7 @@ border-radius: 5px;
 margin: 0px 4px;
 font-weight: bold;
 ${mobile`
+
 width:100%;
 `}
 `

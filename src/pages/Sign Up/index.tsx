@@ -66,8 +66,12 @@ const SignUp = () => {
       <ParentFlex>
         <FlexChild1></FlexChild1>
         <FlexChild2>
-          <h1 className="tracking-[0.5px] font-bold text-blackBrown relative sm:left-[-11.2rem] left-0 ">Sign Up</h1>
-          <p className="text-[#807d7e] text-[12px] relative sm:left-[-6.3rem] left-0 mt-1">Sign up for free to buy or sell on our website</p>
+          <h1 className="relative left-0  lg:left-[-12.5rem] tracking-[0.5px] font-bold text-blackBrown">
+            Sign Up
+          </h1>
+          <p className="text-[#807d7e] text-[14px] relative lg:left-[-6.3rem] left-0 mt-1">
+            Sign up for free to buy or sell on our website
+          </p>
           <button className="secondary-button">
             <img src={google} alt="google" /> Sign In With Google
           </button>
@@ -81,20 +85,27 @@ const SignUp = () => {
           <br />
           <form style={{ width: "75%" }} onSubmit={handleSubmit}>
             <label>Email Address</label>
-            <input placeholder="designer@gmail.com" value={email} onChange={handleEmailChange} required />
+            <input
+             className="placeholder:text-[13px] "
+              placeholder="designer@gmail.com"
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
             {email && !isEmailValid && (
               <p className="validation-message">Invalid email</p>
             )}
-            <label
-              className="flex items-center justify-between mt-6"
-            >
+            <label className="flex items-center justify-between mt-6">
               Password
               <p
                 onClick={handleShowPasswordToggle}
                 className="border-none bg-transparent cursor-pointer"
               >
                 {showPassword ? (
-                  <div className="flex"><VisibilityOff className="mb-[-6px] text-[#807d7e] mr-2" /><p className="text-[#807d7e] text-[12px] mt-1">Hide</p></div>
+                  <div className="flex">
+                    <VisibilityOff className="mb-[-6px] text-[#807d7e] mr-2" />
+                    <p className="text-[#807d7e] text-[12px] mt-1">Hide</p>
+                  </div>
                 ) : (
                   <Visibility className="mb-[-6px]" />
                 )}
@@ -108,7 +119,9 @@ const SignUp = () => {
                 required
               />
             </div>
-            <p className="text-[#807d7e] text-[12px] mt-1">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+            <p className="text-[#807d7e] text-[12px] mt-1">
+              Use 8 or more characters with a mix of letters, numbers & symbols
+            </p>
             {password && !isPasswordValid && (
               <p className="validation-message">
                 Password should be at least 6 characters
@@ -129,7 +142,11 @@ const SignUp = () => {
             </p>
             <StyledButton
               type="submit"
-              style={{ backgroundColor: "#FFBA3F", cursor: "pointer", color: '#fff' }}
+              style={{
+                backgroundColor: "#FFBA3F",
+                cursor: "pointer",
+                color: "#fff",
+              }}
               disabled={!isEmailValid || !isPasswordValid}
             >
               Sign Up

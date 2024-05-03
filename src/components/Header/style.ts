@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { mobile } from "../../utils/responsive";
+import { tablet , mobile } from "../../utils/responsive";
 import Theme from "../../constants/theme";
+
+
 
 export const Styleddiv = styled.div`
 
@@ -58,11 +60,12 @@ export const Styledbutton = styled.button`
 border: none;
 background-color: ${Theme.YELLOW};
 border-radius: 5px;
-padding: 0px 38px;
-width: 300px;
+padding: 0px 0px;
+width: 150px;
 color: ${Theme.BLACK_COLOR};
 margin: 15px 8px;
-font-weight: bold;
+font-size: 15px;
+font-weight: semibold;
 
 &:hover{
   color: ${Theme.WHITE_COLOR};
@@ -71,7 +74,9 @@ font-weight: bold;
 
 a{
   text-decoration: none;
-  color: ${Theme.WHITE_COLOR};
+  color: ${Theme.WHITE_COLOR};  
 
 }
+
+
 `

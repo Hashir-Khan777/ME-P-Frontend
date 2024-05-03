@@ -1,3 +1,9 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
 .mainHeading {
   font-size: 40px;
   font-weight: bold;
@@ -7,10 +13,12 @@
 }
 
 .infoContainer {
-  width: 80%;
-  margin: auto;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
   margin-top: 20px;
-  border: "2px solid black";
+  -webkit-box-shadow: 0 0 10px lightgray;
+  box-shadow: 0 0 10px lightgray;
 }
 
 .secondaryHeading {
@@ -21,8 +29,7 @@
 
 .paymentFlexBox {
   display: flex;
-  /* align-items: center; */
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   gap: 10px;
 }
 
@@ -38,13 +45,11 @@
 .formHeading {
   font-size: 25px;
   font-weight: 600;
-  width: 80%;
-  margin: 20px auto;
+  margin: 20px;
 }
 
 .formContainer {
-  width: 80%;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
 .inputContainer {
@@ -63,7 +68,7 @@
   margin-bottom: 20px;
 }
 
-.buttonContainer{
+.buttonContainer {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
@@ -73,7 +78,7 @@
   width: 250px;
   border: none;
   height: 40px;
-  background-color: #FFBA3F;
+  background-color: #ffba3f;
   border-radius: 5px;
   color: black;
   font-size: 18px;
@@ -88,17 +93,22 @@
 }
 
 @media screen and (max-width: 768px) {
+
+.container{
+  width: 100%;
+}
+
+.infoContainer{
+  padding: 20px 10px;
+}
+
   .mainHeading {
     font-size: 30px;
   }
 
-  .paymentFlexBox{
+  .paymentFlexBox {
     gap: 0;
     flex-direction: column;
-  }
-
-  .infoContainer {
-    width: 90%;
   }
 
   .secondaryHeading {
@@ -108,10 +118,6 @@
   .formHeading {
     width: 90%;
     font-size: 20px;
-  }
-
-  .formContainer {
-    width: 100%;
   }
 
   .inputContainer {

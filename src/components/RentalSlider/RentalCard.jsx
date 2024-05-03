@@ -5,7 +5,7 @@ const RentalCard = ({ item }) => {
   return (
     <div 
       key={item._id}
-      className="md:w-80 w-80% mb-10 bg-white border border-[grey] rounded"
+      className="w-72 sm:w-80 mb-10 bg-white border border-[grey] rounded"
     >
       <Link to={`/rental/details/${item._id}`}>
         <img

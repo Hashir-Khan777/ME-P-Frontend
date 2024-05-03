@@ -80,7 +80,7 @@ export const FlexCard = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: space-between;
-  width: 360px ;
+  width: 320px ;
   background-color: ${Theme.GREY_93_COLOR};
   padding: 0px 0px 14px 0px;
   gap: 10px;
@@ -90,7 +90,7 @@ export const FlexCard = styled.div`
 
   ${mobile`
 
-    width: 320px;
+    width: 290px;
     `}
 
   .justifybtn {

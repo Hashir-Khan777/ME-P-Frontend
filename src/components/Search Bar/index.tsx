@@ -15,16 +15,16 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const SearchBar = () => {
-  const [age, setAge] = React.useState("");
+  const [age, setAge] = React.useState("0");
 
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value as string);
   };
   return (
     <>
-      <FlexBox>
+      <FlexBox >
         <FlexChild>
-          <div className="relative top-[-0.2rem]">
+          <div className="relative top-[0.4rem]" >
             <p>Vehicle Type</p>
           </div>
           <div>
@@ -33,18 +33,21 @@ const SearchBar = () => {
                 <img src={car} alt="car" />
               </div>
               <div>
-                <Box sx={{minWidth: 100, border: "none", p: 0 }}>
+                <Box sx={{ minWidth: 100, border: "none", p: 0 }}>
                   <FormControl sx={{ m: 0, minWidth: 100, p: 0 }}>
-                    <InputLabel
+                    {/* <InputLabel
                       className="fw sm"
                       sx={{ color: "black", fontWeight: "100" }}
                       id="demo-simple-select-autowidth-label"
                     >
-                      <b className="inputLabel" style={{ fontWeight: "100" }}>
+                      <b
+                        className="text-md inputLabel"
+                        style={{ fontWeight: "100" }}
+                      >
                         {" "}
                         Select
                       </b>
-                    </InputLabel>
+                    </InputLabel> */}
                     <Select
                       labelId="demo-simple-select-autowidth-label"
                       id="demo-simple-select-autowidth"
@@ -53,6 +56,7 @@ const SearchBar = () => {
                       autoWidth
                       label="Age"
                     >
+                      <MenuItem value={"0"}>Select</MenuItem>
                       <MenuItem value={"Excavators"}>Excavators</MenuItem>
                       <MenuItem value={"Dozers"}>Dozers</MenuItem>
                       <MenuItem value={"Cranes"}>Cranes</MenuItem>
@@ -73,7 +77,7 @@ const SearchBar = () => {
           </div>
         </FlexChild>
         <FlexChild>
-          <div className="relative top-[-1.2rem]">
+          <div className="relative top-[-0.5rem]">
             <p>Location</p>
           </div>
 
@@ -92,32 +96,7 @@ const SearchBar = () => {
           </div>
         </FlexChild>
         <FlexChild>
-          <p>Pick Up</p>
-          <>
-            {" "}
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-              <DemoContainer
-                components={[
-                  "DatePicker",
-                  "MobileDatePicker",
-                  "DesktopDatePicker",
-                  "StaticDatePicker",
-                ]}
-                sx={{width: "80%"}}
-              >
-                <DemoItem>
-                  <DatePicker
-                    defaultValue={dayjs("2022-04-17")}
-                    sx={{fill: "orange" }}
-                    className="bordermobile"
-                  />
-                </DemoItem>
-              </DemoContainer>
-            </LocalizationProvider>
-          </>
-        </FlexChild>
-        <FlexChild>
-          <p>Return</p>
+          <p className="relative top-3" >Pick Up</p>
           <>
             {" "}
             <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -128,7 +107,32 @@ const SearchBar = () => {
                   "DesktopDatePicker",
                   "StaticDatePicker",
                 ]}
-                sx={{width:"80%"}}
+                sx={{ width: "80%" }}
+              >
+                <DemoItem>
+                  <DatePicker
+                    defaultValue={dayjs("2022-04-17")}
+                    sx={{ fill: "orange" }}
+                    className="bordermobile"
+                  />
+                </DemoItem>
+              </DemoContainer>
+            </LocalizationProvider>
+          </>
+        </FlexChild>
+        <FlexChild>
+          <p className="relative top-3" >Return</p>
+          <>
+            {" "}
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer
+                components={[
+                  "DatePicker",
+                  "MobileDatePicker",
+                  "DesktopDatePicker",
+                  "StaticDatePicker",
+                ]}
+                sx={{ width: "80%" }}
               >
                 <DemoItem>
                   <DatePicker
